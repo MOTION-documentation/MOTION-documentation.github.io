@@ -1,0 +1,5 @@
+<map id="encrypto::motion::Block128::MakeRandom" name="encrypto::motion::Block128::MakeRandom">
+<area shape="rect" id="node1" title="Create a random&#45;initialized Block128." alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node2" href="$a36766.html#a08061a06d3957f913fac8f3fd127c544" title="Set this Block128 to a random value." alt="" coords="255,5,456,47"/>
+<area shape="rect" id="node3" href="$a36506.html#a30f69d69af3951c51aa8bde533279c29" title=" " alt="" coords="504,13,749,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="encrypto::motion::ShareWrapper::Concatenate" name="encrypto::motion::ShareWrapper::Concatenate">
+<area shape="rect" id="node1" title="concatenates wires in multiple shares in one share. Throws if wires have different numbers of SIMD va..." alt="" coords="5,5,239,47"/>
+<area shape="rect" id="node2" href="$a36726.html#afeb1d9048ebab03917742d0cda5dbf0b" title=" " alt="" coords="287,5,520,47"/>
+</map>

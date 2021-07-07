@@ -1,0 +1,10 @@
+<map id="encrypto::motion::BitVector::Resize" name="encrypto::motion::BitVector::Resize">
+<area shape="rect" id="node1" title="Resize BitVector to size number_of_bits. New bits are uninitialized by default." alt="" coords="549,104,749,145"/>
+<area shape="rect" id="node2" href="$a36350.html#a66fe8c9d86c447def07b797a32e0acbd" title=" " alt="" coords="306,5,497,47"/>
+<area shape="rect" id="node3" href="$a35255.html#ad6b159fe00255e7d9117fced44f8a728" title=" " alt="" coords="301,71,501,112"/>
+<area shape="rect" id="node6" href="$a36370.html#a4d342ecfc451715d9a5a1e7e450a5ba7" title=" " alt="" coords="306,136,497,177"/>
+<area shape="rect" id="node8" href="$a36758.html#a6dce001108da37a6f6543bf0386584b5" title="Returns a new BitVector containing the bits of this BitVector between positions from and to." alt="" coords="301,201,501,243"/>
+<area shape="rect" id="node4" href="$a36674.html#a69e4089e3d476eebdc822567a813a08b" title=" " alt="" coords="37,9,222,51"/>
+<area shape="rect" id="node5" href="$a36674.html#afbd684dae959053bab723de819dcd767" title=" " alt="" coords="37,75,222,116"/>
+<area shape="rect" id="node7" href="$a35255.html#a1c00b2f0710ee7bde3b8f060f04485b5" title=" " alt="" coords="5,143,253,170"/>
+</map>

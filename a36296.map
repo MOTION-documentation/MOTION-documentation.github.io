@@ -1,0 +1,10 @@
+<map id="encrypto::motion::SbProviderFromSps" name="encrypto::motion::SbProviderFromSps">
+<area shape="rect" id="node1" title=" " alt="" coords="951,115,1161,157"/>
+<area shape="rect" id="node2" href="$a36294.html" title=" " alt="" coords="691,123,901,149"/>
+<area shape="rect" id="node3" title=" " alt="" coords="311,5,513,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="315,57,509,98"/>
+<area shape="rect" id="node5" href="$a36778.html" title="Wraps a boost::fibers::condition_variable with a boost::fibers::mutex and a condition checking functi..." alt="" coords="5,64,240,91"/>
+<area shape="rect" id="node6" title=" " alt="" coords="311,123,513,149"/>
+<area shape="rect" id="node7" title=" " alt="" coords="311,173,513,200"/>
+<area shape="rect" id="node8" title=" " alt="" coords="315,224,509,251"/>
+</map>

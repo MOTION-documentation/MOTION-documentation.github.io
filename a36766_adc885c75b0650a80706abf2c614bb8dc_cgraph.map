@@ -1,0 +1,4 @@
+<map id="encrypto::motion::Block128::MakeZero" name="encrypto::motion::Block128::MakeZero">
+<area shape="rect" id="node1" title="Create a zero&#45;initialized Block128." alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node2" href="$a36766.html#a75241d616d16c9edcb10dc0216739b9e" title="Set this Block128 to zero." alt="" coords="255,5,456,47"/>
+</map>

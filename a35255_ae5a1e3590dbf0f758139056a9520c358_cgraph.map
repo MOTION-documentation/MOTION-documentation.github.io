@@ -1,0 +1,4 @@
+<map id="encrypto::motion::AddVectors" name="encrypto::motion::AddVectors">
+<area shape="rect" id="node1" title="Performs the AddVectors operation on an arbitrary number of vectors." alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node2" href="$a35255.html#a4532355f25f586097487e3a58466eddb" title="Adds each element in a and b and returns the result." alt="" coords="268,5,483,32"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="encrypto::motion::BitMatrix::AppendColumn" name="encrypto::motion::BitMatrix::AppendColumn">
+<area shape="rect" id="node1" title="Appends a new column by moving the input bit_vector to the matrix." alt="" coords="5,29,207,71"/>
+</map>

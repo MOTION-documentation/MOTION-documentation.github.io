@@ -1,0 +1,13 @@
+<map id="encrypto::motion::BitVector::GetData" name="encrypto::motion::BitVector::GetData">
+<area shape="rect" id="node1" title="Get const reference to content of BitVector." alt="" coords="571,253,771,295"/>
+<area shape="rect" id="node2" href="$a36758.html#ad0d584433188753b028f5f38f458b45a" title="Performs AND operation between all bits in BitVector." alt="" coords="283,5,483,47"/>
+<area shape="rect" id="node3" href="$a36758.html#a722316ab197e5f1d95fe2d976667aea6" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="283,71,483,112"/>
+<area shape="rect" id="node4" href="$a35255.html#ad9f0b3eb27870c7971b51fcab9445a12" title=" " alt="" coords="244,137,523,163"/>
+<area shape="rect" id="node6" href="$a36554.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="266,188,501,229"/>
+<area shape="rect" id="node7" href="$a36662.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="266,253,501,295"/>
+<area shape="rect" id="node8" href="$a36758.html#ae9fd18f5bce638cce89b5516beee375b" title="Performs OR operation between all bits in BitVector." alt="" coords="283,319,483,360"/>
+<area shape="rect" id="node9" href="$a36374.html#a062e3ff8383dbcf08302c8375fffe29a" title=" " alt="" coords="275,384,492,425"/>
+<area shape="rect" id="node10" href="$a36410.html#afc7f71a78563536e4fdfc1b48c410255" title=" " alt="" coords="278,449,489,491"/>
+<area shape="rect" id="node11" href="$a36758.html#a39009e5de2f90b5324ba4cbe2d6c4673" title="Performs XOR operation between all bits in BitVector." alt="" coords="283,515,483,556"/>
+<area shape="rect" id="node5" href="$a36762.html#a44149e09c0c4ec5399575d46ce4dfa19" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="5,129,196,171"/>
+</map>

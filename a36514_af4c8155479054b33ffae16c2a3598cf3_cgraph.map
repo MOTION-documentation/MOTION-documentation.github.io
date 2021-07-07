@@ -1,0 +1,7 @@
+<map id="encrypto::motion::primitives::SharingRandomnessGenerator::GetBits" name="encrypto::motion::primitives::SharingRandomnessGenerator::GetBits">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,233,153"/>
+<area shape="rect" id="node2" href="$a36758.html#a5d1d84dfbba1619c410cdb322622bf26" title="Appends a bit to BitVector." alt="" coords="285,5,485,47"/>
+<area shape="rect" id="node3" href="$a36498.html#a691d3b9294aecb0219a261e6de859b31" title=" " alt="" coords="281,71,488,112"/>
+<area shape="rect" id="node4" href="$a36758.html#adf616f71e5a06f33a00862396e38ea9c" title="Get size of BitVector." alt="" coords="285,136,485,177"/>
+<area shape="rect" id="node5" href="$a36758.html#a6dce001108da37a6f6543bf0386584b5" title="Returns a new BitVector containing the bits of this BitVector between positions from and to." alt="" coords="285,201,485,243"/>
+</map>

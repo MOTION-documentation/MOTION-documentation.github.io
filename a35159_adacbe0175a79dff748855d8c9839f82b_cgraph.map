@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,108,60,135"/>
+<area shape="rect" id="node2" href="$a35159.html#a8c1470bac086d242986b8c402c677604" title=" " alt="" coords="140,108,239,135"/>
+<area shape="rect" id="node6" href="$a35111.html#a37467ef747ef504173db7a9941aa68bf" title=" " alt="" coords="123,188,255,215"/>
+<area shape="rect" id="node12" href="$a35159.html#abbe8981336e2408e51f1df34d0f9b27e" title=" " alt="" coords="108,24,271,51"/>
+<area shape="rect" id="node3" href="$a35159.html#aa7df912dcc33fee1bcf59e7d9b320c8f" title=" " alt="" coords="373,123,528,149"/>
+<area shape="rect" id="node5" href="$a36210.html#a97ca112707962a35777cdcb7613ec4bd" title=" " alt="" coords="323,57,579,98"/>
+<area shape="rect" id="node4" href="$a35159.html#abbd34e925666eb961ebe3594da98e5c3" title=" " alt="" coords="675,64,843,91"/>
+<area shape="rect" id="node7" href="$a35111.html#aa0b9fa6c189039ab848eb69a0435e1bd" title=" " alt="" coords="379,173,522,200"/>
+<area shape="rect" id="node9" href="$a36106.html#aa9ae2008dae4fd0c11f514352abbd251" title=" " alt="" coords="348,225,553,266"/>
+<area shape="rect" id="node10" href="$a36726.html#a83d91e119d83636bb1ca2819075a4fc8" title="constructs an output gate, which reconstructs the cleartext result. The default parameter for the out..." alt="" coords="319,291,583,317"/>
+<area shape="rect" id="node8" href="$a36726.html#a2d6b46313b06d4d8223eb436d4ba476d" title="converts the information on the wires to T. Boolean and arithmetic GMW returns the secret&#45;shared valu..." alt="" coords="631,173,888,200"/>
+<area shape="rect" id="node11" href="$a36726.html#afeb1d9048ebab03917742d0cda5dbf0b" title=" " alt="" coords="643,283,876,325"/>
+<area shape="rect" id="node13" href="$a35159.html#a930f3df131b744d27e6d0a3c9277621e" title=" " alt="" coords="349,5,553,32"/>
+</map>

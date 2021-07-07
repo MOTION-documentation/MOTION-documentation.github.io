@@ -1,0 +1,4 @@
+<map id="encrypto::motion::BitSpan::AsString" name="encrypto::motion::BitSpan::AsString">
+<area shape="rect" id="node1" title="Returns a string representation of this BitVector." alt="" coords="272,5,463,47"/>
+<area shape="rect" id="node2" href="$a35255.html#aa45cb072f8fc9d6cd35cd850c5561f9f" title="Output string representation of BitVector to std::ostream." alt="" coords="5,13,224,39"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="encrypto::motion::BitMatrix::AppendColumn" name="encrypto::motion::BitMatrix::AppendColumn">
+<area shape="rect" id="node1" title="Appends a new column by copying the input bit_vector to the matrix." alt="" coords="5,27,207,69"/>
+<area shape="rect" id="node2" href="$a36758.html#ac1e2e89a5a93ce6f84d4222b6cf1305b" title="Get bit at given position." alt="" coords="255,5,485,32"/>
+<area shape="rect" id="node3" href="$a36758.html#adf616f71e5a06f33a00862396e38ea9c" title="Get size of BitVector." alt="" coords="270,57,470,98"/>
+</map>

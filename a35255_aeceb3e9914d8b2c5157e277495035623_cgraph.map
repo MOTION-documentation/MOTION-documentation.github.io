@@ -1,0 +1,5 @@
+<map id="encrypto::motion::RegisterHelper" name="encrypto::motion::RegisterHelper">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,200,80"/>
+<area shape="rect" id="node2" href="$a36758.html#a5d1d84dfbba1619c410cdb322622bf26" title="Appends a bit to BitVector." alt="" coords="248,5,448,47"/>
+<area shape="rect" id="node3" href="$a36758.html#a66c14f54b643c6d5ba552f80ea06bc4d" title="Reserves new space for BitVector, so that it can contain at least number_of_bits bits." alt="" coords="248,71,448,112"/>
+</map>

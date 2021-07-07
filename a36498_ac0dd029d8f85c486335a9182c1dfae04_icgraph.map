@@ -1,0 +1,7 @@
+<map id="encrypto::motion::primitives::Prg::Mmo" name="encrypto::motion::primitives::Prg::Mmo">
+<area shape="rect" id="node1" title=" " alt="" coords="559,39,765,80"/>
+<area shape="rect" id="node2" href="$a36754.html#a69dc2d074ceb377f16a321f6d986ea4f" title="Transposes a matrix of 128 rows and arbitrary column size and encrypts it for the recepient role." alt="" coords="284,5,511,47"/>
+<area shape="rect" id="node4" href="$a36754.html#a946927e76d7ec8a788d2e3ace03a2a08" title="Transposes a matrix of 128 rows and arbitrary column size and encrypts it for the sender role." alt="" coords="290,71,505,112"/>
+<area shape="rect" id="node3" href="$a36450.html#a3ac6d1df574f212de314e4fa7d27a9db" title=" " alt="" coords="5,5,236,47"/>
+<area shape="rect" id="node5" href="$a36450.html#a4ce073b71c85874fa56e1c43397bc992" title=" " alt="" coords="15,71,226,112"/>
+</map>
