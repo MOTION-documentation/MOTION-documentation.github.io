@@ -1,6 +1,0 @@
-<map id="encrypto::motion::operator&lt;&lt;" name="encrypto::motion::operator&lt;&lt;">
-<area shape="rect" id="node1" title="Output string representation of BitVector to std::ostream." alt="" coords="5,31,224,57"/>
-<area shape="rect" id="node2" href="$a36762.html#a0012b5689c3b86251f939fc6e0624c82" title="Returns a string representation of this BitVector." alt="" coords="272,23,463,65"/>
-<area shape="rect" id="node3" href="$a35255.html#ab051a877b97a4b0a21d05061676fabbd" title=" " alt="" coords="511,5,779,32"/>
-<area shape="rect" id="node4" href="$a35141.html#a27a991bd93cdef9ca044f964d4653e9d" title=" " alt="" coords="605,56,684,83"/>
-</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOTION: test_tcp_transport.cpp File Reference</title>
+<title>MOTION: encrypto::motion::communication::BmrMessageBuilder Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,130 +63,268 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="a34334.html">encrypto</a></li><li class="navelem"><a class="el" href="a34335.html">motion</a></li><li class="navelem"><a class="el" href="a34336.html">communication</a></li><li class="navelem"><a class="el" href="a35246.html">BmrMessageBuilder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a35243.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">test_tcp_transport.cpp File Reference</div>  </div>
+<div class="title">encrypto::motion::communication::BmrMessageBuilder Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
-<code>#include &quot;<a class="el" href="a34715_source.html">communication/tcp_transport.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for test_tcp_transport.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35247.png" border="0" usemap="#test__tcp__transport_8cpp" alt=""/></div>
-<map name="test__tcp__transport_8cpp" id="test__tcp__transport_8cpp">
-<area shape="rect" title=" " alt="" coords="81,5,247,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" title=" " alt="" coords="133,80,195,107"/>
-<area shape="rect" href="a34715.html" title=" " alt="" coords="218,80,443,107"/>
-<area shape="rect" title=" " alt="" coords="105,155,156,181"/>
-<area shape="rect" title=" " alt="" coords="180,155,257,181"/>
-<area shape="rect" title=" " alt="" coords="282,155,379,181"/>
-<area shape="rect" title=" " alt="" coords="382,229,445,256"/>
-<area shape="rect" href="a34721.html" title=" " alt="" coords="457,155,551,181"/>
-<area shape="rect" title=" " alt="" coords="469,229,539,256"/>
-<area shape="rect" title=" " alt="" coords="564,229,639,256"/>
-<area shape="rect" title=" " alt="" coords="663,229,750,256"/>
-</map>
-</div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36914.html">TcpTransportTest</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;<a class="el" href="a33668_source.html">bmr_message_generated.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8094396f6b0c3dd5d59da45078aabe5f"><td class="memItemLeft" align="right" valign="top">typedef BmrMessage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a8094396f6b0c3dd5d59da45078aabe5f">Table</a></td></tr>
+<tr class="separator:a8094396f6b0c3dd5d59da45078aabe5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a027e68669c2cc2c0b61dbe646b17023a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a027e68669c2cc2c0b61dbe646b17023a">TEST_P</a> (<a class="el" href="a36914.html">TcpTransportTest</a>, dummy)</td></tr>
-<tr class="separator:a027e68669c2cc2c0b61dbe646b17023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e20fb40d4faade7a5cd525de0410776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a6e20fb40d4faade7a5cd525de0410776">INSTANTIATE_TEST_SUITE_P</a> (TcpTransportSuite, <a class="el" href="a36914.html">TcpTransportTest</a>, testing::Values(&quot;127.0.0.1&quot;, &quot;::1&quot;), [](auto &amp;info) { return info.param==&quot;::1&quot; ? &quot;ipv6&quot; :&quot;ipv4&quot;;})</td></tr>
-<tr class="separator:a6e20fb40d4faade7a5cd525de0410776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad61741c7f67152a6ec48dbd8bd4ac666"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#ad61741c7f67152a6ec48dbd8bd4ac666">add_gate_id</a> (uint64_t gate_id)</td></tr>
+<tr class="separator:ad61741c7f67152a6ec48dbd8bd4ac666"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0e49cac4e7eed704220d202c80f6f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#afb0e49cac4e7eed704220d202c80f6f9">add_payload</a> (flatbuffers::Offset&lt; flatbuffers::Vector&lt; uint8_t &gt;&gt; payload)</td></tr>
+<tr class="separator:afb0e49cac4e7eed704220d202c80f6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe1289a25a31ad850565b185a694f59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a1fe1289a25a31ad850565b185a694f59">BmrMessageBuilder</a> (flatbuffers::FlatBufferBuilder &amp;_fbb)</td></tr>
+<tr class="separator:a1fe1289a25a31ad850565b185a694f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4909a3dd31fae107734381c6903407f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35246.html">BmrMessageBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a4909a3dd31fae107734381c6903407f7">operator=</a> (const <a class="el" href="a35246.html">BmrMessageBuilder</a> &amp;)</td></tr>
+<tr class="separator:a4909a3dd31fae107734381c6903407f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6fee9fac8e9d6746525178a6561255"><td class="memItemLeft" align="right" valign="top">flatbuffers::Offset&lt; BmrMessage &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#ade6fee9fac8e9d6746525178a6561255">Finish</a> ()</td></tr>
+<tr class="separator:ade6fee9fac8e9d6746525178a6561255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a1a85ce88bbcb6a8c66a56fb8af62a26e"><td class="memItemLeft" align="right" valign="top">flatbuffers::FlatBufferBuilder &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a1a85ce88bbcb6a8c66a56fb8af62a26e">fbb_</a></td></tr>
+<tr class="separator:a1a85ce88bbcb6a8c66a56fb8af62a26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66151a940cc3fb47a2d312a429289a0f"><td class="memItemLeft" align="right" valign="top">flatbuffers::uoffset_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35246.html#a66151a940cc3fb47a2d312a429289a0f">start_</a></td></tr>
+<tr class="separator:a66151a940cc3fb47a2d312a429289a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a6e20fb40d4faade7a5cd525de0410776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e20fb40d4faade7a5cd525de0410776">&#9670;&nbsp;</a></span>INSTANTIATE_TEST_SUITE_P()</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a8094396f6b0c3dd5d59da45078aabe5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8094396f6b0c3dd5d59da45078aabe5f">&#9670;&nbsp;</a></span>Table</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">INSTANTIATE_TEST_SUITE_P </td>
-          <td>(</td>
-          <td class="paramtype">TcpTransportSuite&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a36914.html">TcpTransportTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">testing::Values(&quot;127.0.0.1&quot;, &quot;::1&quot;)&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">[] (auto &amp;info) { return info.param==&quot;::1&quot; ? &quot;ipv6&quot; :&quot;ipv4&quot;;}&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef BmrMessage <a class="el" href="a35246.html#a8094396f6b0c3dd5d59da45078aabe5f">encrypto::motion::communication::BmrMessageBuilder::Table</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a027e68669c2cc2c0b61dbe646b17023a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027e68669c2cc2c0b61dbe646b17023a">&#9670;&nbsp;</a></span>TEST_P()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1fe1289a25a31ad850565b185a694f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe1289a25a31ad850565b185a694f59">&#9670;&nbsp;</a></span>BmrMessageBuilder()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">TEST_P </td>
+          <td class="memname">encrypto::motion::communication::BmrMessageBuilder::BmrMessageBuilder </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a36914.html">TcpTransportTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">flatbuffers::FlatBufferBuilder &amp;&#160;</td>
+          <td class="paramname"><em>_fbb</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">dummy&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad61741c7f67152a6ec48dbd8bd4ac666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad61741c7f67152a6ec48dbd8bd4ac666">&#9670;&nbsp;</a></span>add_gate_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::BmrMessageBuilder::add_gate_id </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>gate_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35246_a027e68669c2cc2c0b61dbe646b17023a_cgraph.png" border="0" usemap="#a35246_a027e68669c2cc2c0b61dbe646b17023a_cgraph" alt=""/></div>
-<map name="a35246_a027e68669c2cc2c0b61dbe646b17023a_cgraph" id="a35246_a027e68669c2cc2c0b61dbe646b17023a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,75,39"/>
-<area shape="rect" href="a36210.html#a97ca112707962a35777cdcb7613ec4bd" title=" " alt="" coords="123,5,379,47"/>
+<div class="center"><img src="a35246_ad61741c7f67152a6ec48dbd8bd4ac666_icgraph.png" border="0" usemap="#a35246_ad61741c7f67152a6ec48dbd8bd4ac666_icgraph" alt=""/></div>
+<map name="a35246_ad61741c7f67152a6ec48dbd8bd4ac666_icgraph" id="a35246_ad61741c7f67152a6ec48dbd8bd4ac666_icgraph">
+<area shape="rect" title=" " alt="" coords="1451,71,1699,112"/>
+<area shape="rect" href="a34336.html#a64a1961969b3fb718156c7e63f1cf6c8" title=" " alt="" coords="1160,71,1403,112"/>
+<area shape="rect" href="a34336.html#a3d32dee263465f672afdb81359cd8969" title=" " alt="" coords="869,71,1112,112"/>
+<area shape="rect" href="a34336.html#a4b9d0cf80700bc0cb21b62f671641a3b" title=" " alt="" coords="579,71,821,112"/>
+<area shape="rect" href="a34336.html#a0ff7973b1308fd9020bfeeb82a4fc52d" title=" " alt="" coords="288,5,531,47"/>
+<area shape="rect" href="a34336.html#a4d34c4f4bb4de42a10e3d0f1dce2c50d" title=" " alt="" coords="288,136,531,177"/>
+<area shape="rect" href="a34336.html#a15d79e0a3a85130a9447bb11db3e5243" title=" " alt="" coords="288,71,531,112"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="11,5,234,47"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="5,136,240,177"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="5,71,240,112"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="afb0e49cac4e7eed704220d202c80f6f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0e49cac4e7eed704220d202c80f6f9">&#9670;&nbsp;</a></span>add_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::BmrMessageBuilder::add_payload </td>
+          <td>(</td>
+          <td class="paramtype">flatbuffers::Offset&lt; flatbuffers::Vector&lt; uint8_t &gt;&gt;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35246_afb0e49cac4e7eed704220d202c80f6f9_icgraph.png" border="0" usemap="#a35246_afb0e49cac4e7eed704220d202c80f6f9_icgraph" alt=""/></div>
+<map name="a35246_afb0e49cac4e7eed704220d202c80f6f9_icgraph" id="a35246_afb0e49cac4e7eed704220d202c80f6f9_icgraph">
+<area shape="rect" title=" " alt="" coords="1451,71,1703,112"/>
+<area shape="rect" href="a34336.html#a64a1961969b3fb718156c7e63f1cf6c8" title=" " alt="" coords="1160,71,1403,112"/>
+<area shape="rect" href="a34336.html#a3d32dee263465f672afdb81359cd8969" title=" " alt="" coords="869,71,1112,112"/>
+<area shape="rect" href="a34336.html#a4b9d0cf80700bc0cb21b62f671641a3b" title=" " alt="" coords="579,71,821,112"/>
+<area shape="rect" href="a34336.html#a0ff7973b1308fd9020bfeeb82a4fc52d" title=" " alt="" coords="288,5,531,47"/>
+<area shape="rect" href="a34336.html#a4d34c4f4bb4de42a10e3d0f1dce2c50d" title=" " alt="" coords="288,136,531,177"/>
+<area shape="rect" href="a34336.html#a15d79e0a3a85130a9447bb11db3e5243" title=" " alt="" coords="288,71,531,112"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="11,5,234,47"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="5,136,240,177"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="5,71,240,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ade6fee9fac8e9d6746525178a6561255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6fee9fac8e9d6746525178a6561255">&#9670;&nbsp;</a></span>Finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flatbuffers::Offset&lt;BmrMessage&gt; encrypto::motion::communication::BmrMessageBuilder::Finish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35246_ade6fee9fac8e9d6746525178a6561255_icgraph.png" border="0" usemap="#a35246_ade6fee9fac8e9d6746525178a6561255_icgraph" alt=""/></div>
+<map name="a35246_ade6fee9fac8e9d6746525178a6561255_icgraph" id="a35246_ade6fee9fac8e9d6746525178a6561255_icgraph">
+<area shape="rect" title=" " alt="" coords="1451,71,1693,112"/>
+<area shape="rect" href="a34336.html#a64a1961969b3fb718156c7e63f1cf6c8" title=" " alt="" coords="1160,71,1403,112"/>
+<area shape="rect" href="a34336.html#a3d32dee263465f672afdb81359cd8969" title=" " alt="" coords="869,71,1112,112"/>
+<area shape="rect" href="a34336.html#a4b9d0cf80700bc0cb21b62f671641a3b" title=" " alt="" coords="579,71,821,112"/>
+<area shape="rect" href="a34336.html#a0ff7973b1308fd9020bfeeb82a4fc52d" title=" " alt="" coords="288,5,531,47"/>
+<area shape="rect" href="a34336.html#a4d34c4f4bb4de42a10e3d0f1dce2c50d" title=" " alt="" coords="288,136,531,177"/>
+<area shape="rect" href="a34336.html#a15d79e0a3a85130a9447bb11db3e5243" title=" " alt="" coords="288,71,531,112"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="11,5,234,47"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="5,136,240,177"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="5,71,240,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4909a3dd31fae107734381c6903407f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4909a3dd31fae107734381c6903407f7">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35246.html">BmrMessageBuilder</a>&amp; encrypto::motion::communication::BmrMessageBuilder::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35246.html">BmrMessageBuilder</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1a85ce88bbcb6a8c66a56fb8af62a26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a85ce88bbcb6a8c66a56fb8af62a26e">&#9670;&nbsp;</a></span>fbb_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flatbuffers::FlatBufferBuilder&amp; encrypto::motion::communication::BmrMessageBuilder::fbb_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66151a940cc3fb47a2d312a429289a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66151a940cc3fb47a2d312a429289a0f">&#9670;&nbsp;</a></span>start_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flatbuffers::uoffset_t encrypto::motion::communication::BmrMessageBuilder::start_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a33668_source.html">bmr_message_generated.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

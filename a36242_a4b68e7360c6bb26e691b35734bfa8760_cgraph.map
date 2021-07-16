@@ -1,6 +1,0 @@
-<map id="encrypto::motion::OtExtensionData::MessageReceived" name="encrypto::motion::OtExtensionData::MessageReceived">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,225,80"/>
-<area shape="rect" id="node2" href="$a36758.html#a722316ab197e5f1d95fe2d976667aea6" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="273,5,473,47"/>
-<area shape="rect" id="node3" href="$a36762.html#a211075ef48f42eef7a8948ee71d4fa87" title="Returns a new BitVector containing the bits of this BitSpan between positions from and to." alt="" coords="278,71,469,112"/>
-<area shape="rect" id="node4" href="$a35255.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="521,71,701,112"/>
-</map>

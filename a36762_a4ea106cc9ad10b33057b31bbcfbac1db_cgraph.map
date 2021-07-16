@@ -1,7 +1,0 @@
-<map id="encrypto::motion::BitSpan::operator==" name="encrypto::motion::BitSpan::operator==">
-<area shape="rect" id="node1" title="Compare the content with another BitSpan for equality." alt="" coords="5,71,196,112"/>
-<area shape="rect" id="node2" href="$a35255.html#a79cd9f754cdd1e8db3686c79eb7348a3" title=" " alt="" coords="289,5,480,47"/>
-<area shape="rect" id="node4" href="$a35255.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="295,71,475,112"/>
-<area shape="rect" id="node5" href="$a35255.html#a243ad1ce552b7b61782babfd2b8ef8fd" title=" " alt="" coords="244,137,525,163"/>
-<area shape="rect" id="node3" href="$a35263.html#ad8637230d811f347d04f4ad92fab28c7" title=" " alt="" coords="573,68,791,109"/>
-</map>

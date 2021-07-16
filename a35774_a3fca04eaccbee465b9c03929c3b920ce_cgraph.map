@@ -1,0 +1,4 @@
+<map id="encrypto::motion::Gate::WaitSetup" name="encrypto::motion::Gate::WaitSetup">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,177,47"/>
+<area shape="rect" id="node2" href="$a35870.html#a96e859d762abee7df758aa8750b1bc62" title="Blocks until fiber is notified and condition_function_ returns true." alt="" coords="225,5,460,47"/>
+</map>

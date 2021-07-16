@@ -1,0 +1,4 @@
+<map id="encrypto::motion::Block128::LoadFromMemory" name="encrypto::motion::Block128::LoadFromMemory">
+<area shape="rect" id="node1" title="Put 16 bytes starting at pointer into this Block128." alt="" coords="255,5,456,47"/>
+<area shape="rect" id="node2" href="$a35858.html#a4f4776a14d5ebb2291611be07e66cc86" title="Load data from memory and store it in Block128." alt="" coords="5,5,207,47"/>
+</map>

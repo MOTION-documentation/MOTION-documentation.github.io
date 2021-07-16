@@ -1,0 +1,4 @@
+<map id="encrypto::motion::BitMatrix::ReceiverTransposeAndEncrypt" name="encrypto::motion::BitMatrix::ReceiverTransposeAndEncrypt">
+<area shape="rect" id="node1" title="Transposes a matrix of 128 rows and arbitrary column size and encrypts it for the recepient role." alt="" coords="284,5,511,47"/>
+<area shape="rect" id="node2" href="$a35538.html#a3ac6d1df574f212de314e4fa7d27a9db" title=" " alt="" coords="5,5,236,47"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOTION: encrypto::motion::detail Namespace Reference</title>
+<title>MOTION: encrypto::motion::communication::OutputWireBuilder Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,333 +63,175 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a35254.html">encrypto</a></li><li class="navelem"><a class="el" href="a35255.html">motion</a></li><li class="navelem"><a class="el" href="a35262.html">detail</a></li>  </ul>
+<li class="navelem"><a class="el" href="a34334.html">encrypto</a></li><li class="navelem"><a class="el" href="a34335.html">motion</a></li><li class="navelem"><a class="el" href="a34336.html">communication</a></li><li class="navelem"><a class="el" href="a35262.html">OutputWireBuilder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a35259.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">encrypto::motion::detail Namespace Reference</div>  </div>
+<div class="title">encrypto::motion::communication::OutputWireBuilder Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a33680_source.html">output_message_generated.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36270.html">get_expanded_type</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36278.html">get_expanded_type&lt; std::uint16_t &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36282.html">get_expanded_type&lt; std::uint32_t &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36286.html">get_expanded_type&lt; std::uint64_t &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36274.html">get_expanded_type&lt; std::uint8_t &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36826.html">ReusableSharedState</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1ede779a0abeb31060c04d9cab783c5a"><td class="memItemLeft" align="right" valign="top">typedef OutputWire&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a1ede779a0abeb31060c04d9cab783c5a">Table</a></td></tr>
+<tr class="separator:a1ede779a0abeb31060c04d9cab783c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:aa0db475b18dcab9895c17a35a90c2258"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa0db475b18dcab9895c17a35a90c2258"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#aa0db475b18dcab9895c17a35a90c2258">get_expanded_type_t</a> = typename <a class="el" href="a36270.html">get_expanded_type</a>&lt; T &gt;::type</td></tr>
-<tr class="separator:aa0db475b18dcab9895c17a35a90c2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0db63fbb437f910aaee976bdc063f25a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a0db63fbb437f910aaee976bdc063f25a">add_payload</a> (flatbuffers::Offset&lt; flatbuffers::Vector&lt; uint8_t &gt;&gt; payload)</td></tr>
+<tr class="separator:a0db63fbb437f910aaee976bdc063f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91cd98db25eca59216b24b70b3b44ecd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a91cd98db25eca59216b24b70b3b44ecd">OutputWireBuilder</a> (flatbuffers::FlatBufferBuilder &amp;_fbb)</td></tr>
+<tr class="separator:a91cd98db25eca59216b24b70b3b44ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9105d9df5a9fd49e618f08a6b6af5236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35262.html">OutputWireBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a9105d9df5a9fd49e618f08a6b6af5236">operator=</a> (const <a class="el" href="a35262.html">OutputWireBuilder</a> &amp;)</td></tr>
+<tr class="separator:a9105d9df5a9fd49e618f08a6b6af5236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd85d0e3260f6ccb39614c8cd55a601"><td class="memItemLeft" align="right" valign="top">flatbuffers::Offset&lt; OutputWire &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a9dd85d0e3260f6ccb39614c8cd55a601">Finish</a> ()</td></tr>
+<tr class="separator:a9dd85d0e3260f6ccb39614c8cd55a601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae1c822074c4ade9191844e9cb9814925"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ae1c822074c4ade9191844e9cb9814925"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#ae1c822074c4ade9191844e9cb9814925">sqrt</a> (size_t k, T a)</td></tr>
-<tr class="separator:ae1c822074c4ade9191844e9cb9814925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad784af132a1037e4f260543d6679aebe"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ad784af132a1037e4f260543d6679aebe"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#ad784af132a1037e4f260543d6679aebe">invert</a> (std::size_t k, T a)</td></tr>
-<tr class="separator:ad784af132a1037e4f260543d6679aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fed9e9f72843e97751090da2af7025a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5fed9e9f72843e97751090da2af7025a"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#a5fed9e9f72843e97751090da2af7025a">GetBitSize</a> ()</td></tr>
-<tr class="separator:a5fed9e9f72843e97751090da2af7025a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8b48426dea2a3382979306283981d72"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ae8b48426dea2a3382979306283981d72"><td class="memTemplItemLeft" align="right" valign="top">constexpr U&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#ae8b48426dea2a3382979306283981d72">GetModMask</a> ()</td></tr>
-<tr class="separator:ae8b48426dea2a3382979306283981d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9aeda88ef8f532e178ae235ce279b0b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ac9aeda88ef8f532e178ae235ce279b0b"><td class="memTemplItemLeft" align="right" valign="top">static std::pair&lt; std::vector&lt; U &gt;, std::vector&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#ac9aeda88ef8f532e178ae235ce279b0b">compute_sbs_phase_1</a> (std::size_t number_of_sbs, std::size_t my_id, <a class="el" href="a36302.html">SpVector</a>&lt; U &gt; &amp;sps)</td></tr>
-<tr class="separator:ac9aeda88ef8f532e178ae235ce279b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bebb05e6d83eba05d53cfbe23247bb0"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a0bebb05e6d83eba05d53cfbe23247bb0"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#a0bebb05e6d83eba05d53cfbe23247bb0">compute_sbs_phase_2</a> (std::vector&lt; U &gt; &amp;wb1, std::vector&lt; U &gt; &amp;wb2, std::size_t my_id, <a class="el" href="a36302.html">SpVector</a>&lt; U &gt; &amp;sps)</td></tr>
-<tr class="separator:a0bebb05e6d83eba05d53cfbe23247bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f904ee13814955a1b78df14b880ebc1"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a0f904ee13814955a1b78df14b880ebc1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#a0f904ee13814955a1b78df14b880ebc1">compute_sbs_phase_3</a> (std::vector&lt; U &gt; &amp;wb1, std::vector&lt; U &gt; &amp;wb2, std::vector&lt; T &gt; &amp;sbs, std::size_t my_id)</td></tr>
-<tr class="separator:a0f904ee13814955a1b78df14b880ebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93ab9f7122fa03f16dd3f251851f5ead"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename &gt; class Value, typename... Ts&gt; </td></tr>
-<tr class="memitem:a93ab9f7122fa03f16dd3f251851f5ead"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35262.html#a93ab9f7122fa03f16dd3f251851f5ead">MakeTypeMap</a> ()</td></tr>
-<tr class="separator:a93ab9f7122fa03f16dd3f251851f5ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a18c4ad2f962628231a5383661241d548"><td class="memItemLeft" align="right" valign="top">flatbuffers::FlatBufferBuilder &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#a18c4ad2f962628231a5383661241d548">fbb_</a></td></tr>
+<tr class="separator:a18c4ad2f962628231a5383661241d548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c619a0e5b76e3f5a58097e428134ef"><td class="memItemLeft" align="right" valign="top">flatbuffers::uoffset_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35262.html#ac4c619a0e5b76e3f5a58097e428134ef">start_</a></td></tr>
+<tr class="separator:ac4c619a0e5b76e3f5a58097e428134ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="aa0db475b18dcab9895c17a35a90c2258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0db475b18dcab9895c17a35a90c2258">&#9670;&nbsp;</a></span>get_expanded_type_t</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a1ede779a0abeb31060c04d9cab783c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ede779a0abeb31060c04d9cab783c5a">&#9670;&nbsp;</a></span>Table</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="a35262.html#aa0db475b18dcab9895c17a35a90c2258">encrypto::motion::detail::get_expanded_type_t</a> = typedef typename <a class="el" href="a36270.html">get_expanded_type</a>&lt;T&gt;::type</td>
+          <td class="memname">typedef OutputWire <a class="el" href="a35262.html#a1ede779a0abeb31060c04d9cab783c5a">encrypto::motion::communication::OutputWireBuilder::Table</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ac9aeda88ef8f532e178ae235ce279b0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9aeda88ef8f532e178ae235ce279b0b">&#9670;&nbsp;</a></span>compute_sbs_phase_1()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a91cd98db25eca59216b24b70b3b44ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91cd98db25eca59216b24b70b3b44ecd">&#9670;&nbsp;</a></span>OutputWireBuilder()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::pair&lt;std::vector&lt;U&gt;, std::vector&lt;U&gt; &gt; encrypto::motion::detail::compute_sbs_phase_1 </td>
+          <td class="memname">encrypto::motion::communication::OutputWireBuilder::OutputWireBuilder </td>
           <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>number_of_sbs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">flatbuffers::FlatBufferBuilder &amp;&#160;</td>
+          <td class="paramname"><em>_fbb</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>my_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a36302.html">SpVector</a>&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0bebb05e6d83eba05d53cfbe23247bb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bebb05e6d83eba05d53cfbe23247bb0">&#9670;&nbsp;</a></span>compute_sbs_phase_2()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0db63fbb437f910aaee976bdc063f25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db63fbb437f910aaee976bdc063f25a">&#9670;&nbsp;</a></span>add_payload()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void encrypto::motion::detail::compute_sbs_phase_2 </td>
+          <td class="memname">void encrypto::motion::communication::OutputWireBuilder::add_payload </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wb1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wb2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>my_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a36302.html">SpVector</a>&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sps</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0f904ee13814955a1b78df14b880ebc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f904ee13814955a1b78df14b880ebc1">&#9670;&nbsp;</a></span>compute_sbs_phase_3()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void encrypto::motion::detail::compute_sbs_phase_3 </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wb1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>wb2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sbs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>my_id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fed9e9f72843e97751090da2af7025a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fed9e9f72843e97751090da2af7025a">&#9670;&nbsp;</a></span>GetBitSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t encrypto::motion::detail::GetBitSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">flatbuffers::Offset&lt; flatbuffers::Vector&lt; uint8_t &gt;&gt;&#160;</td>
+          <td class="paramname"><em>payload</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae8b48426dea2a3382979306283981d72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8b48426dea2a3382979306283981d72">&#9670;&nbsp;</a></span>GetModMask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U  = get_expanded_type_t&lt;T&gt;, typename  = std::enable_if_t&lt;std::is_same_v&lt;U, get_expanded_type_t&lt;T&gt;&gt;&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr U encrypto::motion::detail::GetModMask </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad784af132a1037e4f260543d6679aebe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad784af132a1037e4f260543d6679aebe">&#9670;&nbsp;</a></span>invert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T encrypto::motion::detail::invert </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35262_ad784af132a1037e4f260543d6679aebe_icgraph.png" border="0" usemap="#a35262_ad784af132a1037e4f260543d6679aebe_icgraph" alt=""/></div>
-<map name="a35262_ad784af132a1037e4f260543d6679aebe_icgraph" id="a35262_ad784af132a1037e4f260543d6679aebe_icgraph">
-<area shape="rect" title=" " alt="" coords="232,13,411,54"/>
-<area shape="rect" href="a36602.html#a8a4b7fca4aa094edc58dcdc7b9532aa0" title=" " alt="" coords="5,5,184,61"/>
+<div class="center"><img src="a35262_a0db63fbb437f910aaee976bdc063f25a_icgraph.png" border="0" usemap="#a35262_a0db63fbb437f910aaee976bdc063f25a_icgraph" alt=""/></div>
+<map name="a35262_a0db63fbb437f910aaee976bdc063f25a_icgraph" id="a35262_a0db63fbb437f910aaee976bdc063f25a_icgraph">
+<area shape="rect" title=" " alt="" coords="1144,53,1387,94"/>
+<area shape="rect" href="a34336.html#a8ae8ebc2fed830eb2110fb50b659d7bf" title=" " alt="" coords="853,53,1096,94"/>
+<area shape="rect" href="a34336.html#a2d3e6b723418b2157f6cecd06e810f4a" title=" " alt="" coords="563,53,805,94"/>
+<area shape="rect" href="a34336.html#ae91a7880d4f50cf0fb05a523bebdf777" title=" " alt="" coords="272,53,515,94"/>
+<area shape="rect" href="a35686.html#a416ebb8642ae544dc92b8e60a4e4b2fa" title=" " alt="" coords="13,5,216,61"/>
+<area shape="rect" href="a35614.html#a40d61db172ac68fe6c3514984bde199d" title=" " alt="" coords="5,85,224,141"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a93ab9f7122fa03f16dd3f251851f5ead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ab9f7122fa03f16dd3f251851f5ead">&#9670;&nbsp;</a></span>MakeTypeMap()</h2>
+<a id="a9dd85d0e3260f6ccb39614c8cd55a601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd85d0e3260f6ccb39614c8cd55a601">&#9670;&nbsp;</a></span>Finish()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;template&lt; typename &gt; class Value, typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto encrypto::motion::detail::MakeTypeMap </td>
+          <td class="memname">flatbuffers::Offset&lt;OutputWire&gt; encrypto::motion::communication::OutputWireBuilder::Finish </td>
           <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35262_a9dd85d0e3260f6ccb39614c8cd55a601_icgraph.png" border="0" usemap="#a35262_a9dd85d0e3260f6ccb39614c8cd55a601_icgraph" alt=""/></div>
+<map name="a35262_a9dd85d0e3260f6ccb39614c8cd55a601_icgraph" id="a35262_a9dd85d0e3260f6ccb39614c8cd55a601_icgraph">
+<area shape="rect" title=" " alt="" coords="1144,53,1387,94"/>
+<area shape="rect" href="a34336.html#a8ae8ebc2fed830eb2110fb50b659d7bf" title=" " alt="" coords="853,53,1096,94"/>
+<area shape="rect" href="a34336.html#a2d3e6b723418b2157f6cecd06e810f4a" title=" " alt="" coords="563,53,805,94"/>
+<area shape="rect" href="a34336.html#ae91a7880d4f50cf0fb05a523bebdf777" title=" " alt="" coords="272,53,515,94"/>
+<area shape="rect" href="a35686.html#a416ebb8642ae544dc92b8e60a4e4b2fa" title=" " alt="" coords="13,5,216,61"/>
+<area shape="rect" href="a35614.html#a40d61db172ac68fe6c3514984bde199d" title=" " alt="" coords="5,85,224,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9105d9df5a9fd49e618f08a6b6af5236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9105d9df5a9fd49e618f08a6b6af5236">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35262.html">OutputWireBuilder</a>&amp; encrypto::motion::communication::OutputWireBuilder::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35262.html">OutputWireBuilder</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -398,57 +240,38 @@ template&lt;template&lt; typename &gt; class Value, typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="ae1c822074c4ade9191844e9cb9814925"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1c822074c4ade9191844e9cb9814925">&#9670;&nbsp;</a></span>sqrt()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a18c4ad2f962628231a5383661241d548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c4ad2f962628231a5383661241d548">&#9670;&nbsp;</a></span>fbb_</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T encrypto::motion::detail::sqrt </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>k</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">flatbuffers::FlatBufferBuilder&amp; encrypto::motion::communication::OutputWireBuilder::fbb_</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35262_ae1c822074c4ade9191844e9cb9814925_cgraph.png" border="0" usemap="#a35262_ae1c822074c4ade9191844e9cb9814925_cgraph" alt=""/></div>
-<map name="a35262_ae1c822074c4ade9191844e9cb9814925_cgraph" id="a35262_ae1c822074c4ade9191844e9cb9814925_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,184,47"/>
-<area shape="rect" href="a35255.html#a62bc504c912dab3752fd937bcec91b3a" title=" " alt="" coords="232,13,407,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35262_ae1c822074c4ade9191844e9cb9814925_icgraph.png" border="0" usemap="#a35262_ae1c822074c4ade9191844e9cb9814925_icgraph" alt=""/></div>
-<map name="a35262_ae1c822074c4ade9191844e9cb9814925_icgraph" id="a35262_ae1c822074c4ade9191844e9cb9814925_icgraph">
-<area shape="rect" title=" " alt="" coords="984,5,1163,47"/>
-<area shape="rect" href="a35255.html#aa6e190f7330581a44f56c64d81d027e4" title=" " alt="" coords="721,13,936,39"/>
-<area shape="rect" href="a36742.html#a24271b5b78cd4b86670e4be3b67353b9" title=" " alt="" coords="387,5,673,47"/>
-<area shape="rect" href="a35255.html#a98b975cd523c3e3e3af993747e2e2773" title=" " alt="" coords="108,13,339,39"/>
-<area shape="rect" href="a35108.html#adacbe0175a79dff748855d8c9839f82b" title=" " alt="" coords="5,13,60,39"/>
-</map>
-</div>
 
 </div>
 </div>
+<a id="ac4c619a0e5b76e3f5a58097e428134ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c619a0e5b76e3f5a58097e428134ef">&#9670;&nbsp;</a></span>start_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">flatbuffers::uoffset_t encrypto::motion::communication::OutputWireBuilder::start_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a33680_source.html">output_message_generated.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

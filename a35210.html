@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOTION: test_low_depth_reduce.cpp File Reference</title>
+<title>MOTION: encrypto::motion::BaseProvider Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,81 +63,57 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="a34334.html">encrypto</a></li><li class="navelem"><a class="el" href="a34335.html">motion</a></li><li class="navelem"><a class="el" href="a35210.html">BaseProvider</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a35207.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">test_low_depth_reduce.cpp File Reference</div>  </div>
+<div class="title">encrypto::motion::BaseProvider Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &quot;<a class="el" href="a34589_source.html">algorithm/low_depth_reduce.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for test_low_depth_reduce.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35211.png" border="0" usemap="#test__low__depth__reduce_8cpp" alt=""/></div>
-<map name="test__low__depth__reduce_8cpp" id="test__low__depth__reduce_8cpp">
-<area shape="rect" title=" " alt="" coords="70,5,269,32"/>
-<area shape="rect" title=" " alt="" coords="5,87,109,114"/>
-<area shape="rect" title=" " alt="" coords="133,87,205,114"/>
-<area shape="rect" href="a34589.html" title=" " alt="" coords="230,80,386,121"/>
-<area shape="rect" title=" " alt="" coords="277,169,339,196"/>
-</map>
-</div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36874.html">CalculateDepth&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36878.html">LowDepthReduceTest</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ae30b947eac6adbe9bb2f92de3efc824a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#ae30b947eac6adbe9bb2f92de3efc824a">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, OperationDepth)</td></tr>
-<tr class="separator:ae30b947eac6adbe9bb2f92de3efc824a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d2d464c5f5d3b62977d3f4be823490"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a36d2d464c5f5d3b62977d3f4be823490">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, BitwiseXor)</td></tr>
-<tr class="separator:a36d2d464c5f5d3b62977d3f4be823490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38c2845425a3ca86d842e76ccf0d063"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#ad38c2845425a3ca86d842e76ccf0d063">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, BitwiseOr)</td></tr>
-<tr class="separator:ad38c2845425a3ca86d842e76ccf0d063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebabe67c395c9a2f136ecb157e590c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a1ebabe67c395c9a2f136ecb157e590c3">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, BitwiseAnd)</td></tr>
-<tr class="separator:a1ebabe67c395c9a2f136ecb157e590c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af42b1156ac4720c48800510407c40ba0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#af42b1156ac4720c48800510407c40ba0">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, BitwiseMul)</td></tr>
-<tr class="separator:af42b1156ac4720c48800510407c40ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623da57bddbdb5f5e35a152f934a42c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a623da57bddbdb5f5e35a152f934a42c7">TEST_P</a> (<a class="el" href="a36878.html">LowDepthReduceTest</a>, BitwiseAdd)</td></tr>
-<tr class="separator:a623da57bddbdb5f5e35a152f934a42c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb2e8b2d1f5c6eb5927e70e2e809db2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#adb2e8b2d1f5c6eb5927e70e2e809db2c">INSTANTIATE_TEST_SUITE_P</a> (LowDepthReduceTestParameters, <a class="el" href="a36878.html">LowDepthReduceTest</a>, testing::Values(1, 2, 3, 4, 7, 8, 16, 17, 23, 32, 53, 64, 100, 999999))</td></tr>
-<tr class="separator:adb2e8b2d1f5c6eb5927e70e2e809db2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;<a class="el" href="a33617_source.html">motion_base_provider.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8299718af4a8e8fc90a9b5d7bdd5b087"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a8299718af4a8e8fc90a9b5d7bdd5b087">BaseProvider</a> (<a class="el" href="a35230.html">communication::CommunicationLayer</a> &amp;, std::shared_ptr&lt; <a class="el" href="a35914.html">Logger</a> &gt; logger)</td></tr>
+<tr class="separator:a8299718af4a8e8fc90a9b5d7bdd5b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6ed382c04957f44176ca13f2d74407"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#aba6ed382c04957f44176ca13f2d74407">~BaseProvider</a> ()</td></tr>
+<tr class="separator:aba6ed382c04957f44176ca13f2d74407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0852fe8f64cc795e144eeafb3592609f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a0852fe8f64cc795e144eeafb3592609f">Setup</a> ()</td></tr>
+<tr class="separator:a0852fe8f64cc795e144eeafb3592609f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b4a6e08943b424895312cd877e3b12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#a63b4a6e08943b424895312cd877e3b12">WaitForSetup</a> () const</td></tr>
+<tr class="separator:a63b4a6e08943b424895312cd877e3b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa94b9347f1b86ac9979419a5ccb02070"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::uint8_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#aa94b9347f1b86ac9979419a5ccb02070">GetAesFixedKey</a> () const</td></tr>
+<tr class="separator:aa94b9347f1b86ac9979419a5ccb02070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee42c0850233a5dfb1cf7a52c2f1b51a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35606.html">primitives::SharingRandomnessGenerator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#aee42c0850233a5dfb1cf7a52c2f1b51a">GetMyRandomnessGenerator</a> (std::size_t party_id)</td></tr>
+<tr class="separator:aee42c0850233a5dfb1cf7a52c2f1b51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a5486600d11aee9a0d18e635b2e9bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35606.html">primitives::SharingRandomnessGenerator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#ae7a5486600d11aee9a0d18e635b2e9bc">GetTheirRandomnessGenerator</a> (std::size_t party_id)</td></tr>
+<tr class="separator:ae7a5486600d11aee9a0d18e635b2e9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7c5f7d429ff0536b3894962ab2d7a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a34335.html#aa9bd474bcb4114b0dfd5087d3ecb9612">ReusableFiberFuture</a>&lt; std::vector&lt; std::uint8_t &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35210.html#aed7c5f7d429ff0536b3894962ab2d7a6">RegisterForOutputMessages</a> (std::size_t gate_id)</td></tr>
+<tr class="separator:aed7c5f7d429ff0536b3894962ab2d7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="adb2e8b2d1f5c6eb5927e70e2e809db2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb2e8b2d1f5c6eb5927e70e2e809db2c">&#9670;&nbsp;</a></span>INSTANTIATE_TEST_SUITE_P()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8299718af4a8e8fc90a9b5d7bdd5b087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8299718af4a8e8fc90a9b5d7bdd5b087">&#9670;&nbsp;</a></span>BaseProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">INSTANTIATE_TEST_SUITE_P </td>
+          <td class="memname">encrypto::motion::BaseProvider::BaseProvider </td>
           <td>(</td>
-          <td class="paramtype">LowDepthReduceTestParameters&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype"><a class="el" href="a35230.html">communication::CommunicationLayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>communication_layer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">testing::Values(1, 2, 3, 4, 7, 8, 16, 17, 23, 32, 53, 64, 100, 999999)&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="a35914.html">Logger</a> &gt;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -149,230 +125,246 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a623da57bddbdb5f5e35a152f934a42c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a623da57bddbdb5f5e35a152f934a42c7">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[1/6]</span></h2>
+<a id="aba6ed382c04957f44176ca13f2d74407"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6ed382c04957f44176ca13f2d74407">&#9670;&nbsp;</a></span>~BaseProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TEST_P </td>
+          <td class="memname">encrypto::motion::BaseProvider::~BaseProvider </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">BitwiseAdd&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35210_a623da57bddbdb5f5e35a152f934a42c7_cgraph.png" border="0" usemap="#a35210_a623da57bddbdb5f5e35a152f934a42c7_cgraph" alt=""/></div>
-<map name="a35210_a623da57bddbdb5f5e35a152f934a42c7_cgraph" id="a35210_a623da57bddbdb5f5e35a152f934a42c7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
+<div class="center"><img src="a35210_aba6ed382c04957f44176ca13f2d74407_cgraph.png" border="0" usemap="#a35210_aba6ed382c04957f44176ca13f2d74407_cgraph" alt=""/></div>
+<map name="a35210_aba6ed382c04957f44176ca13f2d74407_cgraph" id="a35210_aba6ed382c04957f44176ca13f2d74407_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,232,54"/>
+<area shape="rect" href="a35230.html#abae24c9e0eaf2cdd0ead32e06d7dfdb5" title=" " alt="" coords="280,5,583,61"/>
+<area shape="rect" href="a34336.html#ab7624f74bc4a1a05c16756659c5f7ca8" title=" " alt="" coords="631,13,873,54"/>
+<area shape="rect" href="a34336.html#a34f17ecc35963cf653f6559e170c2173" title=" " alt="" coords="921,13,1164,54"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1ebabe67c395c9a2f136ecb157e590c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ebabe67c395c9a2f136ecb157e590c3">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[2/6]</span></h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa94b9347f1b86ac9979419a5ccb02070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa94b9347f1b86ac9979419a5ccb02070">&#9670;&nbsp;</a></span>GetAesFixedKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::uint8_t&gt;&amp; encrypto::motion::BaseProvider::GetAesFixedKey </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35210_aa94b9347f1b86ac9979419a5ccb02070_icgraph.png" border="0" usemap="#a35210_aa94b9347f1b86ac9979419a5ccb02070_icgraph" alt=""/></div>
+<map name="a35210_aa94b9347f1b86ac9979419a5ccb02070_icgraph" id="a35210_aa94b9347f1b86ac9979419a5ccb02070_icgraph">
+<area shape="rect" title=" " alt="" coords="284,39,511,80"/>
+<area shape="rect" href="a35538.html#a3ac6d1df574f212de314e4fa7d27a9db" title=" " alt="" coords="5,5,236,47"/>
+<area shape="rect" href="a35538.html#a4ce073b71c85874fa56e1c43397bc992" title=" " alt="" coords="15,71,226,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aee42c0850233a5dfb1cf7a52c2f1b51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee42c0850233a5dfb1cf7a52c2f1b51a">&#9670;&nbsp;</a></span>GetMyRandomnessGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35606.html">primitives::SharingRandomnessGenerator</a>&amp; encrypto::motion::BaseProvider::GetMyRandomnessGenerator </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35210_aee42c0850233a5dfb1cf7a52c2f1b51a_icgraph.png" border="0" usemap="#a35210_aee42c0850233a5dfb1cf7a52c2f1b51a_icgraph" alt=""/></div>
+<map name="a35210_aee42c0850233a5dfb1cf7a52c2f1b51a_icgraph" id="a35210_aee42c0850233a5dfb1cf7a52c2f1b51a_icgraph">
+<area shape="rect" title=" " alt="" coords="260,53,487,94"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="13,5,205,61"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="5,85,212,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae7a5486600d11aee9a0d18e635b2e9bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a5486600d11aee9a0d18e635b2e9bc">&#9670;&nbsp;</a></span>GetTheirRandomnessGenerator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35606.html">primitives::SharingRandomnessGenerator</a>&amp; encrypto::motion::BaseProvider::GetTheirRandomnessGenerator </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35210_ae7a5486600d11aee9a0d18e635b2e9bc_icgraph.png" border="0" usemap="#a35210_ae7a5486600d11aee9a0d18e635b2e9bc_icgraph" alt=""/></div>
+<map name="a35210_ae7a5486600d11aee9a0d18e635b2e9bc_icgraph" id="a35210_ae7a5486600d11aee9a0d18e635b2e9bc_icgraph">
+<area shape="rect" title=" " alt="" coords="260,53,495,94"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="13,5,205,61"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="5,85,212,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed7c5f7d429ff0536b3894962ab2d7a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7c5f7d429ff0536b3894962ab2d7a6">&#9670;&nbsp;</a></span>RegisterForOutputMessages()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TEST_P </td>
+          <td class="memname">std::vector&lt; <a class="el" href="a34335.html#aa9bd474bcb4114b0dfd5087d3ecb9612">ReusableFiberFuture</a>&lt; std::vector&lt; std::uint8_t &gt; &gt; &gt; encrypto::motion::BaseProvider::RegisterForOutputMessages </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>gate_id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">BitwiseAnd&#160;</td>
-          <td class="paramname">&#160;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0852fe8f64cc795e144eeafb3592609f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0852fe8f64cc795e144eeafb3592609f">&#9670;&nbsp;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
+          <td class="memname">void encrypto::motion::BaseProvider::Setup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35210_a1ebabe67c395c9a2f136ecb157e590c3_cgraph.png" border="0" usemap="#a35210_a1ebabe67c395c9a2f136ecb157e590c3_cgraph" alt=""/></div>
-<map name="a35210_a1ebabe67c395c9a2f136ecb157e590c3_cgraph" id="a35210_a1ebabe67c395c9a2f136ecb157e590c3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
+<div class="center"><img src="a35210_a0852fe8f64cc795e144eeafb3592609f_cgraph.png" border="0" usemap="#a35210_a0852fe8f64cc795e144eeafb3592609f_cgraph" alt=""/></div>
+<map name="a35210_a0852fe8f64cc795e144eeafb3592609f_cgraph" id="a35210_a0852fe8f64cc795e144eeafb3592609f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,372,232,413"/>
+<area shape="rect" href="a34336.html#a09f7c5d24471c4a11fd816ae8edf27b5" title=" " alt="" coords="292,339,535,380"/>
+<area shape="rect" href="a35230.html#af18cf7f2ec4628d760a52cb89bd914a8" title=" " alt="" coords="280,404,547,445"/>
+<area shape="rect" href="a34336.html#a21d94ff4f81145236c0188e67331ace7" title=" " alt="" coords="595,228,837,269"/>
+<area shape="rect" href="a34336.html#ae94ff968bbb591c7ac00c72910320539" title=" " alt="" coords="595,339,837,380"/>
+<area shape="rect" href="a34336.html#a808f70bf02291f60eb03ff04f0521e38" title=" " alt="" coords="595,404,837,445"/>
+<area shape="rect" href="a34336.html#a353ae222fc0f00c967eff2c6ceeb4c87" title=" " alt="" coords="885,117,1128,159"/>
+<area shape="rect" href="a34336.html#acfd10b683183a240a7eb03116b267a22" title=" " alt="" coords="885,228,1128,269"/>
+<area shape="rect" href="a34336.html#a9412b26e62a96a63497f82731763b100" title=" " alt="" coords="1176,71,1419,112"/>
+<area shape="rect" href="a35254.html#a50967730d49fa84d13e578d26021c19f" title=" " alt="" coords="1467,5,1735,47"/>
+<area shape="rect" href="a35254.html#a8381f341301f6f926c8de2fb71d54f77" title=" " alt="" coords="1479,71,1722,112"/>
+<area shape="rect" href="a35254.html#a5eecbd984cdab00293a5758d5fe57d44" title=" " alt="" coords="1479,136,1722,177"/>
+<area shape="rect" href="a34336.html#aea61e95c3d16f2a02729772feb429cf3" title=" " alt="" coords="885,384,1128,425"/>
+<area shape="rect" href="a35250.html#af6fa49a23a2ea303cbd83868b4653e75" title=" " alt="" coords="1176,137,1419,193"/>
+<area shape="rect" href="a35250.html#af13c4a7afab00702291c4b9b8c544fed" title=" " alt="" coords="1176,217,1419,273"/>
+<area shape="rect" href="a35250.html#a796fe86a7d6ee7173da8fe4fe2af0169" title=" " alt="" coords="1176,297,1419,353"/>
+<area shape="rect" href="a35250.html#a9fb9c2e8fcfe43e5de554a08957cd22a" title=" " alt="" coords="1176,377,1419,433"/>
+<area shape="rect" href="a35250.html#a85166b5c8280134a2709f51c9243f424" title=" " alt="" coords="1176,457,1419,513"/>
+<area shape="rect" href="a35250.html#a983a6c8fb6db860bc071c3c5d7b1001c" title=" " alt="" coords="1176,537,1419,593"/>
+<area shape="rect" href="a35250.html#a8a422f7b18a925d3cc2a2b17a348bebd" title=" " alt="" coords="1176,617,1419,673"/>
+<area shape="rect" href="a35250.html#a524996b446cbf3afa0338dcabb05b2a4" title=" " alt="" coords="1176,697,1419,739"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35210_a0852fe8f64cc795e144eeafb3592609f_icgraph.png" border="0" usemap="#a35210_a0852fe8f64cc795e144eeafb3592609f_icgraph" alt=""/></div>
+<map name="a35210_a0852fe8f64cc795e144eeafb3592609f_icgraph" id="a35210_a0852fe8f64cc795e144eeafb3592609f_icgraph">
+<area shape="rect" title=" " alt="" coords="284,39,511,80"/>
+<area shape="rect" href="a35538.html#a3ac6d1df574f212de314e4fa7d27a9db" title=" " alt="" coords="5,5,236,47"/>
+<area shape="rect" href="a35538.html#a4ce073b71c85874fa56e1c43397bc992" title=" " alt="" coords="15,71,226,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af42b1156ac4720c48800510407c40ba0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af42b1156ac4720c48800510407c40ba0">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[3/6]</span></h2>
+<a id="a63b4a6e08943b424895312cd877e3b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b4a6e08943b424895312cd877e3b12">&#9670;&nbsp;</a></span>WaitForSetup()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">TEST_P </td>
+          <td class="memname">void encrypto::motion::BaseProvider::WaitForSetup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BitwiseMul&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35210_af42b1156ac4720c48800510407c40ba0_cgraph.png" border="0" usemap="#a35210_af42b1156ac4720c48800510407c40ba0_cgraph" alt=""/></div>
-<map name="a35210_af42b1156ac4720c48800510407c40ba0_cgraph" id="a35210_af42b1156ac4720c48800510407c40ba0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
+<div class="center"><img src="a35210_a63b4a6e08943b424895312cd877e3b12_icgraph.png" border="0" usemap="#a35210_a63b4a6e08943b424895312cd877e3b12_icgraph" alt=""/></div>
+<map name="a35210_a63b4a6e08943b424895312cd877e3b12_icgraph" id="a35210_a63b4a6e08943b424895312cd877e3b12_icgraph">
+<area shape="rect" title=" " alt="" coords="260,53,487,94"/>
+<area shape="rect" href="a35682.html#a012dc20c257b41801fc399bdb7c28ad0" title=" " alt="" coords="13,5,205,61"/>
+<area shape="rect" href="a35610.html#a5c713f72bcd15938720d53a87c4709a2" title=" " alt="" coords="5,85,212,141"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad38c2845425a3ca86d842e76ccf0d063"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38c2845425a3ca86d842e76ccf0d063">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_P </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BitwiseOr&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35210_ad38c2845425a3ca86d842e76ccf0d063_cgraph.png" border="0" usemap="#a35210_ad38c2845425a3ca86d842e76ccf0d063_cgraph" alt=""/></div>
-<map name="a35210_ad38c2845425a3ca86d842e76ccf0d063_cgraph" id="a35210_ad38c2845425a3ca86d842e76ccf0d063_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a36d2d464c5f5d3b62977d3f4be823490"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36d2d464c5f5d3b62977d3f4be823490">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_P </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BitwiseXor&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35210_a36d2d464c5f5d3b62977d3f4be823490_cgraph.png" border="0" usemap="#a35210_a36d2d464c5f5d3b62977d3f4be823490_cgraph" alt=""/></div>
-<map name="a35210_a36d2d464c5f5d3b62977d3f4be823490_cgraph" id="a35210_a36d2d464c5f5d3b62977d3f4be823490_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae30b947eac6adbe9bb2f92de3efc824a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae30b947eac6adbe9bb2f92de3efc824a">&#9670;&nbsp;</a></span>TEST_P() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_P </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a36878.html">LowDepthReduceTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">OperationDepth&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This test-function calculates the total depth of the operation and compares it with the expected depth. The expected depth is defined as the ceiling of the logarithm to the basis 2 of the total leaves, which in this case is 'size'. The real depth itself will be calculated by defining a vector that contains only zeros with 'size' as the length. Using the function operator() in '<a class="el" href="a36874.html">CalculateDepth</a>' struct and given the vector = | 0 | 0 | 0 | 0 | 0 | with size = 5, the calculation will be shown as the following,</p>
-<p>0 0 0 0 0 \ / \ / / 1 1 0 \ / / 2 0 \ / 3 </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35210_ae30b947eac6adbe9bb2f92de3efc824a_cgraph.png" border="0" usemap="#a35210_ae30b947eac6adbe9bb2f92de3efc824a_cgraph" alt=""/></div>
-<map name="a35210_ae30b947eac6adbe9bb2f92de3efc824a_cgraph" id="a35210_ae30b947eac6adbe9bb2f92de3efc824a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="a34589.html#af4860df1e0920350e4176a9fcc8dc855" title=" " alt="" coords="123,5,257,32"/>
-</map>
-</div>
-
-</div>
-</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a33617_source.html">motion_base_provider.h</a></li>
+<li><a class="el" href="a33614.html">motion_base_provider.cpp</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

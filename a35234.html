@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOTION: test_sb.cpp File Reference</title>
+<title>MOTION: encrypto::motion::communication::DummyTransport Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,115 +63,349 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="a34334.html">encrypto</a></li><li class="navelem"><a class="el" href="a34335.html">motion</a></li><li class="navelem"><a class="el" href="a34336.html">communication</a></li><li class="navelem"><a class="el" href="a35234.html">DummyTransport</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="a35231.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">test_sb.cpp File Reference</div>  </div>
+<div class="title">encrypto::motion::communication::DummyTransport Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a35195_source.html">test_constants.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34619_source.html">base/party.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34754_source.html">multiplication_triple/sb_impl.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34760_source.html">multiplication_triple/sb_provider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34766_source.html">multiplication_triple/sp_provider.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for test_sb.cpp:</div>
+
+<p><code>#include &lt;<a class="el" href="a33662_source.html">dummy_transport.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for encrypto::motion::communication::DummyTransport:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35235.png" border="0" usemap="#test__sb_8cpp" alt=""/></div>
-<map name="test__sb_8cpp" id="test__sb_8cpp">
-<area shape="rect" title=" " alt="" coords="279,5,375,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,109,107"/>
-<area shape="rect" href="a35195.html" title=" " alt="" coords="134,80,263,107"/>
-<area shape="rect" href="a34619.html" title=" " alt="" coords="4005,80,4107,107"/>
-<area shape="rect" href="a34766.html" title=" " alt="" coords="1002,319,1155,360"/>
-<area shape="rect" href="a34754.html" title=" " alt="" coords="491,229,645,271"/>
-<area shape="rect" href="a34760.html" title=" " alt="" coords="463,587,617,628"/>
-<area shape="rect" title=" " alt="" coords="143,155,254,181"/>
-<area shape="rect" title=" " alt="" coords="1585,773,1690,799"/>
-<area shape="rect" title=" " alt="" coords="4064,773,4141,799"/>
-<area shape="rect" title=" " alt="" coords="2903,683,2966,710"/>
-<area shape="rect" href="a34595.html" title=" " alt="" coords="3893,155,4016,181"/>
-<area shape="rect" href="a35054.html" title=" " alt="" coords="3233,683,3367,710"/>
-<area shape="rect" href="a34601.html" title=" " alt="" coords="5612,594,5767,621"/>
-<area shape="rect" title=" " alt="" coords="1292,683,1463,710"/>
-<area shape="rect" href="a34838.html" title=" " alt="" coords="1916,229,2135,271"/>
-<area shape="rect" href="a34898.html" title=" " alt="" coords="4111,319,4254,360"/>
-<area shape="rect" href="a34841.html" title=" " alt="" coords="3751,415,3934,442"/>
-<area shape="rect" href="a35003.html" title=" " alt="" coords="1062,683,1234,710"/>
-<area shape="rect" href="a34607.html" title=" " alt="" coords="4108,594,4321,621"/>
-<area shape="rect" href="a35039.html" title=" " alt="" coords="564,683,743,710"/>
-<area shape="rect" href="a34625.html" title=" " alt="" coords="4699,594,4818,621"/>
-<area shape="rect" href="a34646.html" title=" " alt="" coords="3391,497,3619,539"/>
-<area shape="rect" href="a34664.html" title=" " alt="" coords="1309,587,1473,628"/>
-<area shape="rect" href="a34670.html" title=" " alt="" coords="1388,408,1607,449"/>
-<area shape="rect" href="a34697.html" title=" " alt="" coords="1183,319,1353,360"/>
-<area shape="rect" href="a34751.html" title=" " alt="" coords="1391,319,1545,360"/>
-<area shape="rect" href="a35024.html" title=" " alt="" coords="1921,594,2004,621"/>
-<area shape="rect" href="a34835.html" title=" " alt="" coords="2578,408,2769,449"/>
-<area shape="rect" href="a34943.html" title=" " alt="" coords="4346,594,4473,621"/>
-<area shape="rect" href="a35036.html" title=" " alt="" coords="4991,594,5107,621"/>
-<area shape="rect" href="a34844.html" title=" " alt="" coords="4262,505,4437,531"/>
-<area shape="rect" href="a34949.html" title=" " alt="" coords="3365,594,3499,621"/>
-<area shape="rect" href="a34961.html" title=" " alt="" coords="4549,594,4675,621"/>
-<area shape="rect" title=" " alt="" coords="4268,683,4335,710"/>
-<area shape="rect" title=" " alt="" coords="3936,773,4000,799"/>
-<area shape="rect" title=" " alt="" coords="5203,773,5261,799"/>
-<area shape="rect" title=" " alt="" coords="4359,683,4473,710"/>
-<area shape="rect" title=" " alt="" coords="1049,765,1204,807"/>
-<area shape="rect" title=" " alt="" coords="1228,773,1393,799"/>
-<area shape="rect" title=" " alt="" coords="1949,773,2035,799"/>
-<area shape="rect" title=" " alt="" coords="493,773,560,799"/>
-<area shape="rect" title=" " alt="" coords="3242,773,3329,799"/>
-<area shape="rect" title=" " alt="" coords="3353,773,3407,799"/>
-<area shape="rect" title=" " alt="" coords="327,773,419,799"/>
-<area shape="rect" title=" " alt="" coords="688,773,851,799"/>
-<area shape="rect" title=" " alt="" coords="1418,773,1561,799"/>
-<area shape="rect" title=" " alt="" coords="603,773,664,799"/>
-<area shape="rect" title=" " alt="" coords="4701,683,4763,710"/>
-<area shape="rect" title=" " alt="" coords="4018,683,4142,710"/>
-<area shape="rect" title=" " alt="" coords="2458,855,2529,881"/>
-<area shape="rect" href="a34721.html" title=" " alt="" coords="3524,594,3617,621"/>
-<area shape="rect" title=" " alt="" coords="3543,683,3617,710"/>
-<area shape="rect" title=" " alt="" coords="1057,415,1100,442"/>
-<area shape="rect" href="a34787.html" title=" " alt="" coords="1225,408,1364,449"/>
-<area shape="rect" href="a34991.html" title=" " alt="" coords="2165,505,2305,531"/>
-<area shape="rect" href="a34793.html" title=" " alt="" coords="3793,594,3900,621"/>
-<area shape="rect" title=" " alt="" coords="1268,505,1321,531"/>
-<area shape="rect" href="a34997.html" title=" " alt="" coords="1659,505,1770,531"/>
-<area shape="rect" href="a05072.html" title=" " alt="" coords="777,505,940,531"/>
-<area shape="rect" title=" " alt="" coords="2755,683,2811,710"/>
-<area shape="rect" title=" " alt="" coords="3108,594,3188,621"/>
-<area shape="rect" title=" " alt="" coords="2384,683,2456,710"/>
-<area shape="rect" title=" " alt="" coords="1700,587,1847,628"/>
-<area shape="rect" href="a02234.html" title=" " alt="" coords="2282,594,2355,621"/>
-<area shape="rect" title=" " alt="" coords="2582,683,2679,710"/>
-<area shape="rect" href="a02951.html" title=" " alt="" coords="1945,683,2039,710"/>
-<area shape="rect" href="a34826.html" title=" " alt="" coords="2115,676,2309,717"/>
-<area shape="rect" href="a34829.html" title=" " alt="" coords="2363,773,2418,799"/>
-<area shape="rect" title=" " alt="" coords="1047,594,1132,621"/>
-<area shape="rect" title=" " alt="" coords="3924,594,3983,621"/>
-<area shape="rect" title=" " alt="" coords="3252,505,3316,531"/>
-<area shape="rect" title=" " alt="" coords="2786,594,2897,621"/>
-<area shape="rect" title=" " alt="" coords="2481,505,2596,531"/>
-<area shape="rect" title=" " alt="" coords="2621,505,2726,531"/>
-<area shape="rect" title=" " alt="" coords="2972,594,3084,621"/>
-<area shape="rect" title=" " alt="" coords="2750,505,2895,531"/>
-<area shape="rect" href="a34820.html" title=" " alt="" coords="2919,505,3126,531"/>
-<area shape="rect" href="a02309.html" title=" " alt="" coords="3695,505,3833,531"/>
-<area shape="rect" href="a34799.html" title=" " alt="" coords="1751,683,1921,710"/>
-<area shape="rect" title=" " alt="" coords="5041,676,5196,717"/>
-<area shape="rect" title=" " alt="" coords="5221,676,5371,717"/>
-<area shape="rect" title=" " alt="" coords="5395,676,5589,717"/>
-<area shape="rect" title=" " alt="" coords="5613,683,5765,710"/>
-<area shape="rect" href="a34910.html" title=" " alt="" coords="4111,415,4236,442"/>
-<area shape="rect" title=" " alt="" coords="491,326,560,353"/>
-<area shape="rect" title=" " alt="" coords="584,326,627,353"/>
+<div class="center"><img src="a35233.png" border="0" usemap="#encrypto_1_1motion_1_1communication_1_1DummyTransport_inherit__map" alt="Inheritance graph"/></div>
+<map name="encrypto_1_1motion_1_1communication_1_1DummyTransport_inherit__map" id="encrypto_1_1motion_1_1communication_1_1DummyTransport_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,95,248,136"/>
+<area shape="rect" href="a35306.html" title=" " alt="" coords="5,5,248,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for encrypto::motion::communication::DummyTransport:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35232.png" border="0" usemap="#encrypto_1_1motion_1_1communication_1_1DummyTransport_coll__map" alt="Collaboration graph"/></div>
+<map name="encrypto_1_1motion_1_1communication_1_1DummyTransport_coll__map" id="encrypto_1_1motion_1_1communication_1_1DummyTransport_coll__map">
+<area shape="rect" title=" " alt="" coords="5,200,248,241"/>
+<area shape="rect" href="a35306.html" title=" " alt="" coords="5,109,248,151"/>
+<area shape="rect" href="a35302.html" title=" " alt="" coords="5,5,248,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a565070a706efbbd747b0e8d24bcf3fc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a565070a706efbbd747b0e8d24bcf3fc6">DummyTransport</a> (<a class="el" href="a35234.html">DummyTransport</a> &amp;&amp;other)</td></tr>
+<tr class="separator:a565070a706efbbd747b0e8d24bcf3fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130496d82421c7afc54abf67ecc15384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a130496d82421c7afc54abf67ecc15384">SendMessage</a> (std::vector&lt; std::uint8_t &gt; &amp;&amp;message) override</td></tr>
+<tr class="separator:a130496d82421c7afc54abf67ecc15384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d15daefb50d931de368c60333f87a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a61d15daefb50d931de368c60333f87a1">SendMessage</a> (const std::vector&lt; std::uint8_t &gt; &amp;message) override</td></tr>
+<tr class="separator:a61d15daefb50d931de368c60333f87a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721798c273ef35c8f381619fc2739569"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a721798c273ef35c8f381619fc2739569">Available</a> () const override</td></tr>
+<tr class="separator:a721798c273ef35c8f381619fc2739569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004bc7c4caa7b40bcf4f3d6666c1177c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a004bc7c4caa7b40bcf4f3d6666c1177c">ReceiveMessage</a> () override</td></tr>
+<tr class="separator:a004bc7c4caa7b40bcf4f3d6666c1177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6713b4817229fa84d48c374c755e047e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a6713b4817229fa84d48c374c755e047e">ShutdownSend</a> () override</td></tr>
+<tr class="separator:a6713b4817229fa84d48c374c755e047e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef2fc1ada7d29a5b47bb9d8e3617996e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#aef2fc1ada7d29a5b47bb9d8e3617996e">Shutdown</a> () override</td></tr>
+<tr class="separator:aef2fc1ada7d29a5b47bb9d8e3617996e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a35306"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a35306')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a35306.html">encrypto::motion::communication::Transport</a></td></tr>
+<tr class="memitem:ac842c6c7076f758456e972e2ccee7c43 inherit pub_methods_a35306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#ac842c6c7076f758456e972e2ccee7c43">Transport</a> ()=default</td></tr>
+<tr class="separator:ac842c6c7076f758456e972e2ccee7c43 inherit pub_methods_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e07c9ba143beb9de66871dcbd272e76 inherit pub_methods_a35306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#a6e07c9ba143beb9de66871dcbd272e76">Transport</a> (<a class="el" href="a35306.html">Transport</a> &amp;&amp;other)=default</td></tr>
+<tr class="separator:a6e07c9ba143beb9de66871dcbd272e76 inherit pub_methods_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7da1565dced0be710ca419fdbf713d inherit pub_methods_a35306"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#a6c7da1565dced0be710ca419fdbf713d">~Transport</a> ()=default</td></tr>
+<tr class="separator:a6c7da1565dced0be710ca419fdbf713d inherit pub_methods_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3aef13c69f4f24df31c0c803d6f354 inherit pub_methods_a35306"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a35302.html">TransportStatistics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#a3e3aef13c69f4f24df31c0c803d6f354">GetStatistics</a> () const</td></tr>
+<tr class="separator:a3e3aef13c69f4f24df31c0c803d6f354 inherit pub_methods_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed93ad19dc479ba79d3e17f883ef9c5 inherit pub_methods_a35306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#a9ed93ad19dc479ba79d3e17f883ef9c5">ResetStatistics</a> ()</td></tr>
+<tr class="separator:a9ed93ad19dc479ba79d3e17f883ef9c5 inherit pub_methods_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a724b065a6b5714018e3a8ad6dc06f147"><td class="memItemLeft" align="right" valign="top">static std::pair&lt; std::unique_ptr&lt; <a class="el" href="a35234.html">DummyTransport</a> &gt;, std::unique_ptr&lt; <a class="el" href="a35234.html">DummyTransport</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35234.html#a724b065a6b5714018e3a8ad6dc06f147">MakeTransportPair</a> ()</td></tr>
+<tr class="separator:a724b065a6b5714018e3a8ad6dc06f147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_a35306"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_a35306')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="a35306.html">encrypto::motion::communication::Transport</a></td></tr>
+<tr class="memitem:a52a02b7b6498efce2d86bc09b60ff8b4 inherit pro_attribs_a35306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35302.html">TransportStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35306.html#a52a02b7b6498efce2d86bc09b60ff8b4">statistics_</a></td></tr>
+<tr class="separator:a52a02b7b6498efce2d86bc09b60ff8b4 inherit pro_attribs_a35306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a565070a706efbbd747b0e8d24bcf3fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a565070a706efbbd747b0e8d24bcf3fc6">&#9670;&nbsp;</a></span>DummyTransport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">encrypto::motion::communication::DummyTransport::DummyTransport </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a35234.html">DummyTransport</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35234_a565070a706efbbd747b0e8d24bcf3fc6_icgraph.png" border="0" usemap="#a35234_a565070a706efbbd747b0e8d24bcf3fc6_icgraph" alt=""/></div>
+<map name="a35234_a565070a706efbbd747b0e8d24bcf3fc6_icgraph" id="a35234_a565070a706efbbd747b0e8d24bcf3fc6_icgraph">
+<area shape="rect" title=" " alt="" coords="1007,93,1269,135"/>
+<area shape="rect" href="a35234.html#a724b065a6b5714018e3a8ad6dc06f147" title=" " alt="" coords="689,93,959,135"/>
+<area shape="rect" href="a34336.html#a14b8989d78f2df12139ce506f522dad7" title=" " alt="" coords="379,64,641,105"/>
+<area shape="rect" href="a34280.html#ad8f2eaf56afd3e38c5ec6d8039e2f9a2" title=" " alt="" coords="483,130,537,157"/>
+<area shape="rect" href="a34335.html#aae5f7b350bb36608783f2ff03515b0c2" title="constructs number_of_parties motion::Party&#39;s locally connected via TCP." alt="" coords="108,5,331,47"/>
+<area shape="rect" href="a35978.html#a1b41ebd0103640f6281373e18f230fb8" title=" " alt="" coords="144,71,295,98"/>
+<area shape="rect" href="a34271.html#aba310ec16ad772046264ab4760ec1fd5" title=" " alt="" coords="192,122,247,149"/>
+<area shape="rect" href="a34253.html#a7f756b87fcac7af37cf423c93ac73384" title=" " alt="" coords="5,13,60,39"/>
 </map>
 </div>
-</div></div><!-- contents -->
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a721798c273ef35c8f381619fc2739569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721798c273ef35c8f381619fc2739569">&#9670;&nbsp;</a></span>Available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool encrypto::motion::communication::DummyTransport::Available </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#a12d325da2cd5c515d63cc511cb37dc2b">encrypto::motion::communication::Transport</a>.</p>
+
+</div>
+</div>
+<a id="a724b065a6b5714018e3a8ad6dc06f147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a724b065a6b5714018e3a8ad6dc06f147">&#9670;&nbsp;</a></span>MakeTransportPair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::unique_ptr&lt; <a class="el" href="a35234.html">DummyTransport</a> &gt;, std::unique_ptr&lt; <a class="el" href="a35234.html">DummyTransport</a> &gt; &gt; encrypto::motion::communication::DummyTransport::MakeTransportPair </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35234_a724b065a6b5714018e3a8ad6dc06f147_cgraph.png" border="0" usemap="#a35234_a724b065a6b5714018e3a8ad6dc06f147_cgraph" alt=""/></div>
+<map name="a35234_a724b065a6b5714018e3a8ad6dc06f147_cgraph" id="a35234_a724b065a6b5714018e3a8ad6dc06f147_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,275,47"/>
+<area shape="rect" href="a35234.html#a565070a706efbbd747b0e8d24bcf3fc6" title=" " alt="" coords="323,5,585,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35234_a724b065a6b5714018e3a8ad6dc06f147_icgraph.png" border="0" usemap="#a35234_a724b065a6b5714018e3a8ad6dc06f147_icgraph" alt=""/></div>
+<map name="a35234_a724b065a6b5714018e3a8ad6dc06f147_icgraph" id="a35234_a724b065a6b5714018e3a8ad6dc06f147_icgraph">
+<area shape="rect" title=" " alt="" coords="689,93,959,135"/>
+<area shape="rect" href="a34336.html#a14b8989d78f2df12139ce506f522dad7" title=" " alt="" coords="379,64,641,105"/>
+<area shape="rect" href="a34280.html#ad8f2eaf56afd3e38c5ec6d8039e2f9a2" title=" " alt="" coords="483,130,537,157"/>
+<area shape="rect" href="a34335.html#aae5f7b350bb36608783f2ff03515b0c2" title="constructs number_of_parties motion::Party&#39;s locally connected via TCP." alt="" coords="108,5,331,47"/>
+<area shape="rect" href="a35978.html#a1b41ebd0103640f6281373e18f230fb8" title=" " alt="" coords="144,71,295,98"/>
+<area shape="rect" href="a34271.html#aba310ec16ad772046264ab4760ec1fd5" title=" " alt="" coords="192,122,247,149"/>
+<area shape="rect" href="a34253.html#a7f756b87fcac7af37cf423c93ac73384" title=" " alt="" coords="5,13,60,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a004bc7c4caa7b40bcf4f3d6666c1177c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a004bc7c4caa7b40bcf4f3d6666c1177c">&#9670;&nbsp;</a></span>ReceiveMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::vector&lt; std::uint8_t &gt; &gt; encrypto::motion::communication::DummyTransport::ReceiveMessage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#ae063f5efc0ce1d9eb80c90ffb868b884">encrypto::motion::communication::Transport</a>.</p>
+
+</div>
+</div>
+<a id="a61d15daefb50d931de368c60333f87a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d15daefb50d931de368c60333f87a1">&#9670;&nbsp;</a></span>SendMessage() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::DummyTransport::SendMessage </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::uint8_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#a31e73fa5be6820d674593db947add55e">encrypto::motion::communication::Transport</a>.</p>
+
+</div>
+</div>
+<a id="a130496d82421c7afc54abf67ecc15384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130496d82421c7afc54abf67ecc15384">&#9670;&nbsp;</a></span>SendMessage() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::DummyTransport::SendMessage </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::uint8_t &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#ad39470a64b71a93a0b916c199dcee6e9">encrypto::motion::communication::Transport</a>.</p>
+
+</div>
+</div>
+<a id="aef2fc1ada7d29a5b47bb9d8e3617996e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef2fc1ada7d29a5b47bb9d8e3617996e">&#9670;&nbsp;</a></span>Shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::DummyTransport::Shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#a3453d482be40552b3c5961ff6f0a06f3">encrypto::motion::communication::Transport</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35234_aef2fc1ada7d29a5b47bb9d8e3617996e_cgraph.png" border="0" usemap="#a35234_aef2fc1ada7d29a5b47bb9d8e3617996e_cgraph" alt=""/></div>
+<map name="a35234_aef2fc1ada7d29a5b47bb9d8e3617996e_cgraph" id="a35234_aef2fc1ada7d29a5b47bb9d8e3617996e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,248,47"/>
+<area shape="rect" href="a35234.html#a6713b4817229fa84d48c374c755e047e" title=" " alt="" coords="296,5,543,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6713b4817229fa84d48c374c755e047e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6713b4817229fa84d48c374c755e047e">&#9670;&nbsp;</a></span>ShutdownSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::communication::DummyTransport::ShutdownSend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="a35306.html#af8c95f1b35152d559c5a5cf8258446b6">encrypto::motion::communication::Transport</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35234_a6713b4817229fa84d48c374c755e047e_icgraph.png" border="0" usemap="#a35234_a6713b4817229fa84d48c374c755e047e_icgraph" alt=""/></div>
+<map name="a35234_a6713b4817229fa84d48c374c755e047e_icgraph" id="a35234_a6713b4817229fa84d48c374c755e047e_icgraph">
+<area shape="rect" title=" " alt="" coords="296,5,543,47"/>
+<area shape="rect" href="a35234.html#aef2fc1ada7d29a5b47bb9d8e3617996e" title=" " alt="" coords="5,5,248,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a33662_source.html">dummy_transport.h</a></li>
+<li><a class="el" href="a33659.html">dummy_transport.cpp</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

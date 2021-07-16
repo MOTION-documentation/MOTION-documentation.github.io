@@ -1,0 +1,29 @@
+<map id="encrypto::motion::BitsToBytes" name="encrypto::motion::BitsToBytes">
+<area shape="rect" id="node1" title="Returns the number of bytes necessary to store bits bits." alt="" coords="916,711,1096,752"/>
+<area shape="rect" id="node2" href="$a35850.html#a07a80d83f57b024148c9633de746076c" title="Appends append_bit_size bytes starting from pointer to BitVector." alt="" coords="629,5,829,47"/>
+<area shape="rect" id="node3" href="$a35850.html#a159050dd75d1861136eb55bd8caeec3e" title="Initialize by moving content of std::vector (requires same allocator)." alt="" coords="629,71,829,112"/>
+<area shape="rect" id="node4" href="$a35850.html#a722316ab197e5f1d95fe2d976667aea6" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="629,136,829,177"/>
+<area shape="rect" id="node5" href="$a34335.html#ad9f0b3eb27870c7971b51fcab9445a12" title=" " alt="" coords="589,202,868,229"/>
+<area shape="rect" id="node7" href="$a35854.html#a824172b1cfc42c93a68efe11628ac213" title="Perform AND operation on every bit of BitSpan and BitVector." alt="" coords="633,253,824,295"/>
+<area shape="rect" id="node8" href="$a35850.html#a7ac6946f5efb319a742945cd563cf812" title="Perform AND&#45;assign operation between every bit of this and a BitSpan." alt="" coords="629,319,829,360"/>
+<area shape="rect" id="node9" href="$a35854.html#a59930efb347693f9737a49fb78c70a74" title="Perform AND&#45;assign operation on every bit of BitSpan and BitVector." alt="" coords="633,384,824,425"/>
+<area shape="rect" id="node10" href="$a35854.html#af6722f70fe5ff035b648af2592693df9" title="Compare the content of a BitVectorType for equality." alt="" coords="633,449,824,491"/>
+<area shape="rect" id="node11" href="$a35854.html#af6760c1b1b08a6bff0956b630eda318b" title="Perform XOR operation on every bit of BitSpan and BitVector." alt="" coords="633,515,824,556"/>
+<area shape="rect" id="node12" href="$a35850.html#a854ff79d0a9247935cce257cf8e2937f" title="Perform XOR&#45;assign operation between every bit of this and a BitSpan." alt="" coords="629,580,829,621"/>
+<area shape="rect" id="node13" href="$a35854.html#a9aef3072ecceb107b174fee39e97ea24" title="Perform XOR&#45;assign operation on every bit of BitSpan and BitVector." alt="" coords="633,645,824,687"/>
+<area shape="rect" id="node14" href="$a35854.html#a2605ee0b3fd1717d250512497e419eb0" title="Perform OR operation on every bit of BitSpan and BitVector." alt="" coords="633,711,824,752"/>
+<area shape="rect" id="node15" href="$a35850.html#acc29cb3b336d4e98813c526fd1fa6ace" title=" " alt="" coords="629,776,829,817"/>
+<area shape="rect" id="node16" href="$a35854.html#ac9f865d7f089bafc22b1f66fad633846" title="Perform OR&#45;assign operation on every bit of BitSpan and BitVector." alt="" coords="633,841,824,883"/>
+<area shape="rect" id="node17" href="$a35846.html#a69dc2d074ceb377f16a321f6d986ea4f" title="Transposes a matrix of 128 rows and arbitrary column size and encrypts it for the recepient role." alt="" coords="615,907,842,948"/>
+<area shape="rect" id="node18" href="$a35538.html#a3ac6d1df574f212de314e4fa7d27a9db" title=" " alt="" coords="311,936,541,977"/>
+<area shape="rect" id="node19" href="$a35850.html#a66c14f54b643c6d5ba552f80ea06bc4d" title="Reserves new space for BitVector, so that it can contain at least number_of_bits bits." alt="" coords="629,1024,829,1065"/>
+<area shape="rect" id="node20" href="$a35850.html#afb3c606452343089f8a21a0260313b3e" title="Resize BitVector to size number_of_bits. New bits are uninitialized by default." alt="" coords="629,1089,829,1131"/>
+<area shape="rect" id="node21" href="$a35850.html#a999a78f1859c2b177d1f71cc23417c3c" title="Returns a random BitVector." alt="" coords="629,1155,829,1196"/>
+<area shape="rect" id="node22" href="$a35846.html#a946927e76d7ec8a788d2e3ace03a2a08" title="Transposes a matrix of 128 rows and arbitrary column size and encrypts it for the sender role." alt="" coords="621,1220,836,1261"/>
+<area shape="rect" id="node23" href="$a35538.html#a4ce073b71c85874fa56e1c43397bc992" title=" " alt="" coords="321,1249,531,1291"/>
+<area shape="rect" id="node24" href="$a35850.html#a6dce001108da37a6f6543bf0386584b5" title="Returns a new BitVector containing the bits of this BitVector between positions from and to." alt="" coords="629,1337,829,1379"/>
+<area shape="rect" id="node25" href="$a35854.html#a211075ef48f42eef7a8948ee71d4fa87" title="Returns a new BitVector containing the bits of this BitSpan between positions from and to." alt="" coords="633,1403,824,1444"/>
+<area shape="rect" id="node6" href="$a35854.html#a44149e09c0c4ec5399575d46ce4dfa19" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="331,195,521,236"/>
+<area shape="rect" id="node26" href="$a35330.html#a4b68e7360c6bb26e691b35734bfa8760" title=" " alt="" coords="316,1403,536,1444"/>
+<area shape="rect" id="node27" href="$a35510.html#ac673c175f57837fa7ddd6c7c61d47d0e" title=" " alt="" coords="5,1403,263,1444"/>
+</map>

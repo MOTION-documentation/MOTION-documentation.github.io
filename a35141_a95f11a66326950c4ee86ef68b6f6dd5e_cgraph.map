@@ -1,8 +1,0 @@
-<map id="BenchmarkProvider" name="BenchmarkProvider">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,156,73"/>
-<area shape="rect" id="node2" href="$a36766.html#a034a6f935be3c4fb4e55b81efdaa49b3" title="Create a random&#45;initialized Block128." alt="" coords="204,5,405,47"/>
-<area shape="rect" id="node5" href="$a36766.html#adc885c75b0650a80706abf2c614bb8dc" title="Create a zero&#45;initialized Block128." alt="" coords="204,71,405,112"/>
-<area shape="rect" id="node3" href="$a36766.html#a08061a06d3957f913fac8f3fd127c544" title="Set this Block128 to a random value." alt="" coords="453,5,655,47"/>
-<area shape="rect" id="node4" href="$a36506.html#a30f69d69af3951c51aa8bde533279c29" title=" " alt="" coords="703,13,948,39"/>
-<area shape="rect" id="node6" href="$a36766.html#a75241d616d16c9edcb10dc0216739b9e" title="Set this Block128 to zero." alt="" coords="453,71,655,112"/>
-</map>

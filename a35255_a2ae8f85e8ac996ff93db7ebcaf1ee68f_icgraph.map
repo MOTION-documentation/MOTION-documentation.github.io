@@ -1,6 +1,0 @@
-<map id="encrypto::motion::AlignedOrImplementation" name="encrypto::motion::AlignedOrImplementation">
-<area shape="rect" id="node1" title=" " alt="" coords="253,71,444,112"/>
-<area shape="rect" id="node2" href="$a36762.html#a2605ee0b3fd1717d250512497e419eb0" title="Perform OR operation on every bit of BitSpan and BitVector." alt="" coords="10,5,201,47"/>
-<area shape="rect" id="node3" href="$a36758.html#a901996a2b32aa1eae2c2f2a267b6b2b4" title="Perform OR&#45;assign operation between every bit of this and a BitSpan." alt="" coords="5,71,205,112"/>
-<area shape="rect" id="node4" href="$a36762.html#ac9f865d7f089bafc22b1f66fad633846" title="Perform OR&#45;assign operation on every bit of BitSpan and BitVector." alt="" coords="10,136,201,177"/>
-</map>

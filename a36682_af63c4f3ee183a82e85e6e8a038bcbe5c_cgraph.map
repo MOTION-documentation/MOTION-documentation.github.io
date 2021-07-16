@@ -1,5 +1,0 @@
-<map id="encrypto::motion::Gate::SetOnlineIsReady" name="encrypto::motion::Gate::SetOnlineIsReady">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,177,80"/>
-<area shape="rect" id="node2" href="$a36778.html#a8864013bcd3d0befddc029e91d99d019" title="Get the mutex." alt="" coords="225,5,460,47"/>
-<area shape="rect" id="node3" href="$a36778.html#ac0c6482f418812f1238812ae2a66e13e" title="Unblocks all threads waiting for condition_variable_." alt="" coords="225,71,460,112"/>
-</map>

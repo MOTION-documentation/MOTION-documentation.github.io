@@ -1,0 +1,8 @@
+<map id="encrypto::motion::communication::CommunicationLayer::BroadcastMessage" name="encrypto::motion::communication::CommunicationLayer::BroadcastMessage">
+<area shape="rect" id="node1" title=" " alt="" coords="728,71,1028,112"/>
+<area shape="rect" id="node2" href="$a35230.html#a5cf195223f0e6efacf00aeab610c6341" title=" " alt="" coords="380,5,680,47"/>
+<area shape="rect" id="node3" href="$a35230.html#a0272bfccf2427720e69f01661b0d57f1" title=" " alt="" coords="409,71,651,112"/>
+<area shape="rect" id="node5" href="$a35230.html#a2cad20eef9e7cb8a37b663d78bfee217" title=" " alt="" coords="402,136,658,177"/>
+<area shape="rect" id="node4" href="$a35230.html#a5ff9c8a38284c45a8e30752bd514122d" title=" " alt="" coords="5,71,332,112"/>
+<area shape="rect" id="node6" href="$a35198.html#adec0f75cf359069129022632973c7cc3" title="Blocking wait for synchronizing between parties. Called in Clear() and Reset()" alt="" coords="71,136,267,177"/>
+</map>

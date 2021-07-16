@@ -1,0 +1,4 @@
+<map id="encrypto::motion::BitSpan::Subset" name="encrypto::motion::BitSpan::Subset">
+<area shape="rect" id="node1" title="Returns a new BitVector containing the bits of this BitSpan between positions from and to." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="$a34335.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="244,5,424,47"/>
+</map>

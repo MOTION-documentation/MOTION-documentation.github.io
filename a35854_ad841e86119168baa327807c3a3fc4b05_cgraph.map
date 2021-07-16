@@ -1,0 +1,9 @@
+<map id="encrypto::motion::BitSpan::Copy" name="encrypto::motion::BitSpan::Copy">
+<area shape="rect" id="node1" title="copies other to this[dest_from...dest_from+GetSize()]." alt="" coords="5,136,196,177"/>
+<area shape="rect" id="node2" href="$a34335.html#ad9f0b3eb27870c7971b51fcab9445a12" title=" " alt="" coords="244,143,523,170"/>
+<area shape="rect" id="node3" href="$a35850.html#a5d1d84dfbba1619c410cdb322622bf26" title="Appends a bit to BitVector." alt="" coords="611,5,811,47"/>
+<area shape="rect" id="node4" href="$a34335.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="621,71,801,112"/>
+<area shape="rect" id="node5" href="$a35850.html#adeb28266740be514f0e996d4f62ca021" title="Get const reference to content of BitVector." alt="" coords="611,136,811,177"/>
+<area shape="rect" id="node6" href="$a34335.html#ab051a877b97a4b0a21d05061676fabbd" title=" " alt="" coords="577,202,845,229"/>
+<area shape="rect" id="node7" href="$a34335.html#af8b8a95260784168156b66337111a0c1" title=" " alt="" coords="571,253,851,279"/>
+</map>

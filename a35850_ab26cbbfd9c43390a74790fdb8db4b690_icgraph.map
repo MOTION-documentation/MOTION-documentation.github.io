@@ -1,0 +1,4 @@
+<map id="encrypto::motion::BitVector::Invert" name="encrypto::motion::BitVector::Invert">
+<area shape="rect" id="node1" title="In&#45;place bit&#45;wise invert." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node2" href="$a35850.html#ad6500e0bf98af7f4b622810d862b933a" title="Return an inverted copy of this BitVector." alt="" coords="5,5,205,47"/>
+</map>

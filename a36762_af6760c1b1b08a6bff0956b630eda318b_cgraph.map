@@ -1,6 +1,0 @@
-<map id="encrypto::motion::BitSpan::operator^" name="encrypto::motion::BitSpan::operator^">
-<area shape="rect" id="node1" title="Perform XOR operation on every bit of BitSpan and BitVector." alt="" coords="5,71,196,112"/>
-<area shape="rect" id="node2" href="$a35255.html#a0f4f8ab8842e2af09352b2a7c83aa028" title=" " alt="" coords="282,5,473,47"/>
-<area shape="rect" id="node3" href="$a35255.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="287,71,467,112"/>
-<area shape="rect" id="node4" href="$a35255.html#af0bc4257b040f551e60e3fbe13c8f99b" title=" " alt="" coords="244,137,511,163"/>
-</map>

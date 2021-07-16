@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['p_5f_3225',['p_',['../a36426.html#adc38d527fa22db7d179d32a3aaa182ec',1,'encrypto::motion::OtVector']]],
-  ['parent_5f_3226',['parent_',['../a36686.html#a1421f30f97edb2b1c4f94b54c0f88257',1,'encrypto::motion::OneGate']]],
-  ['parent_5fa_3227',['parent_a',['../a36102.html#aed5ed42ea5b9b8e871ac34d0903b817c',1,'encrypto::motion::PrimitiveOperation']]],
-  ['parent_5fa_5f_3228',['parent_a_',['../a36698.html#adc3c3188b2bbaefe49ada98b21b0566d',1,'encrypto::motion::TwoGate::parent_a_()'],['../a36702.html#a68346d0f5ac0dd0402e0112eb19db0a2',1,'encrypto::motion::ThreeGate::parent_a_()']]],
-  ['parent_5fb_3229',['parent_b',['../a36102.html#aae8027edd1817ef50f14572df054253e',1,'encrypto::motion::PrimitiveOperation']]],
-  ['parent_5fb_5f_3230',['parent_b_',['../a36698.html#abd3cee0410dd0cca8d239a96fc54a69e',1,'encrypto::motion::TwoGate::parent_b_()'],['../a36702.html#a8cb2a3e2eaa92e221990ad8fbf82fa99',1,'encrypto::motion::ThreeGate::parent_b_()']]],
-  ['parent_5fc_5f_3231',['parent_c_',['../a36702.html#a4b077442c8a6538e911740473df52101',1,'encrypto::motion::ThreeGate']]],
-  ['parents_5f_3232',['parents_',['../a36706.html#a7c2e40552079dad8e31c93e5c80e1905',1,'encrypto::motion::NInputGate']]],
-  ['protocol_3233',['protocol',['../a36098.html#ae7862b0b9511d041efeda72989a797d7',1,'Combination']]],
-  ['protocol_5f_3234',['protocol_',['../a36098.html#a3749d501cd69be59fa2497005c5e1c33',1,'Combination']]]
+  ['online_5fis_5fready_5f_3307',['online_is_ready_',['../a35774.html#adcb3be5f4e5736191d873b1106dc7377',1,'encrypto::motion::Gate']]],
+  ['online_5fis_5fready_5fcondition_5f_3308',['online_is_ready_condition_',['../a35774.html#a3d69ad4a2cf6a51bc1e446b3af76956f',1,'encrypto::motion::Gate']]],
+  ['operation_5ftype_3309',['operation_type',['../a35178.html#abb70f07ed21721e39521c26b8ab1ece4',1,'Combination']]],
+  ['operation_5ftype_5f_3310',['operation_type_',['../a35178.html#a984b7955d3061b88fe8ba2c855314139',1,'Combination']]],
+  ['ot_5fid_5f_3311',['ot_id_',['../a35514.html#a54325b34190b16858c7bdb4d0476cfcd',1,'encrypto::motion::OtVector']]],
+  ['ot_5fprovider_5fwrappers_5f_3312',['ot_provider_wrappers_',['../a35978.html#a12ba7b10b71f2609e2199b5a4a613d22',1,'OtFlavorTest']]],
+  ['output_5f_3313',['output_',['../a35650.html#a83fbc474121dda0ea8eb6f374efd0279',1,'encrypto::motion::proto::bmr::OutputGate']]],
+  ['output_5fconditions_3314',['output_conditions',['../a35322.html#af8c770651b0b0cf985e087052ceeab6e',1,'encrypto::motion::OtExtensionReceiverData']]],
+  ['output_5fgate_5f_3315',['output_gate_',['../a35650.html#a43fc74227b44a62147dcd67a82cc533f',1,'encrypto::motion::proto::bmr::OutputGate']]],
+  ['output_5fmessage_5ffutures_5f_3316',['output_message_futures_',['../a35614.html#ad9b55e8b384a8fa59caf6e30457d865b',1,'encrypto::motion::proto::arithmetic_gmw::OutputGate::output_message_futures_()'],['../a35686.html#a3ee18dd5e50be576134d24dc5b376ded',1,'encrypto::motion::proto::boolean_gmw::OutputGate::output_message_futures_()']]],
+  ['output_5fowner_5f_3317',['output_owner_',['../a35786.html#abae0b551d0c6ffe819b658c45a1f29c7',1,'encrypto::motion::OutputGate']]],
+  ['output_5fwire_3318',['output_wire',['../a35190.html#ad82f2ff077ddd8aacc116418d5dde9f9',1,'encrypto::motion::PrimitiveOperation']]],
+  ['output_5fwires_5f_3319',['output_wires_',['../a35774.html#a1d49e61cc94a3a71e2e20ccd79526c2d',1,'encrypto::motion::Gate']]],
+  ['outputs_3320',['outputs',['../a35322.html#a8aca4ebc832529ffa961864d20ee88af',1,'encrypto::motion::OtExtensionReceiverData']]],
+  ['own_5foutput_5fwires_5f_3321',['own_output_wires_',['../a35774.html#a836e54078afa96e55ac3854b2068f042',1,'encrypto::motion::Gate']]]
 ];

@@ -1,0 +1,4 @@
+<map id="encrypto::motion::Party::Finish" name="encrypto::motion::Party::Finish">
+<area shape="rect" id="node1" title="Sends a termination message to all of the connected parties. In case a TCP connection is used,..." alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node2" href="$a35218.html#aa31b7717583882dd7d78c8e4fca08331" title=" " alt="" coords="5,5,180,47"/>
+</map>

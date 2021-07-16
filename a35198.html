@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MOTION: test_conversions.cpp File Reference</title>
+<title>MOTION: encrypto::motion::Backend Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,123 +63,2562 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="a34334.html">encrypto</a></li><li class="navelem"><a class="el" href="a34335.html">motion</a></li><li class="navelem"><a class="el" href="a35198.html">Backend</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a35195.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">test_conversions.cpp File Reference</div>  </div>
+<div class="title">encrypto::motion::Backend Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;future&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;fmt/format.h&gt;</code><br />
-<code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="a34619_source.html">base/party.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34751_source.html">multiplication_triple/mt_provider.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34874_source.html">protocols/bmr/bmr_wire.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34892_source.html">protocols/boolean_gmw/boolean_gmw_wire.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a34955_source.html">protocols/share_wrapper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a35054_source.html">utility/typedefs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a35195_source.html">test_constants.h</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for test_conversions.cpp:</div>
+
+<p><code>#include &lt;<a class="el" href="a33605_source.html">backend.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for encrypto::motion::Backend:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35199.png" border="0" usemap="#test__conversions_8cpp" alt=""/></div>
-<map name="test__conversions_8cpp" id="test__conversions_8cpp">
-<area shape="rect" title=" " alt="" coords="1386,5,1545,32"/>
-<area shape="rect" title=" " alt="" coords="909,594,995,621"/>
-<area shape="rect" title=" " alt="" coords="5562,765,5649,792"/>
-<area shape="rect" title=" " alt="" coords="5489,683,5551,710"/>
-<area shape="rect" title=" " alt="" coords="1311,683,1383,710"/>
-<area shape="rect" title=" " alt="" coords="2149,594,2211,621"/>
-<area shape="rect" title=" " alt="" coords="269,765,374,792"/>
-<area shape="rect" title=" " alt="" coords="6327,80,6431,107"/>
-<area shape="rect" href="a34619.html" title=" " alt="" coords="1459,80,1560,107"/>
-<area shape="rect" href="a35054.html" title=" " alt="" coords="1593,683,1727,710"/>
-<area shape="rect" href="a34751.html" title=" " alt="" coords="2249,319,2402,360"/>
-<area shape="rect" href="a34874.html" title=" " alt="" coords="3471,415,3660,442"/>
-<area shape="rect" href="a34892.html" title=" " alt="" coords="3735,408,3913,449"/>
-<area shape="rect" href="a34955.html" title=" " alt="" coords="1146,415,1339,442"/>
-<area shape="rect" href="a35195.html" title=" " alt="" coords="6455,80,6585,107"/>
-<area shape="rect" title=" " alt="" coords="3799,765,3876,792"/>
-<area shape="rect" href="a34595.html" title=" " alt="" coords="3485,155,3608,181"/>
-<area shape="rect" href="a34601.html" title=" " alt="" coords="5844,505,5999,531"/>
-<area shape="rect" title=" " alt="" coords="3079,683,3249,710"/>
-<area shape="rect" href="a34838.html" title=" " alt="" coords="3179,229,3397,271"/>
-<area shape="rect" href="a34898.html" title=" " alt="" coords="4071,229,4214,271"/>
-<area shape="rect" href="a34841.html" title=" " alt="" coords="2441,326,2623,353"/>
-<area shape="rect" href="a35003.html" title=" " alt="" coords="3501,594,3673,621"/>
-<area shape="rect" href="a34607.html" title=" " alt="" coords="4396,505,4609,531"/>
-<area shape="rect" href="a35039.html" title=" " alt="" coords="4089,594,4268,621"/>
-<area shape="rect" href="a34625.html" title=" " alt="" coords="5359,505,5478,531"/>
-<area shape="rect" href="a34646.html" title=" " alt="" coords="4591,408,4819,449"/>
-<area shape="rect" href="a34664.html" title=" " alt="" coords="3501,497,3665,539"/>
-<area shape="rect" href="a34670.html" title=" " alt="" coords="2837,319,3056,360"/>
-<area shape="rect" href="a34697.html" title=" " alt="" coords="3081,319,3250,360"/>
-<area shape="rect" href="a35024.html" title=" " alt="" coords="701,594,784,621"/>
-<area shape="rect" href="a34766.html" title=" " alt="" coords="2647,319,2801,360"/>
-<area shape="rect" href="a34835.html" title=" " alt="" coords="1657,408,1847,449"/>
-<area shape="rect" href="a34943.html" title=" " alt="" coords="4245,505,4371,531"/>
-<area shape="rect" href="a35036.html" title=" " alt="" coords="4982,505,5098,531"/>
-<area shape="rect" href="a34844.html" title=" " alt="" coords="4138,415,4313,442"/>
-<area shape="rect" href="a34949.html" title=" " alt="" coords="2189,505,2323,531"/>
-<area shape="rect" href="a34961.html" title=" " alt="" coords="3893,505,4019,531"/>
-<area shape="rect" title=" " alt="" coords="4444,594,4511,621"/>
-<area shape="rect" title=" " alt="" coords="5447,765,5511,792"/>
-<area shape="rect" title=" " alt="" coords="2367,765,2425,792"/>
-<area shape="rect" title=" " alt="" coords="3900,594,4015,621"/>
-<area shape="rect" title=" " alt="" coords="3569,676,3724,717"/>
-<area shape="rect" title=" " alt="" coords="3329,683,3495,710"/>
-<area shape="rect" title=" " alt="" coords="1693,765,1760,792"/>
-<area shape="rect" title=" " alt="" coords="2934,765,3021,792"/>
-<area shape="rect" title=" " alt="" coords="1614,765,1669,792"/>
-<area shape="rect" title=" " alt="" coords="1461,765,1553,792"/>
-<area shape="rect" title=" " alt="" coords="4105,683,4268,710"/>
-<area shape="rect" title=" " alt="" coords="4595,765,4738,792"/>
-<area shape="rect" title=" " alt="" coords="5607,594,5670,621"/>
-<area shape="rect" title=" " alt="" coords="5357,594,5481,621"/>
-<area shape="rect" title=" " alt="" coords="2051,840,2122,867"/>
-<area shape="rect" href="a34721.html" title=" " alt="" coords="4684,505,4777,531"/>
-<area shape="rect" title=" " alt="" coords="4636,594,4711,621"/>
-<area shape="rect" title=" " alt="" coords="2304,415,2347,442"/>
-<area shape="rect" href="a34787.html" title=" " alt="" coords="2507,408,2645,449"/>
-<area shape="rect" href="a34991.html" title=" " alt="" coords="2399,505,2539,531"/>
-<area shape="rect" href="a34793.html" title=" " alt="" coords="3217,505,3324,531"/>
-<area shape="rect" title=" " alt="" coords="1331,505,1384,531"/>
-<area shape="rect" href="a34997.html" title=" " alt="" coords="2615,505,2726,531"/>
-<area shape="rect" href="a05072.html" title=" " alt="" coords="1407,683,1569,710"/>
-<area shape="rect" title=" " alt="" coords="3065,594,3121,621"/>
-<area shape="rect" title=" " alt="" coords="2708,594,2788,621"/>
-<area shape="rect" title=" " alt="" coords="2439,587,2585,628"/>
-<area shape="rect" href="a02234.html" title=" " alt="" coords="2610,594,2683,621"/>
-<area shape="rect" title=" " alt="" coords="2598,683,2695,710"/>
-<area shape="rect" href="a02951.html" title=" " alt="" coords="5218,683,5313,710"/>
-<area shape="rect" href="a34826.html" title=" " alt="" coords="1093,676,1286,717"/>
-<area shape="rect" href="a34829.html" title=" " alt="" coords="1314,765,1369,792"/>
-<area shape="rect" title=" " alt="" coords="1493,594,1552,621"/>
-<area shape="rect" title=" " alt="" coords="2049,505,2113,531"/>
-<area shape="rect" title=" " alt="" coords="1019,594,1130,621"/>
-<area shape="rect" title=" " alt="" coords="1560,505,1675,531"/>
-<area shape="rect" title=" " alt="" coords="1699,505,1805,531"/>
-<area shape="rect" title=" " alt="" coords="1221,594,1333,621"/>
-<area shape="rect" title=" " alt="" coords="1829,505,1974,531"/>
-<area shape="rect" href="a34820.html" title=" " alt="" coords="947,505,1154,531"/>
-<area shape="rect" href="a02309.html" title=" " alt="" coords="2751,505,2889,531"/>
-<area shape="rect" href="a34799.html" title=" " alt="" coords="1802,683,1971,710"/>
-<area shape="rect" title=" " alt="" coords="4785,587,4940,628"/>
-<area shape="rect" title=" " alt="" coords="4965,587,5115,628"/>
-<area shape="rect" title=" " alt="" coords="5139,587,5333,628"/>
-<area shape="rect" title=" " alt="" coords="5796,594,5948,621"/>
-<area shape="rect" href="a34910.html" title=" " alt="" coords="3988,415,4113,442"/>
-<area shape="rect" title=" " alt="" coords="600,505,669,531"/>
-<area shape="rect" title=" " alt="" coords="6465,155,6575,181"/>
+<div class="center"><img src="a35197.png" border="0" usemap="#encrypto_1_1motion_1_1Backend_inherit__map" alt="Inheritance graph"/></div>
+<map name="encrypto_1_1motion_1_1Backend_inherit__map" id="encrypto_1_1motion_1_1Backend_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,95,201,121"/>
+<area shape="rect" title=" " alt="" coords="15,5,191,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for encrypto::motion::Backend:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35196.png" border="0" usemap="#encrypto_1_1motion_1_1Backend_coll__map" alt="Collaboration graph"/></div>
+<map name="encrypto_1_1motion_1_1Backend_coll__map" id="encrypto_1_1motion_1_1Backend_coll__map">
+<area shape="rect" title=" " alt="" coords="5,95,201,121"/>
+<area shape="rect" title=" " alt="" coords="15,5,191,47"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0c4242e7f3963d9838acb966edf5e92a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a0c4242e7f3963d9838acb966edf5e92a">Backend</a> ()=delete</td></tr>
+<tr class="separator:a0c4242e7f3963d9838acb966edf5e92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a79b03291de7a5ac855f12f842024c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1">Backend</a> (<a class="el" href="a35230.html">communication::CommunicationLayer</a> &amp;communication_layer, <a class="el" href="a34335.html#aff53d8c5a857e592b264fa10618269bc">ConfigurationPointer</a> &amp;configuration, std::shared_ptr&lt; <a class="el" href="a35914.html">Logger</a> &gt; logger)</td></tr>
+<tr class="separator:a5a79b03291de7a5ac855f12f842024c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649b9d40219106be702dc00eeed5c455"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a649b9d40219106be702dc00eeed5c455">~Backend</a> ()</td></tr>
+<tr class="separator:a649b9d40219106be702dc00eeed5c455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082c8599c317bb24e5520a491b9e834d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a34335.html#aff53d8c5a857e592b264fa10618269bc">ConfigurationPointer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a082c8599c317bb24e5520a491b9e834d">GetConfiguration</a> () const noexcept</td></tr>
+<tr class="separator:a082c8599c317bb24e5520a491b9e834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa46885893fb8593a511cfd397329e9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a34335.html#a9bd6f8f8f9c1eb9052b99bf7d2055c60">LoggerPointer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a9fa46885893fb8593a511cfd397329e9">GetLogger</a> () const noexcept</td></tr>
+<tr class="separator:a9fa46885893fb8593a511cfd397329e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b96f04c078b64d63a9fcb27a4de1e61"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a34335.html#af38a5289a7c07d5360849a6e759992b4">RegisterPointer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a1b96f04c078b64d63a9fcb27a4de1e61">GetRegister</a> () const noexcept</td></tr>
+<tr class="separator:a1b96f04c078b64d63a9fcb27a4de1e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73be5a42dea90b13936265791519b68"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#aa73be5a42dea90b13936265791519b68">NextGateId</a> () const</td></tr>
+<tr class="separator:aa73be5a42dea90b13936265791519b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a47cc49366f25adc5a68ad74307f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a42a47cc49366f25adc5a68ad74307f1d">Send</a> (std::size_t party_id, flatbuffers::FlatBufferBuilder &amp;&amp;message)</td></tr>
+<tr class="separator:a42a47cc49366f25adc5a68ad74307f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75db008bb610225f9e5fb1b284b34c5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b">RegisterInputGate</a> (const <a class="el" href="a34335.html#a4d72630f13126320af1a6bb37942b129">InputGatePointer</a> &amp;input_gate)</td></tr>
+<tr class="separator:a75db008bb610225f9e5fb1b284b34c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a5f6cccc9e31beed09b6332b149921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921">RegisterGate</a> (const <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &amp;gate)</td></tr>
+<tr class="separator:ad7a5f6cccc9e31beed09b6332b149921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47162b9152f22cf964e6ea3f9efe7773"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773">RunPreprocessing</a> ()</td></tr>
+<tr class="separator:a47162b9152f22cf964e6ea3f9efe7773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e081e090fb20e9f14aceaab235e95e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a29e081e090fb20e9f14aceaab235e95e">EvaluateSequential</a> ()</td></tr>
+<tr class="separator:a29e081e090fb20e9f14aceaab235e95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a297adec8cdd91ae1b2fe83926ab7a71e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a297adec8cdd91ae1b2fe83926ab7a71e">EvaluateParallel</a> ()</td></tr>
+<tr class="separator:a297adec8cdd91ae1b2fe83926ab7a71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e98b19a58cfa9f211e570e65e1d8714"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a5e98b19a58cfa9f211e570e65e1d8714">GetGate</a> (std::size_t gate_id) const</td></tr>
+<tr class="separator:a5e98b19a58cfa9f211e570e65e1d8714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c8f7bdb7f76d75973eace38da4868f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a89c8f7bdb7f76d75973eace38da4868f">GetInputGates</a> () const</td></tr>
+<tr class="separator:a89c8f7bdb7f76d75973eace38da4868f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa63f13f28dcc7e68b8d8dfd2110a4ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#aaa63f13f28dcc7e68b8d8dfd2110a4ac">Reset</a> ()</td></tr>
+<tr class="separator:aaa63f13f28dcc7e68b8d8dfd2110a4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3673bc38c07447e4745df83c353bd357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a3673bc38c07447e4745df83c353bd357">Clear</a> ()</td></tr>
+<tr class="separator:a3673bc38c07447e4745df83c353bd357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7997aef826984d0bb6dbcb622baacc71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a7997aef826984d0bb6dbcb622baacc71">BooleanGmwInput</a> (std::size_t party_id, bool input=false)</td></tr>
+<tr class="separator:a7997aef826984d0bb6dbcb622baacc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd47ac8baf1a700774a002ef51284ad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#abd47ac8baf1a700774a002ef51284ad6">BooleanGmwInput</a> (std::size_t party_id, const <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;input)</td></tr>
+<tr class="separator:abd47ac8baf1a700774a002ef51284ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281f70e80eaa74999f7cfa25bfbb14ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a281f70e80eaa74999f7cfa25bfbb14ed">BooleanGmwInput</a> (std::size_t party_id, <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&amp;input)</td></tr>
+<tr class="separator:a281f70e80eaa74999f7cfa25bfbb14ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72f4fda8cce6e5558e706fe3374f6a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#af72f4fda8cce6e5558e706fe3374f6a0">BooleanGmwInput</a> (std::size_t party_id, std::span&lt; const <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; input)</td></tr>
+<tr class="separator:af72f4fda8cce6e5558e706fe3374f6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae915ead93aa992294a75362a079d171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#aae915ead93aa992294a75362a079d171">BooleanGmwInput</a> (std::size_t party_id, std::vector&lt; <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; &amp;&amp;input)</td></tr>
+<tr class="separator:aae915ead93aa992294a75362a079d171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50af847622ce09beb2c00739cecd0fc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a50af847622ce09beb2c00739cecd0fc0">BooleanGmwXor</a> (const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;a, const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:a50af847622ce09beb2c00739cecd0fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbf72ca6579c7812de9c1452239b0ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a1bbf72ca6579c7812de9c1452239b0ee">BooleanGmwXor</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;a, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:a1bbf72ca6579c7812de9c1452239b0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1de9dfc6f9a52a18290b82d7657c0b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#af1de9dfc6f9a52a18290b82d7657c0b7">BooleanGmwAnd</a> (const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;a, const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:af1de9dfc6f9a52a18290b82d7657c0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f83e5d0ccba878f3434f8134c963e3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a6f83e5d0ccba878f3434f8134c963e3d">BooleanGmwAnd</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;a, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:a6f83e5d0ccba878f3434f8134c963e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a056b06fbe003b4a6654010aa4427bff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a056b06fbe003b4a6654010aa4427bff2">BooleanGmwMux</a> (const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;a, const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;b, const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;selection)</td></tr>
+<tr class="separator:a056b06fbe003b4a6654010aa4427bff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afeff24de889f2a26cf048a7b7714a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a0afeff24de889f2a26cf048a7b7714a3">BooleanGmwMux</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;a, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;b, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;selection)</td></tr>
+<tr class="separator:a0afeff24de889f2a26cf048a7b7714a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd6366c4a3870aad54c66e66ccadfe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a2cd6366c4a3870aad54c66e66ccadfe8">BooleanGmwOutput</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;parent, std::size_t output_owner)</td></tr>
+<tr class="separator:a2cd6366c4a3870aad54c66e66ccadfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71c9f5ef192820f7c52156ba689bca3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#ac71c9f5ef192820f7c52156ba689bca3">BmrInput</a> (std::size_t party_id, bool input=false)</td></tr>
+<tr class="separator:ac71c9f5ef192820f7c52156ba689bca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91a5cbf321ff5909971eddc398b24ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#ad91a5cbf321ff5909971eddc398b24ba">BmrInput</a> (std::size_t party_id, const <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;input)</td></tr>
+<tr class="separator:ad91a5cbf321ff5909971eddc398b24ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fb391919dd887fbdb61c72dbdcdf63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a93fb391919dd887fbdb61c72dbdcdf63">BmrInput</a> (std::size_t party_id, <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&amp;input)</td></tr>
+<tr class="separator:a93fb391919dd887fbdb61c72dbdcdf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367ecd3c02d4bec4b06c13fa3a1b024e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a367ecd3c02d4bec4b06c13fa3a1b024e">BmrInput</a> (std::size_t party_id, std::span&lt; const <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; input)</td></tr>
+<tr class="separator:a367ecd3c02d4bec4b06c13fa3a1b024e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6af8eacb55b0e1c3c7654254239f370b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a6af8eacb55b0e1c3c7654254239f370b">BmrInput</a> (std::size_t party_id, std::vector&lt; <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; &amp;&amp;input)</td></tr>
+<tr class="separator:a6af8eacb55b0e1c3c7654254239f370b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7652df7ee423cea08ca0dac04d35cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#acf7652df7ee423cea08ca0dac04d35cc">BmrOutput</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;parent, std::size_t output_owner)</td></tr>
+<tr class="separator:acf7652df7ee423cea08ca0dac04d35cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35d55db687eb53d7c5fe382757f4f247"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a35d55db687eb53d7c5fe382757f4f247"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a35d55db687eb53d7c5fe382757f4f247">ConstantArithmeticGmwInput</a> (T input=0)</td></tr>
+<tr class="separator:a35d55db687eb53d7c5fe382757f4f247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2614cd4ab8727726739910ecfd93fb64"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a2614cd4ab8727726739910ecfd93fb64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a2614cd4ab8727726739910ecfd93fb64">ConstantArithmeticGmwInput</a> (const std::vector&lt; T &gt; &amp;input_vector)</td></tr>
+<tr class="separator:a2614cd4ab8727726739910ecfd93fb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a248abd3905b8c2e8a1ac9ff340227e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a7a248abd3905b8c2e8a1ac9ff340227e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a7a248abd3905b8c2e8a1ac9ff340227e">ConstantArithmeticGmwInput</a> (std::vector&lt; T &gt; &amp;&amp;input_vector)</td></tr>
+<tr class="separator:a7a248abd3905b8c2e8a1ac9ff340227e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f28caedf0b3f1296a234f3d06a88a8"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:ae7f28caedf0b3f1296a234f3d06a88a8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#ae7f28caedf0b3f1296a234f3d06a88a8">ArithmeticGmwInput</a> (std::size_t party_id, T input=0)</td></tr>
+<tr class="separator:ae7f28caedf0b3f1296a234f3d06a88a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba86c7fcc10324a77f75ac10bc6e355"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:abba86c7fcc10324a77f75ac10bc6e355"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#abba86c7fcc10324a77f75ac10bc6e355">ArithmeticGmwInput</a> (std::size_t party_id, const std::vector&lt; T &gt; &amp;input_vector)</td></tr>
+<tr class="separator:abba86c7fcc10324a77f75ac10bc6e355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f24fa9a1183e64e3de4be14924f26a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a75f24fa9a1183e64e3de4be14924f26a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a75f24fa9a1183e64e3de4be14924f26a">ArithmeticGmwInput</a> (std::size_t party_id, std::vector&lt; T &gt; &amp;&amp;input_vector)</td></tr>
+<tr class="separator:a75f24fa9a1183e64e3de4be14924f26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b4b6dbb0a117f277e56377da8bc14a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:aa3b4b6dbb0a117f277e56377da8bc14a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#aa3b4b6dbb0a117f277e56377da8bc14a">ArithmeticGmwOutput</a> (const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;parent, std::size_t output_owner)</td></tr>
+<tr class="separator:aa3b4b6dbb0a117f277e56377da8bc14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0937b5b0ed74054bada4f4db95cf81ae"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a0937b5b0ed74054bada4f4db95cf81ae"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a0937b5b0ed74054bada4f4db95cf81ae">ArithmeticGmwOutput</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;parent, std::size_t output_owner)</td></tr>
+<tr class="separator:a0937b5b0ed74054bada4f4db95cf81ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f3044d06187861bc1c5538d6b09adf"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a59f3044d06187861bc1c5538d6b09adf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a59f3044d06187861bc1c5538d6b09adf">ArithmeticGmwAddition</a> (const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;a, const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:a59f3044d06187861bc1c5538d6b09adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c73fe7423bb4e7d267f97f39b4fc8df"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a9c73fe7423bb4e7d267f97f39b4fc8df"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a9c73fe7423bb4e7d267f97f39b4fc8df">ArithmeticGmwAddition</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;a, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:a9c73fe7423bb4e7d267f97f39b4fc8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25916310af6a37cb04c3a637a911193b"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a25916310af6a37cb04c3a637a911193b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#a25916310af6a37cb04c3a637a911193b">ArithmeticGmwSubtraction</a> (const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;a, const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="separator:a25916310af6a37cb04c3a637a911193b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb00975d6460067317576b69e30a28d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </td></tr>
+<tr class="memitem:affb00975d6460067317576b69e30a28d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a35198.html#affb00975d6460067317576b69e30a28d">ArithmeticGmwSubtraction</a> (const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;a, const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;b)</td></tr>
+<tr class="separator:affb00975d6460067317576b69e30a28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec0f75cf359069129022632973c7cc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#adec0f75cf359069129022632973c7cc3">Synchronize</a> ()</td></tr>
+<tr class="memdesc:adec0f75cf359069129022632973c7cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking wait for synchronizing between parties. Called in <a class="el" href="a35198.html#a3673bc38c07447e4745df83c353bd357">Clear()</a> and <a class="el" href="a35198.html#aaa63f13f28dcc7e68b8d8dfd2110a4ac">Reset()</a>  <a href="a35198.html#adec0f75cf359069129022632973c7cc3">More...</a><br /></td></tr>
+<tr class="separator:adec0f75cf359069129022632973c7cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364454198c31b392942815c6236822d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a364454198c31b392942815c6236822d5">ComputeBaseOts</a> ()</td></tr>
+<tr class="separator:a364454198c31b392942815c6236822d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee3220819bc8df2472115e368ec3d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#acee3220819bc8df2472115e368ec3d36">ImportBaseOts</a> (std::size_t i, const <a class="el" href="a35410.html">ReceiverMessage</a> &amp;messages)</td></tr>
+<tr class="separator:acee3220819bc8df2472115e368ec3d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e2fa03edac8c1755fc42e875a53e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#ae6e2fa03edac8c1755fc42e875a53e43">ImportBaseOts</a> (std::size_t i, const <a class="el" href="a35406.html">SenderMessage</a> &amp;messages)</td></tr>
+<tr class="separator:ae6e2fa03edac8c1755fc42e875a53e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0157ff656e1e499d5f2572cd7f4bf1"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="a35410.html">ReceiverMessage</a>, <a class="el" href="a35406.html">SenderMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a7d0157ff656e1e499d5f2572cd7f4bf1">ExportBaseOts</a> (std::size_t i)</td></tr>
+<tr class="separator:a7d0157ff656e1e499d5f2572cd7f4bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22022ee57e4e3fd5404826cbcb507b41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a22022ee57e4e3fd5404826cbcb507b41">OtExtensionSetup</a> ()</td></tr>
+<tr class="separator:a22022ee57e4e3fd5404826cbcb507b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a280cd7846f192a362008ca0639f560bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35230.html">communication::CommunicationLayer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a280cd7846f192a362008ca0639f560bc">GetCommunicationLayer</a> ()</td></tr>
+<tr class="separator:a280cd7846f192a362008ca0639f560bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6ffe1d636c247564d89d3050a21783"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35210.html">BaseProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#aca6ffe1d636c247564d89d3050a21783">GetBaseProvider</a> ()</td></tr>
+<tr class="separator:aca6ffe1d636c247564d89d3050a21783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4729e5ca2e117ece307ba9f52448ec07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35670.html">proto::bmr::Provider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a4729e5ca2e117ece307ba9f52448ec07">GetBmrProvider</a> ()</td></tr>
+<tr class="separator:a4729e5ca2e117ece307ba9f52448ec07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b11a923e4c412a1243d60f1f587babb"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a5b11a923e4c412a1243d60f1f587babb">GetBaseOtProvider</a> ()</td></tr>
+<tr class="separator:a5b11a923e4c412a1243d60f1f587babb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8160d33cfa1fdb65f2011894fd671e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35526.html">OtProvider</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a8160d33cfa1fdb65f2011894fd671e2d">GetOtProvider</a> (std::size_t party_id)</td></tr>
+<tr class="separator:a8160d33cfa1fdb65f2011894fd671e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6237b7c37b74f7cf5c4f162a533ffb6d"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a6237b7c37b74f7cf5c4f162a533ffb6d">GetMtProvider</a> ()</td></tr>
+<tr class="separator:a6237b7c37b74f7cf5c4f162a533ffb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9ff5f7ab0ac7bdd1ab3f353725f6cd"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#acf9ff5f7ab0ac7bdd1ab3f353725f6cd">GetSpProvider</a> ()</td></tr>
+<tr class="separator:acf9ff5f7ab0ac7bdd1ab3f353725f6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3ff216c8c7e948475dc5772339547b"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a7c3ff216c8c7e948475dc5772339547b">GetSbProvider</a> ()</td></tr>
+<tr class="separator:a7c3ff216c8c7e948475dc5772339547b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40ed4ca1b5dd088b3b1cf560b155c4a"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#ac40ed4ca1b5dd088b3b1cf560b155c4a">GetRunTimeStatistics</a> () const</td></tr>
+<tr class="separator:ac40ed4ca1b5dd088b3b1cf560b155c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e2ae3d899d56108fbbd133eb424d6d"><td class="memItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35198.html#a49e2ae3d899d56108fbbd133eb424d6d">GetMutableRunTimeStatistics</a> ()</td></tr>
+<tr class="separator:a49e2ae3d899d56108fbbd133eb424d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0c4242e7f3963d9838acb966edf5e92a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c4242e7f3963d9838acb966edf5e92a">&#9670;&nbsp;</a></span>Backend() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">encrypto::motion::Backend::Backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a79b03291de7a5ac855f12f842024c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a79b03291de7a5ac855f12f842024c1">&#9670;&nbsp;</a></span>Backend() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">encrypto::motion::Backend::Backend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a35230.html">communication::CommunicationLayer</a> &amp;&#160;</td>
+          <td class="paramname"><em>communication_layer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a34335.html#aff53d8c5a857e592b264fa10618269bc">ConfigurationPointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>configuration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="a35914.html">Logger</a> &gt;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a5a79b03291de7a5ac855f12f842024c1_cgraph.png" border="0" usemap="#a35198_a5a79b03291de7a5ac855f12f842024c1_cgraph" alt=""/></div>
+<map name="a35198_a5a79b03291de7a5ac855f12f842024c1_cgraph" id="a35198_a5a79b03291de7a5ac855f12f842024c1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,201,145"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="249,104,445,145"/>
+<area shape="rect" href="a35198.html#a6237b7c37b74f7cf5c4f162a533ffb6d" title=" " alt="" coords="493,5,689,47"/>
+<area shape="rect" href="a35198.html#a7c3ff216c8c7e948475dc5772339547b" title=" " alt="" coords="493,71,689,112"/>
+<area shape="rect" href="a35198.html#acf9ff5f7ab0ac7bdd1ab3f353725f6cd" title=" " alt="" coords="493,136,689,177"/>
+<area shape="rect" href="a35198.html#a22022ee57e4e3fd5404826cbcb507b41" title=" " alt="" coords="493,201,689,243"/>
+<area shape="rect" href="a35198.html#a364454198c31b392942815c6236822d5" title=" " alt="" coords="795,136,991,177"/>
+<area shape="rect" href="a35230.html#a8749ddcd3b0a9d5abd703fdd4f2a0cbc" title=" " alt="" coords="771,201,1014,243"/>
+<area shape="rect" href="a35230.html#aea280618717bc8bf1169383f151e03d3" title=" " alt="" coords="737,267,1048,308"/>
 </map>
 </div>
-</div></div><!-- contents -->
+
+</div>
+</div>
+<a id="a649b9d40219106be702dc00eeed5c455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649b9d40219106be702dc00eeed5c455">&#9670;&nbsp;</a></span>~Backend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">encrypto::motion::Backend::~Backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59f3044d06187861bc1c5538d6b09adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f3044d06187861bc1c5538d6b09adf">&#9670;&nbsp;</a></span>ArithmeticGmwAddition() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwAddition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a59f3044d06187861bc1c5538d6b09adf_cgraph.png" border="0" usemap="#a35198_a59f3044d06187861bc1c5538d6b09adf_cgraph" alt=""/></div>
+<map name="a35198_a59f3044d06187861bc1c5538d6b09adf_cgraph" id="a35198_a59f3044d06187861bc1c5538d6b09adf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a59f3044d06187861bc1c5538d6b09adf_icgraph.png" border="0" usemap="#a35198_a59f3044d06187861bc1c5538d6b09adf_icgraph" alt=""/></div>
+<map name="a35198_a59f3044d06187861bc1c5538d6b09adf_icgraph" id="a35198_a59f3044d06187861bc1c5538d6b09adf_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a9c73fe7423bb4e7d267f97f39b4fc8df" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9c73fe7423bb4e7d267f97f39b4fc8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c73fe7423bb4e7d267f97f39b4fc8df">&#9670;&nbsp;</a></span>ArithmeticGmwAddition() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwAddition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a9c73fe7423bb4e7d267f97f39b4fc8df_cgraph.png" border="0" usemap="#a35198_a9c73fe7423bb4e7d267f97f39b4fc8df_cgraph" alt=""/></div>
+<map name="a35198_a9c73fe7423bb4e7d267f97f39b4fc8df_cgraph" id="a35198_a9c73fe7423bb4e7d267f97f39b4fc8df_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a59f3044d06187861bc1c5538d6b09adf" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="493,5,689,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abba86c7fcc10324a77f75ac10bc6e355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba86c7fcc10324a77f75ac10bc6e355">&#9670;&nbsp;</a></span>ArithmeticGmwInput() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_abba86c7fcc10324a77f75ac10bc6e355_cgraph.png" border="0" usemap="#a35198_abba86c7fcc10324a77f75ac10bc6e355_cgraph" alt=""/></div>
+<map name="a35198_abba86c7fcc10324a77f75ac10bc6e355_cgraph" id="a35198_abba86c7fcc10324a77f75ac10bc6e355_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75f24fa9a1183e64e3de4be14924f26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f24fa9a1183e64e3de4be14924f26a">&#9670;&nbsp;</a></span>ArithmeticGmwInput() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input_vector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a75f24fa9a1183e64e3de4be14924f26a_cgraph.png" border="0" usemap="#a35198_a75f24fa9a1183e64e3de4be14924f26a_cgraph" alt=""/></div>
+<map name="a35198_a75f24fa9a1183e64e3de4be14924f26a_cgraph" id="a35198_a75f24fa9a1183e64e3de4be14924f26a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae7f28caedf0b3f1296a234f3d06a88a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f28caedf0b3f1296a234f3d06a88a8">&#9670;&nbsp;</a></span>ArithmeticGmwInput() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>input</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3b4b6dbb0a117f277e56377da8bc14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3b4b6dbb0a117f277e56377da8bc14a">&#9670;&nbsp;</a></span>ArithmeticGmwOutput() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>output_owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_cgraph.png" border="0" usemap="#a35198_aa3b4b6dbb0a117f277e56377da8bc14a_cgraph" alt=""/></div>
+<map name="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_cgraph" id="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_icgraph.png" border="0" usemap="#a35198_aa3b4b6dbb0a117f277e56377da8bc14a_icgraph" alt=""/></div>
+<map name="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_icgraph" id="a35198_aa3b4b6dbb0a117f277e56377da8bc14a_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a0937b5b0ed74054bada4f4db95cf81ae" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0937b5b0ed74054bada4f4db95cf81ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0937b5b0ed74054bada4f4db95cf81ae">&#9670;&nbsp;</a></span>ArithmeticGmwOutput() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>output_owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a0937b5b0ed74054bada4f4db95cf81ae_cgraph.png" border="0" usemap="#a35198_a0937b5b0ed74054bada4f4db95cf81ae_cgraph" alt=""/></div>
+<map name="a35198_a0937b5b0ed74054bada4f4db95cf81ae_cgraph" id="a35198_a0937b5b0ed74054bada4f4db95cf81ae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#aa3b4b6dbb0a117f277e56377da8bc14a" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="493,5,689,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25916310af6a37cb04c3a637a911193b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25916310af6a37cb04c3a637a911193b">&#9670;&nbsp;</a></span>ArithmeticGmwSubtraction() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwSubtraction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34344.html#a520773ca43a0e9b17eeaeae6b0eb6815">proto::arithmetic_gmw::SharePointer</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a25916310af6a37cb04c3a637a911193b_cgraph.png" border="0" usemap="#a35198_a25916310af6a37cb04c3a637a911193b_cgraph" alt=""/></div>
+<map name="a35198_a25916310af6a37cb04c3a637a911193b_cgraph" id="a35198_a25916310af6a37cb04c3a637a911193b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="260,5,456,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a25916310af6a37cb04c3a637a911193b_icgraph.png" border="0" usemap="#a35198_a25916310af6a37cb04c3a637a911193b_icgraph" alt=""/></div>
+<map name="a35198_a25916310af6a37cb04c3a637a911193b_icgraph" id="a35198_a25916310af6a37cb04c3a637a911193b_icgraph">
+<area shape="rect" title=" " alt="" coords="260,5,467,47"/>
+<area shape="rect" href="a35198.html#affb00975d6460067317576b69e30a28d" title=" " alt="" coords="5,5,212,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="affb00975d6460067317576b69e30a28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb00975d6460067317576b69e30a28d">&#9670;&nbsp;</a></span>ArithmeticGmwSubtraction() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ArithmeticGmwSubtraction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_affb00975d6460067317576b69e30a28d_cgraph.png" border="0" usemap="#a35198_affb00975d6460067317576b69e30a28d_cgraph" alt=""/></div>
+<map name="a35198_affb00975d6460067317576b69e30a28d_cgraph" id="a35198_affb00975d6460067317576b69e30a28d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" href="a35198.html#a25916310af6a37cb04c3a637a911193b" title=" " alt="" coords="260,5,467,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="515,5,711,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93fb391919dd887fbdb61c72dbdcdf63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93fb391919dd887fbdb61c72dbdcdf63">&#9670;&nbsp;</a></span>BmrInput() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a93fb391919dd887fbdb61c72dbdcdf63_cgraph.png" border="0" usemap="#a35198_a93fb391919dd887fbdb61c72dbdcdf63_cgraph" alt=""/></div>
+<map name="a35198_a93fb391919dd887fbdb61c72dbdcdf63_cgraph" id="a35198_a93fb391919dd887fbdb61c72dbdcdf63_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ac71c9f5ef192820f7c52156ba689bca3" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac71c9f5ef192820f7c52156ba689bca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71c9f5ef192820f7c52156ba689bca3">&#9670;&nbsp;</a></span>BmrInput() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>input</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_ac71c9f5ef192820f7c52156ba689bca3_icgraph.png" border="0" usemap="#a35198_ac71c9f5ef192820f7c52156ba689bca3_icgraph" alt=""/></div>
+<map name="a35198_ac71c9f5ef192820f7c52156ba689bca3_icgraph" id="a35198_ac71c9f5ef192820f7c52156ba689bca3_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#ad91a5cbf321ff5909971eddc398b24ba" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad91a5cbf321ff5909971eddc398b24ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad91a5cbf321ff5909971eddc398b24ba">&#9670;&nbsp;</a></span>BmrInput() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_ad91a5cbf321ff5909971eddc398b24ba_cgraph.png" border="0" usemap="#a35198_ad91a5cbf321ff5909971eddc398b24ba_cgraph" alt=""/></div>
+<map name="a35198_ad91a5cbf321ff5909971eddc398b24ba_cgraph" id="a35198_ad91a5cbf321ff5909971eddc398b24ba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ac71c9f5ef192820f7c52156ba689bca3" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a367ecd3c02d4bec4b06c13fa3a1b024e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367ecd3c02d4bec4b06c13fa3a1b024e">&#9670;&nbsp;</a></span>BmrInput() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a367ecd3c02d4bec4b06c13fa3a1b024e_cgraph.png" border="0" usemap="#a35198_a367ecd3c02d4bec4b06c13fa3a1b024e_cgraph" alt=""/></div>
+<map name="a35198_a367ecd3c02d4bec4b06c13fa3a1b024e_cgraph" id="a35198_a367ecd3c02d4bec4b06c13fa3a1b024e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6af8eacb55b0e1c3c7654254239f370b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6af8eacb55b0e1c3c7654254239f370b">&#9670;&nbsp;</a></span>BmrInput() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a6af8eacb55b0e1c3c7654254239f370b_cgraph.png" border="0" usemap="#a35198_a6af8eacb55b0e1c3c7654254239f370b_cgraph" alt=""/></div>
+<map name="a35198_a6af8eacb55b0e1c3c7654254239f370b_cgraph" id="a35198_a6af8eacb55b0e1c3c7654254239f370b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf7652df7ee423cea08ca0dac04d35cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7652df7ee423cea08ca0dac04d35cc">&#9670;&nbsp;</a></span>BmrOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BmrOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>output_owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_acf7652df7ee423cea08ca0dac04d35cc_cgraph.png" border="0" usemap="#a35198_acf7652df7ee423cea08ca0dac04d35cc_cgraph" alt=""/></div>
+<map name="a35198_acf7652df7ee423cea08ca0dac04d35cc_cgraph" id="a35198_acf7652df7ee423cea08ca0dac04d35cc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af1de9dfc6f9a52a18290b82d7657c0b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1de9dfc6f9a52a18290b82d7657c0b7">&#9670;&nbsp;</a></span>BooleanGmwAnd() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwAnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_af1de9dfc6f9a52a18290b82d7657c0b7_cgraph.png" border="0" usemap="#a35198_af1de9dfc6f9a52a18290b82d7657c0b7_cgraph" alt=""/></div>
+<map name="a35198_af1de9dfc6f9a52a18290b82d7657c0b7_cgraph" id="a35198_af1de9dfc6f9a52a18290b82d7657c0b7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6f83e5d0ccba878f3434f8134c963e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f83e5d0ccba878f3434f8134c963e3d">&#9670;&nbsp;</a></span>BooleanGmwAnd() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwAnd </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a281f70e80eaa74999f7cfa25bfbb14ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281f70e80eaa74999f7cfa25bfbb14ed">&#9670;&nbsp;</a></span>BooleanGmwInput() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a281f70e80eaa74999f7cfa25bfbb14ed_cgraph.png" border="0" usemap="#a35198_a281f70e80eaa74999f7cfa25bfbb14ed_cgraph" alt=""/></div>
+<map name="a35198_a281f70e80eaa74999f7cfa25bfbb14ed_cgraph" id="a35198_a281f70e80eaa74999f7cfa25bfbb14ed_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a7997aef826984d0bb6dbcb622baacc71" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7997aef826984d0bb6dbcb622baacc71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7997aef826984d0bb6dbcb622baacc71">&#9670;&nbsp;</a></span>BooleanGmwInput() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>input</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a7997aef826984d0bb6dbcb622baacc71_icgraph.png" border="0" usemap="#a35198_a7997aef826984d0bb6dbcb622baacc71_icgraph" alt=""/></div>
+<map name="a35198_a7997aef826984d0bb6dbcb622baacc71_icgraph" id="a35198_a7997aef826984d0bb6dbcb622baacc71_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#abd47ac8baf1a700774a002ef51284ad6" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abd47ac8baf1a700774a002ef51284ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd47ac8baf1a700774a002ef51284ad6">&#9670;&nbsp;</a></span>BooleanGmwInput() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35850.html">BitVector</a>&lt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_abd47ac8baf1a700774a002ef51284ad6_cgraph.png" border="0" usemap="#a35198_abd47ac8baf1a700774a002ef51284ad6_cgraph" alt=""/></div>
+<map name="a35198_abd47ac8baf1a700774a002ef51284ad6_cgraph" id="a35198_abd47ac8baf1a700774a002ef51284ad6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a7997aef826984d0bb6dbcb622baacc71" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af72f4fda8cce6e5558e706fe3374f6a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72f4fda8cce6e5558e706fe3374f6a0">&#9670;&nbsp;</a></span>BooleanGmwInput() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_af72f4fda8cce6e5558e706fe3374f6a0_cgraph.png" border="0" usemap="#a35198_af72f4fda8cce6e5558e706fe3374f6a0_cgraph" alt=""/></div>
+<map name="a35198_af72f4fda8cce6e5558e706fe3374f6a0_cgraph" id="a35198_af72f4fda8cce6e5558e706fe3374f6a0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aae915ead93aa992294a75362a079d171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae915ead93aa992294a75362a079d171">&#9670;&nbsp;</a></span>BooleanGmwInput() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="a35850.html">BitVector</a>&lt;&gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_aae915ead93aa992294a75362a079d171_cgraph.png" border="0" usemap="#a35198_aae915ead93aa992294a75362a079d171_cgraph" alt=""/></div>
+<map name="a35198_aae915ead93aa992294a75362a079d171_cgraph" id="a35198_aae915ead93aa992294a75362a079d171_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a75db008bb610225f9e5fb1b284b34c5b" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a056b06fbe003b4a6654010aa4427bff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056b06fbe003b4a6654010aa4427bff2">&#9670;&nbsp;</a></span>BooleanGmwMux() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwMux </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>selection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a056b06fbe003b4a6654010aa4427bff2_cgraph.png" border="0" usemap="#a35198_a056b06fbe003b4a6654010aa4427bff2_cgraph" alt=""/></div>
+<map name="a35198_a056b06fbe003b4a6654010aa4427bff2_cgraph" id="a35198_a056b06fbe003b4a6654010aa4427bff2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0afeff24de889f2a26cf048a7b7714a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afeff24de889f2a26cf048a7b7714a3">&#9670;&nbsp;</a></span>BooleanGmwMux() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwMux </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>selection</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cd6366c4a3870aad54c66e66ccadfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd6366c4a3870aad54c66e66ccadfe8">&#9670;&nbsp;</a></span>BooleanGmwOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>output_owner</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a2cd6366c4a3870aad54c66e66ccadfe8_cgraph.png" border="0" usemap="#a35198_a2cd6366c4a3870aad54c66e66ccadfe8_cgraph" alt=""/></div>
+<map name="a35198_a2cd6366c4a3870aad54c66e66ccadfe8_cgraph" id="a35198_a2cd6366c4a3870aad54c66e66ccadfe8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a50af847622ce09beb2c00739cecd0fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50af847622ce09beb2c00739cecd0fc0">&#9670;&nbsp;</a></span>BooleanGmwXor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwXor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34338.html#a01748ed1fe225d0414c7b87d3dd69274">proto::boolean_gmw::SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a50af847622ce09beb2c00739cecd0fc0_cgraph.png" border="0" usemap="#a35198_a50af847622ce09beb2c00739cecd0fc0_cgraph" alt=""/></div>
+<map name="a35198_a50af847622ce09beb2c00739cecd0fc0_cgraph" id="a35198_a50af847622ce09beb2c00739cecd0fc0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="249,5,445,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1bbf72ca6579c7812de9c1452239b0ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bbf72ca6579c7812de9c1452239b0ee">&#9670;&nbsp;</a></span>BooleanGmwXor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::BooleanGmwXor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3673bc38c07447e4745df83c353bd357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3673bc38c07447e4745df83c353bd357">&#9670;&nbsp;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a364454198c31b392942815c6236822d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364454198c31b392942815c6236822d5">&#9670;&nbsp;</a></span>ComputeBaseOts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::ComputeBaseOts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a364454198c31b392942815c6236822d5_icgraph.png" border="0" usemap="#a35198_a364454198c31b392942815c6236822d5_icgraph" alt=""/></div>
+<map name="a35198_a364454198c31b392942815c6236822d5_icgraph" id="a35198_a364454198c31b392942815c6236822d5_icgraph">
+<area shape="rect" title=" " alt="" coords="737,5,933,47"/>
+<area shape="rect" href="a35198.html#a22022ee57e4e3fd5404826cbcb507b41" title=" " alt="" coords="493,5,689,47"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2614cd4ab8727726739910ecfd93fb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2614cd4ab8727726739910ecfd93fb64">&#9670;&nbsp;</a></span>ConstantArithmeticGmwInput() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ConstantArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>input_vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a2614cd4ab8727726739910ecfd93fb64_cgraph.png" border="0" usemap="#a35198_a2614cd4ab8727726739910ecfd93fb64_cgraph" alt=""/></div>
+<map name="a35198_a2614cd4ab8727726739910ecfd93fb64_cgraph" id="a35198_a2614cd4ab8727726739910ecfd93fb64_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="276,5,472,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a248abd3905b8c2e8a1ac9ff340227e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a248abd3905b8c2e8a1ac9ff340227e">&#9670;&nbsp;</a></span>ConstantArithmeticGmwInput() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ConstantArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>input_vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a7a248abd3905b8c2e8a1ac9ff340227e_cgraph.png" border="0" usemap="#a35198_a7a248abd3905b8c2e8a1ac9ff340227e_cgraph" alt=""/></div>
+<map name="a35198_a7a248abd3905b8c2e8a1ac9ff340227e_cgraph" id="a35198_a7a248abd3905b8c2e8a1ac9ff340227e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" href="a35198.html#ad7a5f6cccc9e31beed09b6332b149921" title=" " alt="" coords="276,5,472,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a35d55db687eb53d7c5fe382757f4f247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35d55db687eb53d7c5fe382757f4f247">&#9670;&nbsp;</a></span>ConstantArithmeticGmwInput() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename  = std::enable_if_t&lt;std::is_unsigned_v&lt;T&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a34335.html#a748f062b733610144de18a3f8e5b8dc1">SharePointer</a> encrypto::motion::Backend::ConstantArithmeticGmwInput </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>input</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a297adec8cdd91ae1b2fe83926ab7a71e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297adec8cdd91ae1b2fe83926ab7a71e">&#9670;&nbsp;</a></span>EvaluateParallel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::EvaluateParallel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29e081e090fb20e9f14aceaab235e95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e081e090fb20e9f14aceaab235e95e">&#9670;&nbsp;</a></span>EvaluateSequential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::EvaluateSequential </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d0157ff656e1e499d5f2572cd7f4bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0157ff656e1e499d5f2572cd7f4bf1">&#9670;&nbsp;</a></span>ExportBaseOts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; <a class="el" href="a35410.html">ReceiverMessage</a>, <a class="el" href="a35406.html">SenderMessage</a> &gt; encrypto::motion::Backend::ExportBaseOts </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b11a923e4c412a1243d60f1f587babb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b11a923e4c412a1243d60f1f587babb">&#9670;&nbsp;</a></span>GetBaseOtProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; encrypto::motion::Backend::GetBaseOtProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca6ffe1d636c247564d89d3050a21783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6ffe1d636c247564d89d3050a21783">&#9670;&nbsp;</a></span>GetBaseProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35210.html">BaseProvider</a>&amp; encrypto::motion::Backend::GetBaseProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_aca6ffe1d636c247564d89d3050a21783_icgraph.png" border="0" usemap="#a35198_aca6ffe1d636c247564d89d3050a21783_icgraph" alt=""/></div>
+<map name="a35198_aca6ffe1d636c247564d89d3050a21783_icgraph" id="a35198_aca6ffe1d636c247564d89d3050a21783_icgraph">
+<area shape="rect" title=" " alt="" coords="500,279,696,321"/>
+<area shape="rect" href="a35774.html#a7fcb1ad4e209e814fb4dd282a59b8f48" title=" " alt="" coords="280,279,452,321"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="23,5,215,61"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="15,85,222,141"/>
+<area shape="rect" href="a35662.html#ad7e5862d9511aafb050d55821f0883d5" title=" " alt="" coords="5,166,232,207"/>
+<area shape="rect" href="a35682.html#a012dc20c257b41801fc399bdb7c28ad0" title=" " alt="" coords="23,232,215,288"/>
+<area shape="rect" href="a35610.html#a5c713f72bcd15938720d53a87c4709a2" title=" " alt="" coords="15,312,222,368"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="7,393,230,434"/>
+<area shape="rect" href="a35686.html#a59251792cb5d63a301b8f35c62884cc1" title=" " alt="" coords="17,459,220,515"/>
+<area shape="rect" href="a35614.html#a3c84c85567dc970eba412f82319de5ab" title=" " alt="" coords="9,539,228,595"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4729e5ca2e117ece307ba9f52448ec07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4729e5ca2e117ece307ba9f52448ec07">&#9670;&nbsp;</a></span>GetBmrProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35670.html">proto::bmr::Provider</a>&amp; encrypto::motion::Backend::GetBmrProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a4729e5ca2e117ece307ba9f52448ec07_icgraph.png" border="0" usemap="#a35198_a4729e5ca2e117ece307ba9f52448ec07_icgraph" alt=""/></div>
+<map name="a35198_a4729e5ca2e117ece307ba9f52448ec07_icgraph" id="a35198_a4729e5ca2e117ece307ba9f52448ec07_icgraph">
+<area shape="rect" title=" " alt="" coords="596,235,792,276"/>
+<area shape="rect" href="a35662.html#ab676dada889c662558bf79a44200fb21" title=" " alt="" coords="309,5,493,47"/>
+<area shape="rect" href="a35754.html#a8f7574885de7e75e60abc1ef48662a65" title=" " alt="" coords="253,71,548,112"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="283,136,518,177"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="283,201,518,243"/>
+<area shape="rect" href="a35662.html#ad7e5862d9511aafb050d55821f0883d5" title=" " alt="" coords="287,267,514,308"/>
+<area shape="rect" href="a35646.html#aa8e65c5bbcbae0c51fbc27db8292bb47" title=" " alt="" coords="285,332,516,373"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="289,397,512,439"/>
+<area shape="rect" href="a35646.html#af9286483dd889df517e9291e48c2a76a" title=" " alt="" coords="292,463,509,519"/>
+<area shape="rect" href="a35646.html#a82682107abfeaad9c7562589d344b868" title=" " alt="" coords="5,471,205,512"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a280cd7846f192a362008ca0639f560bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a280cd7846f192a362008ca0639f560bc">&#9670;&nbsp;</a></span>GetCommunicationLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35230.html">communication::CommunicationLayer</a>&amp; encrypto::motion::Backend::GetCommunicationLayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a280cd7846f192a362008ca0639f560bc_icgraph.png" border="0" usemap="#a35198_a280cd7846f192a362008ca0639f560bc_icgraph" alt=""/></div>
+<map name="a35198_a280cd7846f192a362008ca0639f560bc_icgraph" id="a35198_a280cd7846f192a362008ca0639f560bc_icgraph">
+<area shape="rect" title=" " alt="" coords="852,916,1048,957"/>
+<area shape="rect" href="a35774.html#a905fe35926364d345d889a934e81628a" title=" " alt="" coords="612,916,804,957"/>
+<area shape="rect" href="a35662.html#ab676dada889c662558bf79a44200fb21" title=" " alt="" coords="317,5,501,47"/>
+<area shape="rect" href="a35758.html#a501c106c7dd196c25e448ea2aeda850f" title=" " alt="" coords="253,71,564,112"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="313,137,505,193"/>
+<area shape="rect" href="a35750.html#a6c3b8e869632b1332a89a98c9589df98" title=" " alt="" coords="291,217,526,259"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="291,283,526,324"/>
+<area shape="rect" href="a35686.html#a416ebb8642ae544dc92b8e60a4e4b2fa" title=" " alt="" coords="307,349,510,405"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="291,429,526,471"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="305,495,512,551"/>
+<area shape="rect" href="a35746.html#abd1d97808f581ec2df47b79908392973" title=" " alt="" coords="280,576,537,617"/>
+<area shape="rect" href="a35694.html#a8a4b7fca4aa094edc58dcdc7b9532aa0" title=" " alt="" coords="319,642,498,698"/>
+<area shape="rect" href="a35698.html#a2a94da60a2ea7694cf9a5c11852900a9" title=" " alt="" coords="317,722,501,778"/>
+<area shape="rect" href="a35662.html#ad7e5862d9511aafb050d55821f0883d5" title=" " alt="" coords="295,803,522,844"/>
+<area shape="rect" href="a35722.html#a85b7d81715e926f3bc5e9bee904bb0f9" title=" " alt="" coords="303,869,514,925"/>
+<area shape="rect" href="a35702.html#aa45854a615decf1226f1bbce27851572" title=" " alt="" coords="315,949,502,1005"/>
+<area shape="rect" href="a35614.html#a40d61db172ac68fe6c3514984bde199d" title=" " alt="" coords="299,1029,518,1085"/>
+<area shape="rect" href="a35626.html#a509347b08c20ba606e76e21e2cb88908" title=" " alt="" coords="293,1109,525,1165"/>
+<area shape="rect" href="a35630.html#a780aa992a106c940d717c103c9199b60" title=" " alt="" coords="299,1189,518,1245"/>
+<area shape="rect" href="a35646.html#aa8e65c5bbcbae0c51fbc27db8292bb47" title=" " alt="" coords="293,1269,524,1311"/>
+<area shape="rect" href="a35658.html#ae365029a1374892892224d983c8209fe" title=" " alt="" coords="300,1335,517,1376"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="297,1400,520,1441"/>
+<area shape="rect" href="a35682.html#ae5f016a2015ecf6daee92563306c317a" title=" " alt="" coords="313,1466,505,1522"/>
+<area shape="rect" href="a35646.html#af9286483dd889df517e9291e48c2a76a" title=" " alt="" coords="300,1546,517,1602"/>
+<area shape="rect" href="a35702.html#a56c20e638625aabfcf837faf022e9a57" title="Provides the functionality of ternary expression &quot;s ? a : b&quot;;." alt="" coords="315,1626,502,1682"/>
+<area shape="rect" href="a35686.html#a59251792cb5d63a301b8f35c62884cc1" title=" " alt="" coords="307,1706,510,1762"/>
+<area shape="rect" href="a35650.html#a2f1a376fb794893e427098489460a441" title=" " alt="" coords="297,1787,520,1828"/>
+<area shape="rect" href="a35614.html#a3c84c85567dc970eba412f82319de5ab" title=" " alt="" coords="299,1853,518,1909"/>
+<area shape="rect" href="a35682.html#ab39478ca9ef1ed3324f503e32d5cbaf5" title=" " alt="" coords="9,1466,201,1522"/>
+<area shape="rect" href="a35646.html#a82682107abfeaad9c7562589d344b868" title=" " alt="" coords="5,1553,205,1595"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a082c8599c317bb24e5520a491b9e834d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082c8599c317bb24e5520a491b9e834d">&#9670;&nbsp;</a></span>GetConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a34335.html#aff53d8c5a857e592b264fa10618269bc">ConfigurationPointer</a>&amp; encrypto::motion::Backend::GetConfiguration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a082c8599c317bb24e5520a491b9e834d_icgraph.png" border="0" usemap="#a35198_a082c8599c317bb24e5520a491b9e834d_icgraph" alt=""/></div>
+<map name="a35198_a082c8599c317bb24e5520a491b9e834d_icgraph" id="a35198_a082c8599c317bb24e5520a491b9e834d_icgraph">
+<area shape="rect" title=" " alt="" coords="480,71,676,112"/>
+<area shape="rect" href="a35774.html#ad4d010ed7c2a5f5e8679390b1c10f643" title=" " alt="" coords="260,71,432,112"/>
+<area shape="rect" href="a35770.html#adbde906cbaa5603647be02b03758ebe7" title=" " alt="" coords="5,5,212,47"/>
+<area shape="rect" href="a35766.html#a69e4089e3d476eebdc822567a813a08b" title=" " alt="" coords="16,71,201,112"/>
+<area shape="rect" href="a35762.html#a51c1be41ad42a8c6a173dbf011be035d" title=" " alt="" coords="13,136,204,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5e98b19a58cfa9f211e570e65e1d8714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e98b19a58cfa9f211e570e65e1d8714">&#9670;&nbsp;</a></span>GetGate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &amp; encrypto::motion::Backend::GetGate </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>gate_id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a5e98b19a58cfa9f211e570e65e1d8714_icgraph.png" border="0" usemap="#a35198_a5e98b19a58cfa9f211e570e65e1d8714_icgraph" alt=""/></div>
+<map name="a35198_a5e98b19a58cfa9f211e570e65e1d8714_icgraph" id="a35198_a5e98b19a58cfa9f211e570e65e1d8714_icgraph">
+<area shape="rect" title=" " alt="" coords="479,5,675,47"/>
+<area shape="rect" href="a35822.html#a33219b842fe9a0e031e2556974fbb2c5" title=" " alt="" coords="224,5,431,47"/>
+<area shape="rect" href="a35822.html#ad4d206a0ef9b2922c8d7cf573e18c6b4" title=" " alt="" coords="5,5,176,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a89c8f7bdb7f76d75973eace38da4868f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c8f7bdb7f76d75973eace38da4868f">&#9670;&nbsp;</a></span>GetInputGates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &gt; &amp; encrypto::motion::Backend::GetInputGates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fa46885893fb8593a511cfd397329e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa46885893fb8593a511cfd397329e9">&#9670;&nbsp;</a></span>GetLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a34335.html#a9bd6f8f8f9c1eb9052b99bf7d2055c60">LoggerPointer</a> &amp; encrypto::motion::Backend::GetLogger </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a9fa46885893fb8593a511cfd397329e9_icgraph.png" border="0" usemap="#a35198_a9fa46885893fb8593a511cfd397329e9_icgraph" alt=""/></div>
+<map name="a35198_a9fa46885893fb8593a511cfd397329e9_icgraph" id="a35198_a9fa46885893fb8593a511cfd397329e9_icgraph">
+<area shape="rect" title=" " alt="" coords="852,2149,1048,2190"/>
+<area shape="rect" href="a35774.html#a6c47268030ce073458fd1fabfcbedb47" title=" " alt="" coords="632,2149,804,2190"/>
+<area shape="rect" href="a35618.html#adb36032724e013fa14b3120864d38b1c" title=" " alt="" coords="315,5,543,61"/>
+<area shape="rect" href="a35698.html#a940251712d95a706d3ad437650726c10" title=" " alt="" coords="337,85,521,141"/>
+<area shape="rect" href="a35662.html#ab676dada889c662558bf79a44200fb21" title=" " alt="" coords="337,166,521,207"/>
+<area shape="rect" href="a35758.html#a501c106c7dd196c25e448ea2aeda850f" title=" " alt="" coords="273,231,584,273"/>
+<area shape="rect" href="a35750.html#aea08c8898823214c16d4d6ac554e1a0d" title=" " alt="" coords="301,297,556,338"/>
+<area shape="rect" href="a35754.html#a8f7574885de7e75e60abc1ef48662a65" title=" " alt="" coords="281,362,576,403"/>
+<area shape="rect" href="a35722.html#abf8bb63e4703c9940155a758a4f06719" title=" " alt="" coords="293,428,565,484"/>
+<area shape="rect" href="a35726.html#ae003a852b79b03e292b9f39d74499c07" title=" " alt="" coords="275,508,582,564"/>
+<area shape="rect" href="a35770.html#adbde906cbaa5603647be02b03758ebe7" title=" " alt="" coords="325,589,532,630"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="333,655,525,711"/>
+<area shape="rect" href="a35766.html#a69e4089e3d476eebdc822567a813a08b" title=" " alt="" coords="336,735,521,777"/>
+<area shape="rect" href="a35762.html#a51c1be41ad42a8c6a173dbf011be035d" title=" " alt="" coords="333,801,524,842"/>
+<area shape="rect" href="a35750.html#a6c3b8e869632b1332a89a98c9589df98" title=" " alt="" coords="311,866,546,907"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="311,931,546,973"/>
+<area shape="rect" href="a35686.html#a416ebb8642ae544dc92b8e60a4e4b2fa" title=" " alt="" coords="327,997,530,1053"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="311,1078,546,1119"/>
+<area shape="rect" href="a35650.html#ae34e67632055a7273c8151afa9a89d48" title=" " alt="" coords="305,1143,552,1185"/>
+<area shape="rect" href="a35690.html#a12276c921ca69bf83b14847481beb823" title=" " alt="" coords="338,1209,519,1265"/>
+<area shape="rect" href="a35758.html#a6661dcf2b565670583288c3f5ed63ff0" title=" " alt="" coords="311,1290,546,1331"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="325,1356,532,1412"/>
+<area shape="rect" href="a35746.html#abd1d97808f581ec2df47b79908392973" title=" " alt="" coords="300,1437,557,1478"/>
+<area shape="rect" href="a35694.html#a8a4b7fca4aa094edc58dcdc7b9532aa0" title=" " alt="" coords="339,1503,518,1559"/>
+<area shape="rect" href="a35654.html#aa496118c076fa7d2c98b754c33c93c52" title=" " alt="" coords="317,1583,541,1625"/>
+<area shape="rect" href="a35698.html#a2a94da60a2ea7694cf9a5c11852900a9" title=" " alt="" coords="337,1649,521,1705"/>
+<area shape="rect" href="a35658.html#a5ccd38fdedc90fbc1fa430b4ea77a2b7" title=" " alt="" coords="317,1730,540,1771"/>
+<area shape="rect" href="a35662.html#ad7e5862d9511aafb050d55821f0883d5" title=" " alt="" coords="315,1795,542,1837"/>
+<area shape="rect" href="a35722.html#a85b7d81715e926f3bc5e9bee904bb0f9" title=" " alt="" coords="323,1861,534,1917"/>
+<area shape="rect" href="a35702.html#aa45854a615decf1226f1bbce27851572" title=" " alt="" coords="335,1941,522,1997"/>
+<area shape="rect" href="a35726.html#af7b6c19a1e75055dacec72604f6bc976" title=" " alt="" coords="306,2021,551,2077"/>
+<area shape="rect" href="a35614.html#a40d61db172ac68fe6c3514984bde199d" title=" " alt="" coords="319,2101,538,2157"/>
+<area shape="rect" href="a35618.html#aa2c3213ecef91f803db346d58078b471" title=" " alt="" coords="315,2181,543,2237"/>
+<area shape="rect" href="a35622.html#a517964d9b11362159a3b1db819ecd6a9" title=" " alt="" coords="320,2261,537,2317"/>
+<area shape="rect" href="a35626.html#a509347b08c20ba606e76e21e2cb88908" title=" " alt="" coords="313,2341,545,2397"/>
+<area shape="rect" href="a35630.html#a780aa992a106c940d717c103c9199b60" title=" " alt="" coords="319,2421,538,2477"/>
+<area shape="rect" href="a35770.html#a32590f835088837365780e77a91fb891" title=" " alt="" coords="325,2502,532,2543"/>
+<area shape="rect" href="a35766.html#afbd684dae959053bab723de819dcd767" title=" " alt="" coords="336,2567,521,2609"/>
+<area shape="rect" href="a35762.html#a6fec8df5c45c4922e78f06fbc6a9e931" title=" " alt="" coords="333,2633,524,2674"/>
+<area shape="rect" href="a35646.html#aa8e65c5bbcbae0c51fbc27db8292bb47" title=" " alt="" coords="313,2698,544,2739"/>
+<area shape="rect" href="a35754.html#ac6a2f5da19033953dca45369d798ff54" title=" " alt="" coords="313,2763,544,2805"/>
+<area shape="rect" href="a35758.html#acab3a4a78ca545eff21fca93aea04236" title=" " alt="" coords="313,2829,544,2870"/>
+<area shape="rect" href="a35654.html#ad8869f47b0c18efed88cc135d943fc5c" title=" " alt="" coords="319,2894,538,2935"/>
+<area shape="rect" href="a35658.html#ae365029a1374892892224d983c8209fe" title=" " alt="" coords="320,2959,537,3001"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="317,3025,540,3066"/>
+<area shape="rect" href="a35746.html#ab835ade361e09133239d90777bee6b2e" title=" " alt="" coords="300,3090,557,3131"/>
+<area shape="rect" href="a35682.html#ae5f016a2015ecf6daee92563306c317a" title=" " alt="" coords="333,3156,525,3212"/>
+<area shape="rect" href="a35714.html#ae07f366967d65f2ed9ec5242975a144f" title=" " alt="" coords="326,3236,531,3292"/>
+<area shape="rect" href="a35646.html#af9286483dd889df517e9291e48c2a76a" title=" " alt="" coords="320,3316,537,3372"/>
+<area shape="rect" href="a35610.html#a40075718b40ee109c743f7e551c3f172" title=" " alt="" coords="325,3396,532,3452"/>
+<area shape="rect" href="a35718.html#a8b6a919b0b6ab5cee37c1b3a70d77709" title=" " alt="" coords="319,3476,539,3532"/>
+<area shape="rect" href="a35694.html#abdd2a19e53d0e38d63c5090db6a838b0" title=" " alt="" coords="339,3556,518,3612"/>
+<area shape="rect" href="a35658.html#a39c7e784619a1751e1efcb5c9d5a89a7" title=" " alt="" coords="341,3637,516,3678"/>
+<area shape="rect" href="a35626.html#a7f751394fdd117199b6e0d5a03b223b7" title=" " alt="" coords="313,3703,545,3759"/>
+<area shape="rect" href="a35702.html#a56c20e638625aabfcf837faf022e9a57" title="Provides the functionality of ternary expression &quot;s ? a : b&quot;;." alt="" coords="335,3783,522,3839"/>
+<area shape="rect" href="a35686.html#a59251792cb5d63a301b8f35c62884cc1" title=" " alt="" coords="327,3863,530,3919"/>
+<area shape="rect" href="a35650.html#a2f1a376fb794893e427098489460a441" title=" " alt="" coords="317,3943,540,3985"/>
+<area shape="rect" href="a35614.html#a3c84c85567dc970eba412f82319de5ab" title=" " alt="" coords="319,4009,538,4065"/>
+<area shape="rect" href="a35630.html#aa705675bc6815c896aff55ca20325e07" title=" " alt="" coords="319,4089,538,4145"/>
+<area shape="rect" href="a35622.html#a2e19e0cf574b41baac874d3f32ffa76d" title=" " alt="" coords="320,4169,537,4225"/>
+<area shape="rect" href="a35690.html#ac3b603287c7e0770393584701ab4bf47" title=" " alt="" coords="338,4249,519,4305"/>
+<area shape="rect" href="a35654.html#a5684fb6f6d4fe71e355e5310431b70de" title=" " alt="" coords="339,4330,518,4371"/>
+<area shape="rect" href="a35682.html#ab39478ca9ef1ed3324f503e32d5cbaf5" title=" " alt="" coords="19,3156,211,3212"/>
+<area shape="rect" href="a35714.html#a222aa38a54f2b34c5d01950224ed5fc9" title=" " alt="" coords="13,3236,218,3292"/>
+<area shape="rect" href="a35646.html#a82682107abfeaad9c7562589d344b868" title=" " alt="" coords="15,3323,215,3365"/>
+<area shape="rect" href="a35610.html#aa129cdf191807f6a278eefa95a1cd5a3" title=" " alt="" coords="12,3396,219,3452"/>
+<area shape="rect" href="a35718.html#aa0bc1847f69a65d3b22d800e69a96ee0" title=" " alt="" coords="5,3476,225,3532"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6237b7c37b74f7cf5c4f162a533ffb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6237b7c37b74f7cf5c4f162a533ffb6d">&#9670;&nbsp;</a></span>GetMtProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; encrypto::motion::Backend::GetMtProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a6237b7c37b74f7cf5c4f162a533ffb6d_icgraph.png" border="0" usemap="#a35198_a6237b7c37b74f7cf5c4f162a533ffb6d_icgraph" alt=""/></div>
+<map name="a35198_a6237b7c37b74f7cf5c4f162a533ffb6d_icgraph" id="a35198_a6237b7c37b74f7cf5c4f162a533ffb6d_icgraph">
+<area shape="rect" title=" " alt="" coords="529,133,725,174"/>
+<area shape="rect" href="a35698.html#a940251712d95a706d3ad437650726c10" title=" " alt="" coords="291,52,475,108"/>
+<area shape="rect" href="a35774.html#a9fcee750034a1c9a59aad16c6ef20f2f" title=" " alt="" coords="297,133,469,174"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="285,202,481,243"/>
+<area shape="rect" href="a35698.html#a2a94da60a2ea7694cf9a5c11852900a9" title=" " alt="" coords="29,5,213,61"/>
+<area shape="rect" href="a35626.html#a509347b08c20ba606e76e21e2cb88908" title=" " alt="" coords="5,85,237,141"/>
+<area shape="rect" href="a35626.html#a7f751394fdd117199b6e0d5a03b223b7" title=" " alt="" coords="5,165,237,221"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="23,246,219,287"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a49e2ae3d899d56108fbbd133eb424d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e2ae3d899d56108fbbd133eb424d6d">&#9670;&nbsp;</a></span>GetMutableRunTimeStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; encrypto::motion::Backend::GetMutableRunTimeStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8160d33cfa1fdb65f2011894fd671e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8160d33cfa1fdb65f2011894fd671e2d">&#9670;&nbsp;</a></span>GetOtProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35526.html">OtProvider</a> &amp; encrypto::motion::Backend::GetOtProvider </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a8160d33cfa1fdb65f2011894fd671e2d_icgraph.png" border="0" usemap="#a35198_a8160d33cfa1fdb65f2011894fd671e2d_icgraph" alt=""/></div>
+<map name="a35198_a8160d33cfa1fdb65f2011894fd671e2d_icgraph" id="a35198_a8160d33cfa1fdb65f2011894fd671e2d_icgraph">
+<area shape="rect" title=" " alt="" coords="460,43,656,84"/>
+<area shape="rect" href="a35774.html#a1f9f6f339aff6f30ff853d7a02e4e046" title=" " alt="" coords="240,43,412,84"/>
+<area shape="rect" href="a35662.html#ab676dada889c662558bf79a44200fb21" title=" " alt="" coords="7,5,191,47"/>
+<area shape="rect" href="a35702.html#a56c20e638625aabfcf837faf022e9a57" title="Provides the functionality of ternary expression &quot;s ? a : b&quot;;." alt="" coords="5,71,192,127"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b96f04c078b64d63a9fcb27a4de1e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b96f04c078b64d63a9fcb27a4de1e61">&#9670;&nbsp;</a></span>GetRegister()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a34335.html#af38a5289a7c07d5360849a6e759992b4">RegisterPointer</a>&amp; encrypto::motion::Backend::GetRegister </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a1b96f04c078b64d63a9fcb27a4de1e61_icgraph.png" border="0" usemap="#a35198_a1b96f04c078b64d63a9fcb27a4de1e61_icgraph" alt=""/></div>
+<map name="a35198_a1b96f04c078b64d63a9fcb27a4de1e61_icgraph" id="a35198_a1b96f04c078b64d63a9fcb27a4de1e61_icgraph">
+<area shape="rect" title=" " alt="" coords="859,3019,1055,3061"/>
+<area shape="rect" href="a35802.html#a270dc9ae4e3313b1cd8a81898aaa6179" title=" " alt="" coords="632,2986,811,3027"/>
+<area shape="rect" href="a35774.html#a12640782f5b65cd8de30ffe6b85fc28c" title=" " alt="" coords="635,3051,807,3093"/>
+<area shape="rect" href="a35618.html#adb36032724e013fa14b3120864d38b1c" title=" " alt="" coords="315,5,543,61"/>
+<area shape="rect" href="a35698.html#a940251712d95a706d3ad437650726c10" title=" " alt="" coords="337,85,521,141"/>
+<area shape="rect" href="a35662.html#ab676dada889c662558bf79a44200fb21" title=" " alt="" coords="337,166,521,207"/>
+<area shape="rect" href="a35758.html#a501c106c7dd196c25e448ea2aeda850f" title=" " alt="" coords="273,231,584,273"/>
+<area shape="rect" href="a35750.html#aea08c8898823214c16d4d6ac554e1a0d" title=" " alt="" coords="301,297,556,338"/>
+<area shape="rect" href="a35754.html#a8f7574885de7e75e60abc1ef48662a65" title=" " alt="" coords="281,362,576,403"/>
+<area shape="rect" href="a35722.html#abf8bb63e4703c9940155a758a4f06719" title=" " alt="" coords="293,428,565,484"/>
+<area shape="rect" href="a35726.html#ae003a852b79b03e292b9f39d74499c07" title=" " alt="" coords="275,508,582,564"/>
+<area shape="rect" href="a35770.html#adbde906cbaa5603647be02b03758ebe7" title=" " alt="" coords="325,589,532,630"/>
+<area shape="rect" href="a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="333,655,525,711"/>
+<area shape="rect" href="a35766.html#a69e4089e3d476eebdc822567a813a08b" title=" " alt="" coords="336,735,521,777"/>
+<area shape="rect" href="a35762.html#a51c1be41ad42a8c6a173dbf011be035d" title=" " alt="" coords="333,801,524,842"/>
+<area shape="rect" href="a35750.html#a6c3b8e869632b1332a89a98c9589df98" title=" " alt="" coords="311,866,546,907"/>
+<area shape="rect" href="a35714.html#ab8b45cab032878c2a1ea4392d92ce833" title=" " alt="" coords="326,932,531,988"/>
+<area shape="rect" href="a35646.html#a979c10808c5915c655e31a5ae247af11" title=" " alt="" coords="311,1013,546,1054"/>
+<area shape="rect" href="a35686.html#a416ebb8642ae544dc92b8e60a4e4b2fa" title=" " alt="" coords="327,1079,530,1135"/>
+<area shape="rect" href="a35754.html#a0938baaa9c6fed7b8a4fa5ab3cfc2d52" title=" " alt="" coords="311,1159,546,1201"/>
+<area shape="rect" href="a35650.html#ae34e67632055a7273c8151afa9a89d48" title=" " alt="" coords="305,1225,552,1266"/>
+<area shape="rect" href="a35690.html#a12276c921ca69bf83b14847481beb823" title=" " alt="" coords="338,1291,519,1347"/>
+<area shape="rect" href="a35758.html#a6661dcf2b565670583288c3f5ed63ff0" title=" " alt="" coords="311,1371,546,1413"/>
+<area shape="rect" href="a35610.html#ae83062880a26bdb64c9b92b457fd41a6" title=" " alt="" coords="325,1437,532,1493"/>
+<area shape="rect" href="a35746.html#abd1d97808f581ec2df47b79908392973" title=" " alt="" coords="300,1518,557,1559"/>
+<area shape="rect" href="a35718.html#a9c44d95ce1ed76ceb4bd89fc52f2e221" title=" " alt="" coords="319,1584,539,1640"/>
+<area shape="rect" href="a35694.html#a8a4b7fca4aa094edc58dcdc7b9532aa0" title=" " alt="" coords="339,1664,518,1720"/>
+<area shape="rect" href="a35654.html#aa496118c076fa7d2c98b754c33c93c52" title=" " alt="" coords="317,1745,541,1786"/>
+<area shape="rect" href="a35698.html#a2a94da60a2ea7694cf9a5c11852900a9" title=" " alt="" coords="337,1811,521,1867"/>
+<area shape="rect" href="a35658.html#a5ccd38fdedc90fbc1fa430b4ea77a2b7" title=" " alt="" coords="317,1891,540,1933"/>
+<area shape="rect" href="a35662.html#ad7e5862d9511aafb050d55821f0883d5" title=" " alt="" coords="315,1957,542,1998"/>
+<area shape="rect" href="a35722.html#a85b7d81715e926f3bc5e9bee904bb0f9" title=" " alt="" coords="323,2023,534,2079"/>
+<area shape="rect" href="a35702.html#aa45854a615decf1226f1bbce27851572" title=" " alt="" coords="335,2103,522,2159"/>
+<area shape="rect" href="a35726.html#af7b6c19a1e75055dacec72604f6bc976" title=" " alt="" coords="306,2183,551,2239"/>
+<area shape="rect" href="a35614.html#a40d61db172ac68fe6c3514984bde199d" title=" " alt="" coords="319,2263,538,2319"/>
+<area shape="rect" href="a35618.html#aa2c3213ecef91f803db346d58078b471" title=" " alt="" coords="315,2343,543,2399"/>
+<area shape="rect" href="a35622.html#a517964d9b11362159a3b1db819ecd6a9" title=" " alt="" coords="320,2423,537,2479"/>
+<area shape="rect" href="a35626.html#a509347b08c20ba606e76e21e2cb88908" title=" " alt="" coords="313,2503,545,2559"/>
+<area shape="rect" href="a35630.html#a780aa992a106c940d717c103c9199b60" title=" " alt="" coords="319,2583,538,2639"/>
+<area shape="rect" href="a35770.html#a32590f835088837365780e77a91fb891" title=" " alt="" coords="325,2663,532,2705"/>
+<area shape="rect" href="a35682.html#a012dc20c257b41801fc399bdb7c28ad0" title=" " alt="" coords="333,2729,525,2785"/>
+<area shape="rect" href="a35766.html#afbd684dae959053bab723de819dcd767" title=" " alt="" coords="336,2810,521,2851"/>
+<area shape="rect" href="a35762.html#a6fec8df5c45c4922e78f06fbc6a9e931" title=" " alt="" coords="333,2875,524,2917"/>
+<area shape="rect" href="a35750.html#aa8faae9d83fd8ce0975d4c3ba59cd194" title=" " alt="" coords="311,2941,546,2982"/>
+<area shape="rect" href="a35714.html#a679371c5f54a9978f91972e373db60e4" title=" " alt="" coords="326,3007,531,3063"/>
+<area shape="rect" href="a35646.html#aa8e65c5bbcbae0c51fbc27db8292bb47" title=" " alt="" coords="313,3087,544,3129"/>
+<area shape="rect" href="a35686.html#ac0e23436142ef7fdf4eb11388001e293" title=" " alt="" coords="327,3153,530,3209"/>
+<area shape="rect" href="a35754.html#ac6a2f5da19033953dca45369d798ff54" title=" " alt="" coords="313,3234,544,3275"/>
+<area shape="rect" href="a35650.html#a326c4ba60bc874ac659dc30e1b123449" title=" " alt="" coords="308,3299,549,3341"/>
+<area shape="rect" href="a35610.html#a5c713f72bcd15938720d53a87c4709a2" title=" " alt="" coords="325,3365,532,3421"/>
+<area shape="rect" href="a35690.html#ac766e2216dadb8f20362637adba06daf" title=" " alt="" coords="338,3445,519,3501"/>
+<area shape="rect" href="a35746.html#a4b00fe74ba8affe322f90d20907100ad" title=" " alt="" coords="300,3526,557,3567"/>
+<area shape="rect" href="a35758.html#acab3a4a78ca545eff21fca93aea04236" title=" " alt="" coords="313,3591,544,3633"/>
+<area shape="rect" href="a35718.html#a87786329e0324a9fd96174a766a57e9e" title=" " alt="" coords="319,3657,539,3713"/>
+<area shape="rect" href="a35694.html#a4de09379b06e648903715950a8e7443a" title=" " alt="" coords="339,3737,518,3793"/>
+<area shape="rect" href="a35654.html#ad8869f47b0c18efed88cc135d943fc5c" title=" " alt="" coords="319,3818,538,3859"/>
+<area shape="rect" href="a35698.html#a1775819cebde3a832fc3c45fd6357600" title=" " alt="" coords="337,3884,521,3940"/>
+<area shape="rect" href="a35658.html#ae365029a1374892892224d983c8209fe" title=" " alt="" coords="320,3965,537,4006"/>
+<area shape="rect" href="a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="317,4030,540,4071"/>
+<area shape="rect" href="a35722.html#aa954a48fcb45a6ea5749f88faff14d9a" title=" " alt="" coords="323,4096,534,4152"/>
+<area shape="rect" href="a35702.html#abcb9bbd14914c37ed0d971037106ac28" title=" " alt="" coords="335,4176,522,4232"/>
+<area shape="rect" href="a35726.html#a0d099f3ba247f0c9fb2f90bc4415404a" title=" " alt="" coords="306,4256,551,4312"/>
+<area shape="rect" href="a35614.html#a95e7a349f96cec6bc17965e46af3a6b1" title=" " alt="" coords="319,4336,538,4392"/>
+<area shape="rect" href="a35618.html#acf4fcd8dfd1e1424aef6997812c0d5c7" title=" " alt="" coords="315,4416,543,4472"/>
+<area shape="rect" href="a35622.html#a3f087c76fb672aff0a773de336520784" title=" " alt="" coords="320,4496,537,4552"/>
+<area shape="rect" href="a35626.html#a773e69c74d35311f6ffcdfc5f5b83e62" title=" " alt="" coords="313,4576,545,4632"/>
+<area shape="rect" href="a35630.html#a57126b9d6b93bf303be112cace8d036b" title=" " alt="" coords="319,4656,538,4712"/>
+<area shape="rect" href="a35746.html#ab835ade361e09133239d90777bee6b2e" title=" " alt="" coords="300,4737,557,4778"/>
+<area shape="rect" href="a35682.html#ae5f016a2015ecf6daee92563306c317a" title=" " alt="" coords="333,4803,525,4859"/>
+<area shape="rect" href="a35714.html#ae07f366967d65f2ed9ec5242975a144f" title=" " alt="" coords="326,4883,531,4939"/>
+<area shape="rect" href="a35646.html#af9286483dd889df517e9291e48c2a76a" title=" " alt="" coords="320,4963,537,5019"/>
+<area shape="rect" href="a35610.html#a40075718b40ee109c743f7e551c3f172" title=" " alt="" coords="325,5043,532,5099"/>
+<area shape="rect" href="a35718.html#a8b6a919b0b6ab5cee37c1b3a70d77709" title=" " alt="" coords="319,5123,539,5179"/>
+<area shape="rect" href="a35694.html#abdd2a19e53d0e38d63c5090db6a838b0" title=" " alt="" coords="339,5203,518,5259"/>
+<area shape="rect" href="a35658.html#a39c7e784619a1751e1efcb5c9d5a89a7" title=" " alt="" coords="341,5283,516,5325"/>
+<area shape="rect" href="a35626.html#a7f751394fdd117199b6e0d5a03b223b7" title=" " alt="" coords="313,5349,545,5405"/>
+<area shape="rect" href="a35702.html#a56c20e638625aabfcf837faf022e9a57" title="Provides the functionality of ternary expression &quot;s ? a : b&quot;;." alt="" coords="335,5429,522,5485"/>
+<area shape="rect" href="a35686.html#a59251792cb5d63a301b8f35c62884cc1" title=" " alt="" coords="327,5509,530,5565"/>
+<area shape="rect" href="a35650.html#a2f1a376fb794893e427098489460a441" title=" " alt="" coords="317,5590,540,5631"/>
+<area shape="rect" href="a35614.html#a3c84c85567dc970eba412f82319de5ab" title=" " alt="" coords="319,5656,538,5712"/>
+<area shape="rect" href="a35762.html#a31e0e542be32c0d3852a653af7dc6adc" title=" " alt="" coords="333,5737,524,5778"/>
+<area shape="rect" href="a35630.html#aa705675bc6815c896aff55ca20325e07" title=" " alt="" coords="319,5803,538,5859"/>
+<area shape="rect" href="a35766.html#a6cd679dac19e27f171ab320fc97e6ab8" title=" " alt="" coords="336,5883,521,5925"/>
+<area shape="rect" href="a35622.html#a2e19e0cf574b41baac874d3f32ffa76d" title=" " alt="" coords="320,5949,537,6005"/>
+<area shape="rect" href="a35770.html#af09096c9bad5f5924beabd8b331625c1" title=" " alt="" coords="325,6030,532,6071"/>
+<area shape="rect" href="a35690.html#ac3b603287c7e0770393584701ab4bf47" title=" " alt="" coords="338,6096,519,6152"/>
+<area shape="rect" href="a35654.html#a5684fb6f6d4fe71e355e5310431b70de" title=" " alt="" coords="339,6177,518,6218"/>
+<area shape="rect" href="a35682.html#ab39478ca9ef1ed3324f503e32d5cbaf5" title=" " alt="" coords="19,4803,211,4859"/>
+<area shape="rect" href="a35714.html#a222aa38a54f2b34c5d01950224ed5fc9" title=" " alt="" coords="13,4883,218,4939"/>
+<area shape="rect" href="a35646.html#a82682107abfeaad9c7562589d344b868" title=" " alt="" coords="15,4970,215,5011"/>
+<area shape="rect" href="a35610.html#aa129cdf191807f6a278eefa95a1cd5a3" title=" " alt="" coords="12,5043,219,5099"/>
+<area shape="rect" href="a35718.html#aa0bc1847f69a65d3b22d800e69a96ee0" title=" " alt="" coords="5,5123,225,5179"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac40ed4ca1b5dd088b3b1cf560b155c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40ed4ca1b5dd088b3b1cf560b155c4a">&#9670;&nbsp;</a></span>GetRunTimeStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const auto&amp; encrypto::motion::Backend::GetRunTimeStatistics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c3ff216c8c7e948475dc5772339547b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3ff216c8c7e948475dc5772339547b">&#9670;&nbsp;</a></span>GetSbProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; encrypto::motion::Backend::GetSbProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a7c3ff216c8c7e948475dc5772339547b_icgraph.png" border="0" usemap="#a35198_a7c3ff216c8c7e948475dc5772339547b_icgraph" alt=""/></div>
+<map name="a35198_a7c3ff216c8c7e948475dc5772339547b_icgraph" id="a35198_a7c3ff216c8c7e948475dc5772339547b_icgraph">
+<area shape="rect" title=" " alt="" coords="555,104,751,145"/>
+<area shape="rect" href="a35774.html#aeeddee5e75de01135b081dcea5c45dfb" title=" " alt="" coords="323,71,495,112"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="311,136,507,177"/>
+<area shape="rect" href="a35746.html#abd1d97808f581ec2df47b79908392973" title=" " alt="" coords="5,5,263,47"/>
+<area shape="rect" href="a35746.html#ab835ade361e09133239d90777bee6b2e" title=" " alt="" coords="5,71,263,112"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="36,136,232,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acf9ff5f7ab0ac7bdd1ab3f353725f6cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9ff5f7ab0ac7bdd1ab3f353725f6cd">&#9670;&nbsp;</a></span>GetSpProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto&amp; encrypto::motion::Backend::GetSpProvider </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_acf9ff5f7ab0ac7bdd1ab3f353725f6cd_icgraph.png" border="0" usemap="#a35198_acf9ff5f7ab0ac7bdd1ab3f353725f6cd_icgraph" alt=""/></div>
+<map name="a35198_acf9ff5f7ab0ac7bdd1ab3f353725f6cd_icgraph" id="a35198_acf9ff5f7ab0ac7bdd1ab3f353725f6cd_icgraph">
+<area shape="rect" title=" " alt="" coords="516,130,712,171"/>
+<area shape="rect" href="a35774.html#a089bba8a50f0eb4d4c3e26ad9de443b2" title=" " alt="" coords="284,93,456,134"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="272,162,468,203"/>
+<area shape="rect" href="a35630.html#a780aa992a106c940d717c103c9199b60" title=" " alt="" coords="5,5,224,61"/>
+<area shape="rect" href="a35630.html#aa705675bc6815c896aff55ca20325e07" title=" " alt="" coords="5,85,224,141"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="17,166,213,207"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acee3220819bc8df2472115e368ec3d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee3220819bc8df2472115e368ec3d36">&#9670;&nbsp;</a></span>ImportBaseOts() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::ImportBaseOts </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35410.html">ReceiverMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>messages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6e2fa03edac8c1755fc42e875a53e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e2fa03edac8c1755fc42e875a53e43">&#9670;&nbsp;</a></span>ImportBaseOts() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::ImportBaseOts </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35406.html">SenderMessage</a> &amp;&#160;</td>
+          <td class="paramname"><em>messages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa73be5a42dea90b13936265791519b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73be5a42dea90b13936265791519b68">&#9670;&nbsp;</a></span>NextGateId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t encrypto::motion::Backend::NextGateId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22022ee57e4e3fd5404826cbcb507b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22022ee57e4e3fd5404826cbcb507b41">&#9670;&nbsp;</a></span>OtExtensionSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::OtExtensionSetup </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a22022ee57e4e3fd5404826cbcb507b41_cgraph.png" border="0" usemap="#a35198_a22022ee57e4e3fd5404826cbcb507b41_cgraph" alt=""/></div>
+<map name="a35198_a22022ee57e4e3fd5404826cbcb507b41_cgraph" id="a35198_a22022ee57e4e3fd5404826cbcb507b41_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,201,112"/>
+<area shape="rect" href="a35198.html#a364454198c31b392942815c6236822d5" title=" " alt="" coords="307,5,503,47"/>
+<area shape="rect" href="a35230.html#a8749ddcd3b0a9d5abd703fdd4f2a0cbc" title=" " alt="" coords="283,71,526,112"/>
+<area shape="rect" href="a35230.html#aea280618717bc8bf1169383f151e03d3" title=" " alt="" coords="249,136,560,177"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a22022ee57e4e3fd5404826cbcb507b41_icgraph.png" border="0" usemap="#a35198_a22022ee57e4e3fd5404826cbcb507b41_icgraph" alt=""/></div>
+<map name="a35198_a22022ee57e4e3fd5404826cbcb507b41_icgraph" id="a35198_a22022ee57e4e3fd5404826cbcb507b41_icgraph">
+<area shape="rect" title=" " alt="" coords="493,5,689,47"/>
+<area shape="rect" href="a35198.html#a47162b9152f22cf964e6ea3f9efe7773" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad7a5f6cccc9e31beed09b6332b149921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a5f6cccc9e31beed09b6332b149921">&#9670;&nbsp;</a></span>RegisterGate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::RegisterGate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#aa99575c1824a11b590a8cfd0f4f8301b">GatePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>gate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_ad7a5f6cccc9e31beed09b6332b149921_icgraph.png" border="0" usemap="#a35198_ad7a5f6cccc9e31beed09b6332b149921_icgraph" alt=""/></div>
+<map name="a35198_ad7a5f6cccc9e31beed09b6332b149921_icgraph" id="a35198_ad7a5f6cccc9e31beed09b6332b149921_icgraph">
+<area shape="rect" title=" " alt="" coords="531,267,727,308"/>
+<area shape="rect" href="a35198.html#a59f3044d06187861bc1c5538d6b09adf" title=" " alt="" coords="273,5,469,47"/>
+<area shape="rect" href="a35198.html#aa3b4b6dbb0a117f277e56377da8bc14a" title=" " alt="" coords="273,71,469,112"/>
+<area shape="rect" href="a35198.html#a25916310af6a37cb04c3a637a911193b" title=" " alt="" coords="268,136,475,177"/>
+<area shape="rect" href="a35198.html#acf7652df7ee423cea08ca0dac04d35cc" title=" " alt="" coords="273,201,469,243"/>
+<area shape="rect" href="a35198.html#af1de9dfc6f9a52a18290b82d7657c0b7" title=" " alt="" coords="273,267,469,308"/>
+<area shape="rect" href="a35198.html#a056b06fbe003b4a6654010aa4427bff2" title=" " alt="" coords="273,332,469,373"/>
+<area shape="rect" href="a35198.html#a2cd6366c4a3870aad54c66e66ccadfe8" title=" " alt="" coords="273,397,469,439"/>
+<area shape="rect" href="a35198.html#a50af847622ce09beb2c00739cecd0fc0" title=" " alt="" coords="273,463,469,504"/>
+<area shape="rect" href="a35198.html#a2614cd4ab8727726739910ecfd93fb64" title=" " alt="" coords="260,528,483,569"/>
+<area shape="rect" href="a35198.html#a9c73fe7423bb4e7d267f97f39b4fc8df" title=" " alt="" coords="11,5,207,47"/>
+<area shape="rect" href="a35198.html#a0937b5b0ed74054bada4f4db95cf81ae" title=" " alt="" coords="11,71,207,112"/>
+<area shape="rect" href="a35198.html#affb00975d6460067317576b69e30a28d" title=" " alt="" coords="5,136,212,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75db008bb610225f9e5fb1b284b34c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75db008bb610225f9e5fb1b284b34c5b">&#9670;&nbsp;</a></span>RegisterInputGate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::RegisterInputGate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a34335.html#a4d72630f13126320af1a6bb37942b129">InputGatePointer</a> &amp;&#160;</td>
+          <td class="paramname"><em>input_gate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a75db008bb610225f9e5fb1b284b34c5b_icgraph.png" border="0" usemap="#a35198_a75db008bb610225f9e5fb1b284b34c5b_icgraph" alt=""/></div>
+<map name="a35198_a75db008bb610225f9e5fb1b284b34c5b_icgraph" id="a35198_a75db008bb610225f9e5fb1b284b34c5b_icgraph">
+<area shape="rect" title=" " alt="" coords="249,71,445,112"/>
+<area shape="rect" href="a35198.html#abba86c7fcc10324a77f75ac10bc6e355" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35198.html#a367ecd3c02d4bec4b06c13fa3a1b024e" title=" " alt="" coords="5,71,201,112"/>
+<area shape="rect" href="a35198.html#af72f4fda8cce6e5558e706fe3374f6a0" title=" " alt="" coords="5,136,201,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa63f13f28dcc7e68b8d8dfd2110a4ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa63f13f28dcc7e68b8d8dfd2110a4ac">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47162b9152f22cf964e6ea3f9efe7773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47162b9152f22cf964e6ea3f9efe7773">&#9670;&nbsp;</a></span>RunPreprocessing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::RunPreprocessing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a47162b9152f22cf964e6ea3f9efe7773_cgraph.png" border="0" usemap="#a35198_a47162b9152f22cf964e6ea3f9efe7773_cgraph" alt=""/></div>
+<map name="a35198_a47162b9152f22cf964e6ea3f9efe7773_cgraph" id="a35198_a47162b9152f22cf964e6ea3f9efe7773_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,201,145"/>
+<area shape="rect" href="a35198.html#a6237b7c37b74f7cf5c4f162a533ffb6d" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a7c3ff216c8c7e948475dc5772339547b" title=" " alt="" coords="249,71,445,112"/>
+<area shape="rect" href="a35198.html#acf9ff5f7ab0ac7bdd1ab3f353725f6cd" title=" " alt="" coords="249,136,445,177"/>
+<area shape="rect" href="a35198.html#a22022ee57e4e3fd5404826cbcb507b41" title=" " alt="" coords="249,201,445,243"/>
+<area shape="rect" href="a35198.html#a364454198c31b392942815c6236822d5" title=" " alt="" coords="551,136,747,177"/>
+<area shape="rect" href="a35230.html#a8749ddcd3b0a9d5abd703fdd4f2a0cbc" title=" " alt="" coords="527,201,770,243"/>
+<area shape="rect" href="a35230.html#aea280618717bc8bf1169383f151e03d3" title=" " alt="" coords="493,267,804,308"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a47162b9152f22cf964e6ea3f9efe7773_icgraph.png" border="0" usemap="#a35198_a47162b9152f22cf964e6ea3f9efe7773_icgraph" alt=""/></div>
+<map name="a35198_a47162b9152f22cf964e6ea3f9efe7773_icgraph" id="a35198_a47162b9152f22cf964e6ea3f9efe7773_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,445,47"/>
+<area shape="rect" href="a35198.html#a5a79b03291de7a5ac855f12f842024c1" title=" " alt="" coords="5,5,201,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42a47cc49366f25adc5a68ad74307f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a47cc49366f25adc5a68ad74307f1d">&#9670;&nbsp;</a></span>Send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::Send </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>party_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">flatbuffers::FlatBufferBuilder &amp;&amp;&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_a42a47cc49366f25adc5a68ad74307f1d_cgraph.png" border="0" usemap="#a35198_a42a47cc49366f25adc5a68ad74307f1d_cgraph" alt=""/></div>
+<map name="a35198_a42a47cc49366f25adc5a68ad74307f1d_cgraph" id="a35198_a42a47cc49366f25adc5a68ad74307f1d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" href="a35230.html#af18cf7f2ec4628d760a52cb89bd914a8" title=" " alt="" coords="249,5,516,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adec0f75cf359069129022632973c7cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec0f75cf359069129022632973c7cc3">&#9670;&nbsp;</a></span>Synchronize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encrypto::motion::Backend::Synchronize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocking wait for synchronizing between parties. Called in <a class="el" href="a35198.html#a3673bc38c07447e4745df83c353bd357">Clear()</a> and <a class="el" href="a35198.html#aaa63f13f28dcc7e68b8d8dfd2110a4ac">Reset()</a> </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35198_adec0f75cf359069129022632973c7cc3_cgraph.png" border="0" usemap="#a35198_adec0f75cf359069129022632973c7cc3_cgraph" alt=""/></div>
+<map name="a35198_adec0f75cf359069129022632973c7cc3_cgraph" id="a35198_adec0f75cf359069129022632973c7cc3_cgraph">
+<area shape="rect" title="Blocking wait for synchronizing between parties. Called in Clear() and Reset()" alt="" coords="5,39,201,80"/>
+<area shape="rect" href="a35230.html#a2cad20eef9e7cb8a37b663d78bfee217" title=" " alt="" coords="249,39,505,80"/>
+<area shape="rect" href="a35230.html#a5699584d15a108ab7afad5908b9f510b" title=" " alt="" coords="553,5,853,47"/>
+<area shape="rect" href="a34336.html#a21d94ff4f81145236c0188e67331ace7" title=" " alt="" coords="582,71,825,112"/>
+<area shape="rect" href="a35230.html#af18cf7f2ec4628d760a52cb89bd914a8" title=" " alt="" coords="901,5,1168,47"/>
+<area shape="rect" href="a34336.html#a353ae222fc0f00c967eff2c6ceeb4c87" title=" " alt="" coords="913,71,1156,112"/>
+<area shape="rect" href="a34336.html#acfd10b683183a240a7eb03116b267a22" title=" " alt="" coords="913,136,1156,177"/>
+<area shape="rect" href="a34336.html#a9412b26e62a96a63497f82731763b100" title=" " alt="" coords="1216,71,1459,112"/>
+<area shape="rect" href="a35254.html#a50967730d49fa84d13e578d26021c19f" title=" " alt="" coords="1507,5,1775,47"/>
+<area shape="rect" href="a35254.html#a8381f341301f6f926c8de2fb71d54f77" title=" " alt="" coords="1519,71,1762,112"/>
+<area shape="rect" href="a35254.html#a5eecbd984cdab00293a5758d5fe57d44" title=" " alt="" coords="1519,136,1762,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a33605_source.html">backend.h</a></li>
+<li><a class="el" href="a33602.html">backend.cpp</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

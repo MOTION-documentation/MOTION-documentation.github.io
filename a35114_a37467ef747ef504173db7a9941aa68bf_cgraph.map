@@ -1,8 +1,0 @@
-<map id="EvaluateProtocol" name="EvaluateProtocol">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,137,91"/>
-<area shape="rect" id="node2" href="$a35111.html#aa0b9fa6c189039ab848eb69a0435e1bd" title=" " alt="" coords="246,5,389,32"/>
-<area shape="rect" id="node4" href="$a36106.html#aa9ae2008dae4fd0c11f514352abbd251" title=" " alt="" coords="215,57,420,98"/>
-<area shape="rect" id="node5" href="$a36726.html#a83d91e119d83636bb1ca2819075a4fc8" title="constructs an output gate, which reconstructs the cleartext result. The default parameter for the out..." alt="" coords="185,123,449,149"/>
-<area shape="rect" id="node3" href="$a36726.html#a2d6b46313b06d4d8223eb436d4ba476d" title="converts the information on the wires to T. Boolean and arithmetic GMW returns the secret&#45;shared valu..." alt="" coords="497,5,755,32"/>
-<area shape="rect" id="node6" href="$a36726.html#afeb1d9048ebab03917742d0cda5dbf0b" title=" " alt="" coords="509,115,743,157"/>
-</map>

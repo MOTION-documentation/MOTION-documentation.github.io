@@ -1,6 +1,0 @@
-<map id="encrypto::motion::primitives::SharingRandomnessGenerator::ResetBitPool" name="encrypto::motion::primitives::SharingRandomnessGenerator::ResetBitPool">
-<area shape="rect" id="node1" title=" " alt="" coords="5,63,233,119"/>
-<area shape="rect" id="node2" href="$a36758.html#a9bdd840b877bde7cb948a10d0c2b9f84" title="Clear this Bitvector." alt="" coords="281,5,481,47"/>
-<area shape="rect" id="node3" href="$a36758.html#adf616f71e5a06f33a00862396e38ea9c" title="Get size of BitVector." alt="" coords="281,71,481,112"/>
-<area shape="rect" id="node4" href="$a36758.html#a6dce001108da37a6f6543bf0386584b5" title="Returns a new BitVector containing the bits of this BitVector between positions from and to." alt="" coords="281,136,481,177"/>
-</map>

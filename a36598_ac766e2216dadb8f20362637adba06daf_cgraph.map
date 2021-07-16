@@ -1,9 +1,0 @@
-<map id="encrypto::motion::proto::boolean_gmw::XorGate::EvaluateSetup" name="encrypto::motion::proto::boolean_gmw::XorGate::EvaluateSetup">
-<area shape="rect" id="node1" title=" " alt="" coords="5,63,187,119"/>
-<area shape="rect" id="node2" href="$a36682.html#a12640782f5b65cd8de30ffe6b85fc28c" title=" " alt="" coords="292,5,464,47"/>
-<area shape="rect" id="node4" href="$a36134.html#a1fd61633436603e156fadd48928af52f" title=" " alt="" coords="235,71,521,112"/>
-<area shape="rect" id="node5" href="$a36682.html#a10301f3a0ea91b10b67989cc35b557fc" title=" " alt="" coords="292,136,464,177"/>
-<area shape="rect" id="node3" href="$a36110.html#a1b96f04c078b64d63a9fcb27a4de1e61" title=" " alt="" coords="589,5,785,47"/>
-<area shape="rect" id="node6" href="$a36778.html#a8864013bcd3d0befddc029e91d99d019" title="Get the mutex." alt="" coords="569,103,804,144"/>
-<area shape="rect" id="node7" href="$a36778.html#ac0c6482f418812f1238812ae2a66e13e" title="Unblocks all threads waiting for condition_variable_." alt="" coords="569,168,804,209"/>
-</map>

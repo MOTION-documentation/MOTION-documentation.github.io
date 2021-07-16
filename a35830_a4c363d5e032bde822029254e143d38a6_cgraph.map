@@ -1,0 +1,7 @@
+<map id="encrypto::motion::SecureUnsignedInteger::operator&gt;" name="encrypto::motion::SecureUnsignedInteger::operator&gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="5,128,208,169"/>
+<area shape="rect" id="node2" href="$a35818.html#a5c99891b3b8571a7d441ba1cc9a31c9e" title="concatenates wires in multiple shares in one share." alt="" coords="256,29,489,71"/>
+<area shape="rect" id="node3" href="$a35818.html#afe64885b9c807167ff0f27937c88a102" title="evaluates AlgorithmDescription also on this&#45;&gt;share_ as input." alt="" coords="256,95,489,136"/>
+<area shape="rect" id="node4" href="$a35194.html#aa9ae2008dae4fd0c11f514352abbd251" title=" " alt="" coords="270,160,475,201"/>
+<area shape="rect" id="node5" href="$a35818.html#ad25d21a530970bef622b2d48188c4fef" title="splits the share into single wires." alt="" coords="256,225,489,267"/>
+</map>

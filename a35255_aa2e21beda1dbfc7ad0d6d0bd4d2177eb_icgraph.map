@@ -1,6 +1,0 @@
-<map id="encrypto::motion::AndImplementation" name="encrypto::motion::AndImplementation">
-<area shape="rect" id="node1" title=" " alt="" coords="253,78,524,105"/>
-<area shape="rect" id="node2" href="$a36762.html#a824172b1cfc42c93a68efe11628ac213" title="Perform AND operation on every bit of BitSpan and BitVector." alt="" coords="10,5,201,47"/>
-<area shape="rect" id="node3" href="$a36758.html#a7ac6946f5efb319a742945cd563cf812" title="Perform AND&#45;assign operation between every bit of this and a BitSpan." alt="" coords="5,71,205,112"/>
-<area shape="rect" id="node4" href="$a36762.html#a59930efb347693f9737a49fb78c70a74" title="Perform AND&#45;assign operation on every bit of BitSpan and BitVector." alt="" coords="10,136,201,177"/>
-</map>

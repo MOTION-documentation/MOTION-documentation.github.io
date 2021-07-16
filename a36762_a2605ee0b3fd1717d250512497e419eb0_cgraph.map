@@ -1,6 +1,0 @@
-<map id="encrypto::motion::BitSpan::operator|" name="encrypto::motion::BitSpan::operator|">
-<area shape="rect" id="node1" title="Perform OR operation on every bit of BitSpan and BitVector." alt="" coords="5,71,196,112"/>
-<area shape="rect" id="node2" href="$a35255.html#a2ae8f85e8ac996ff93db7ebcaf1ee68f" title=" " alt="" coords="279,5,469,47"/>
-<area shape="rect" id="node3" href="$a35255.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="284,71,464,112"/>
-<area shape="rect" id="node4" href="$a35255.html#a7fa59d0f25b6f4d350552763950e52ef" title=" " alt="" coords="244,137,504,163"/>
-</map>

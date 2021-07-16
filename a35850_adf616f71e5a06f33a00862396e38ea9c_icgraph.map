@@ -1,0 +1,19 @@
+<map id="encrypto::motion::BitVector::GetSize" name="encrypto::motion::BitVector::GetSize">
+<area shape="rect" id="node1" title="Get size of BitVector." alt="" coords="521,397,721,439"/>
+<area shape="rect" id="node2" href="$a35850.html#ad0d584433188753b028f5f38f458b45a" title="Performs AND operation between all bits in BitVector." alt="" coords="259,5,459,47"/>
+<area shape="rect" id="node3" href="$a35846.html#a4b588947c661373cd630796e328f48bc" title="Appends a new column by copying the input bit_vector to the matrix." alt="" coords="259,71,460,112"/>
+<area shape="rect" id="node4" href="$a35846.html#a3c05fac91ca4eed72f4359130a11e144" title="Appends a new row by copying the input bit_vector to the matrix." alt="" coords="259,136,460,177"/>
+<area shape="rect" id="node5" href="$a35438.html#a66fe8c9d86c447def07b797a32e0acbd" title=" " alt="" coords="264,201,455,243"/>
+<area shape="rect" id="node6" href="$a34335.html#ad6b159fe00255e7d9117fced44f8a728" title=" " alt="" coords="259,267,459,308"/>
+<area shape="rect" id="node9" href="$a35850.html#a722316ab197e5f1d95fe2d976667aea6" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="259,332,459,373"/>
+<area shape="rect" id="node10" href="$a35350.html#a23d4433cf733921207ad5bd4d367c9d9" title=" " alt="" coords="253,397,465,439"/>
+<area shape="rect" id="node11" href="$a35606.html#af4c8155479054b33ffae16c2a3598cf3" title=" " alt="" coords="245,463,473,519"/>
+<area shape="rect" id="node13" href="$a35850.html#a740e0c0953eb5dfbd229437941394d1c" title="Copy&#45;assign from BitVector with different allocator." alt="" coords="259,544,459,585"/>
+<area shape="rect" id="node14" href="$a35850.html#ae9fd18f5bce638cce89b5516beee375b" title="Performs OR operation between all bits in BitVector." alt="" coords="259,609,459,651"/>
+<area shape="rect" id="node15" href="$a35606.html#a03cc204739f82735a52cab6164bc9ee2" title=" " alt="" coords="245,675,473,731"/>
+<area shape="rect" id="node16" href="$a35458.html#a3598c621d466d665c06958267b390d61" title=" " alt="" coords="264,756,455,797"/>
+<area shape="rect" id="node17" href="$a35850.html#a39009e5de2f90b5324ba4cbe2d6c4673" title="Performs XOR operation between all bits in BitVector." alt="" coords="259,821,459,863"/>
+<area shape="rect" id="node7" href="$a35766.html#a69e4089e3d476eebdc822567a813a08b" title=" " alt="" coords="9,235,194,276"/>
+<area shape="rect" id="node8" href="$a35766.html#afbd684dae959053bab723de819dcd767" title=" " alt="" coords="9,300,194,341"/>
+<area shape="rect" id="node12" href="$a35682.html#a97ed14136fead3832d471e0cdacda2df" title=" " alt="" coords="5,463,197,519"/>
+</map>

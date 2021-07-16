@@ -1,6 +1,0 @@
-<map id="encrypto::motion::BitVectorSubsetImplementation" name="encrypto::motion::BitVectorSubsetImplementation">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,205,112"/>
-<area shape="rect" id="node2" href="$a36758.html#adf616f71e5a06f33a00862396e38ea9c" title="Get size of BitVector." alt="" coords="268,5,468,47"/>
-<area shape="rect" id="node3" href="$a36758.html#afb3c606452343089f8a21a0260313b3e" title="Resize BitVector to size number_of_bits. New bits are uninitialized by default." alt="" coords="268,71,468,112"/>
-<area shape="rect" id="node4" href="$a36758.html#afdf1e8438ada05b70beab047a52f32e8" title="Sets or unsets all bits in the BitVector." alt="" coords="253,137,483,163"/>
-</map>

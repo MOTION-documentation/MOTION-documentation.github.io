@@ -1,5 +1,0 @@
-<map id="encrypto::motion::Block128Vector::MakeZero" name="encrypto::motion::Block128Vector::MakeZero">
-<area shape="rect" id="node1" title="Creates a zero&#45;filled vector of size elements." alt="" coords="5,39,207,80"/>
-<area shape="rect" id="node2" href="$a36770.html#ad15167b78b8094b7ffd518e4d8b2686d" title=" " alt="" coords="255,5,456,47"/>
-<area shape="rect" id="node3" href="$a36770.html#a3e0a45899890831dc5a55e2b7c79102a" title="Get size of Block128Vector." alt="" coords="255,71,456,112"/>
-</map>

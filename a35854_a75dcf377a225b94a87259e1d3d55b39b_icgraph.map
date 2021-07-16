@@ -1,0 +1,5 @@
+<map id="encrypto::motion::BitSpan::GetMutableData" name="encrypto::motion::BitSpan::GetMutableData">
+<area shape="rect" id="node1" title="Get reference to content of BitSpan." alt="" coords="244,39,435,80"/>
+<area shape="rect" id="node2" href="$a35854.html#abebe33a15386482a3e60330595109ac3" title="copies the first (dest_to &#45; dest_from) bits from other to the bits [dest_from, dest_to) in this." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node3" href="$a35854.html#a6800c3ca2a648fb39d39c84a7fa5b790" title="Assignment from BitVector." alt="" coords="5,71,196,112"/>
+</map>

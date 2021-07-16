@@ -1,0 +1,15 @@
+<map id="encrypto::motion::ShareWrapper::ShareWrapper" name="encrypto::motion::ShareWrapper::ShareWrapper">
+<area shape="rect" id="node1" title=" " alt="" coords="605,221,839,263"/>
+<area shape="rect" id="node2" href="$a35818.html#a0f825f0260ecfd5352bcf566b954b94f" title="concatenates wires in multiple shares in one share. Throws if wires have different numbers of SIMD va..." alt="" coords="306,5,539,47"/>
+<area shape="rect" id="node3" href="$a35818.html#a3efa280342234d9a82ae3cf09a3b0fe5" title="yields wire #i from share_ as ShareWrapper." alt="" coords="306,71,539,112"/>
+<area shape="rect" id="node4" href="$a35818.html#a9145ca5c914e8cef0f31dcf1e7da6b8c" title=" " alt="" coords="288,137,557,163"/>
+<area shape="rect" id="node6" href="$a35818.html#a611f9f53d288733c37440060a2bc2823" title=" " alt="" coords="306,188,539,229"/>
+<area shape="rect" id="node7" href="$a35818.html#aded5b5b31e02ab6d294994619f6b505c" title=" " alt="" coords="306,253,539,295"/>
+<area shape="rect" id="node8" href="$a35818.html#a7c4ba90b2cfa44df9fa5b0aba585a73b" title=" " alt="" coords="306,319,539,360"/>
+<area shape="rect" id="node9" href="$a35818.html#a83d91e119d83636bb1ca2819075a4fc8" title="constructs an output gate, which reconstructs the cleartext result. The default parameter for the out..." alt="" coords="291,385,555,411"/>
+<area shape="rect" id="node13" href="$a35818.html#a8eea520b99e3f7ea6d0ab0af46d141fe" title="constructs a SubsetGate that returns values stored at positions in this&#45;&gt;share_, e...." alt="" coords="306,436,539,477"/>
+<area shape="rect" id="node5" href="$a34169.html#a4199f451e4a5056d6ff388daa28e5e71" title=" " alt="" coords="108,137,240,163"/>
+<area shape="rect" id="node10" href="$a34160.html#a37467ef747ef504173db7a9941aa68bf" title=" " alt="" coords="108,359,240,386"/>
+<area shape="rect" id="node12" href="$a34253.html#a7f756b87fcac7af37cf423c93ac73384" title=" " alt="" coords="147,410,201,437"/>
+<area shape="rect" id="node11" href="$a34154.html#adacbe0175a79dff748855d8c9839f82b" title=" " alt="" coords="5,359,60,386"/>
+</map>

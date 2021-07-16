@@ -1,4 +1,0 @@
-<map id="encrypto::motion::BitMatrix::AppendRow" name="encrypto::motion::BitMatrix::AppendRow">
-<area shape="rect" id="node1" title="Appends a new row by copying the input bit_vector to the matrix." alt="" coords="5,5,207,47"/>
-<area shape="rect" id="node2" href="$a36758.html#adf616f71e5a06f33a00862396e38ea9c" title="Get size of BitVector." alt="" coords="255,5,455,47"/>
-</map>

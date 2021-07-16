@@ -1,0 +1,12 @@
+<map id="encrypto::motion::Block128Vector::size" name="encrypto::motion::Block128Vector::size">
+<area shape="rect" id="node1" title="Get size of Block128Vector." alt="" coords="643,169,844,211"/>
+<area shape="rect" id="node2" href="$a35862.html#a2458dc9af4f8aa007e3b2ed3799f80ba" title="Creates initialized vector of size elements read from memory." alt="" coords="383,5,584,47"/>
+<area shape="rect" id="node3" href="$a35662.html#abcb57c7e40cd873f4029a43326e3ea9f" title=" " alt="" coords="372,71,595,112"/>
+<area shape="rect" id="node4" href="$a35862.html#a954d6baebd0fca534d27fb764f2dc8dc" title="Creates a vector of size elements filled with random data." alt="" coords="383,136,584,177"/>
+<area shape="rect" id="node6" href="$a35862.html#adcf1dbc510bd50a48b91b52985dbaba2" title="Creates a zero&#45;filled vector of size elements." alt="" coords="383,201,584,243"/>
+<area shape="rect" id="node9" href="$a35862.html#a943a0b713c30983117b611d899238824" title="Perform a XOR operation between all the Block128 in this vector and the Block128 in a different one o..." alt="" coords="383,267,584,308"/>
+<area shape="rect" id="node10" href="$a35862.html#a47d392836950492038d4a8673438e366" title="Perform a XOR&#45;assign operation between all the Block128 in this vector and the Block128 in a differen..." alt="" coords="383,332,584,373"/>
+<area shape="rect" id="node5" href="$a34304.html#a82b4c4a00f4c31aeb12157553437a238" title=" " alt="" coords="220,143,289,170"/>
+<area shape="rect" id="node7" href="$a34166.html#aa5d374defecb3dcc402711061476000a" title=" " alt="" coords="185,209,324,235"/>
+<area shape="rect" id="node8" href="$a34169.html#a4199f451e4a5056d6ff388daa28e5e71" title=" " alt="" coords="5,209,137,235"/>
+</map>

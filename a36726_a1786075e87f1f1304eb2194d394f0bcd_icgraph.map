@@ -1,4 +1,0 @@
-<map id="encrypto::motion::ShareWrapper::Simdify" name="encrypto::motion::ShareWrapper::Simdify">
-<area shape="rect" id="node1" title="constructs a SimdifyGate that composes the shares in input into a &quot;larger&quot; share with all the input s..." alt="" coords="287,5,520,47"/>
-<area shape="rect" id="node2" href="$a36726.html#a036bb8ab01477bcd6f12814528a6a81b" title="internally extracts shares from each entry in input and calls Simdify(std::span&lt;SharePointer&gt; input) ..." alt="" coords="5,5,239,47"/>
-</map>

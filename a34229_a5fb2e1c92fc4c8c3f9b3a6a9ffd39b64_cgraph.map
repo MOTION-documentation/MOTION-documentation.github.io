@@ -1,0 +1,10 @@
+<map id="EvaluateProtocol" name="EvaluateProtocol">
+<area shape="rect" id="node1" title=" " alt="" coords="5,122,137,149"/>
+<area shape="rect" id="node2" href="$a35830.html#abdd0daa85ae735249a51b43f51e8c31b" title="converts the information on the wires to T in type Unsigned Integer. See the description in ShareWrap..." alt="" coords="187,5,373,47"/>
+<area shape="rect" id="node3" href="$a34229.html#afb80b2fe9dfbc8c685829bd06d60dc6d" title=" " alt="" coords="185,71,375,98"/>
+<area shape="rect" id="node5" href="$a34229.html#af2ddcbef3abf787a5bf78b8da249344a" title=" " alt="" coords="229,122,331,149"/>
+<area shape="rect" id="node6" href="$a35830.html#a7c001c0c90519062779b7a0ab62e3758" title="constructs an output gate, which reconstructs the cleartext result. The default parameter for the out..." alt="" coords="187,173,373,215"/>
+<area shape="rect" id="node8" href="$a34335.html#a753d9f582daa35cc6350ccd7df729bfe" title=" " alt="" coords="186,239,374,266"/>
+<area shape="rect" id="node4" href="$a35830.html#ac34b7a7d557fda316ca8929b3ac55985" title="decomposes this&#45;&gt;share_&#45;&gt;Get() into shares with exactly 1 SIMD value. See the description in ShareWra..." alt="" coords="443,64,645,105"/>
+<area shape="rect" id="node7" href="$a35830.html#afca91cd1a246c6965a06291b5a8c3215" title=" " alt="" coords="423,166,665,222"/>
+</map>

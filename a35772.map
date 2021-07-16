@@ -1,0 +1,12 @@
+<map id="encrypto::motion::Gate" name="encrypto::motion::Gate">
+<area shape="rect" id="node1" title=" " alt="" coords="909,225,1081,252"/>
+<area shape="rect" id="node2" href="$a35198.html" title=" " alt="" coords="423,24,619,51"/>
+<area shape="rect" id="node3" title=" " alt="" coords="115,17,291,58"/>
+<area shape="rect" id="node4" href="$a35870.html" title="Wraps a boost::fibers::condition_variable with a boost::fibers::mutex and a condition checking functi..." alt="" coords="404,99,639,125"/>
+<area shape="rect" id="node5" title=" " alt="" coords="445,197,598,224"/>
+<area shape="rect" id="node6" title=" " alt="" coords="423,248,620,275"/>
+<area shape="rect" id="node7" title="STL class." alt="" coords="124,248,281,275"/>
+<area shape="rect" id="node8" title=" " alt="" coords="5,248,44,275"/>
+<area shape="rect" id="node9" title=" " alt="" coords="450,299,593,341"/>
+<area shape="rect" id="node10" title=" " alt="" coords="426,365,617,392"/>
+</map>

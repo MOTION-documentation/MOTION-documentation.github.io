@@ -1,8 +1,0 @@
-<map id="encrypto::motion::CopyImplementation" name="encrypto::motion::CopyImplementation">
-<area shape="rect" id="node1" title=" " alt="" coords="5,143,284,170"/>
-<area shape="rect" id="node2" href="$a36758.html#a5d1d84dfbba1619c410cdb322622bf26" title="Appends a bit to BitVector." alt="" coords="372,5,572,47"/>
-<area shape="rect" id="node3" href="$a35255.html#a8ec964191e1babe6d6e57d3b5cbab205" title="Returns the number of bytes necessary to store bits bits." alt="" coords="382,71,562,112"/>
-<area shape="rect" id="node4" href="$a36758.html#adeb28266740be514f0e996d4f62ca021" title="Get const reference to content of BitVector." alt="" coords="372,136,572,177"/>
-<area shape="rect" id="node5" href="$a35255.html#ab051a877b97a4b0a21d05061676fabbd" title=" " alt="" coords="338,202,606,229"/>
-<area shape="rect" id="node6" href="$a35255.html#af8b8a95260784168156b66337111a0c1" title=" " alt="" coords="332,253,612,279"/>
-</map>
